@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>...</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="event.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Itim&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
+</head>
+<body id ="main">
+	<div class="header">
+	<h1 class="h11 start_heading h1color" align="center" class="heading">MKKO&reg;</h1>
+	<h1 class="h11 end_heading h1color" align="center">ONLINE SHOP</h1></div><br>
+	<!-- <div align="right"><button onclick="call()" class="login_btn">Login</button></div>  -->
+	<div class="animated jackInTheBox">
+	<h2 class="h22 h1color animated pulse infinite" align="center" style="color : red;">Today discount 90%</h2></div><br>
+	<div align="center">
+		<div class="search_bar animated flipInX delay-1s">
+		<img class="search_icon" src="https://img.icons8.com/ios/500/search--v1.png">	
+		<input id="inputitems" type="text" name="name" maxlength="23" placeholder="Search Items" required>
+		<input id="clear_wave" type="button" value="&times;">
+	</div><br>
+	<button id = "btn_add">ADD</button>
+		<br>
+	</div>
+	<h2 align="center" class="h23 h1color">Item List</h2>
+		<div align="center">
+			<p class="h1color wcc">wallpaper color change</p>
+			<input oninput="setGradient()" type="color" name="color1" class="color1" value="#E139DC">
+			<input oninput="setGradient()" type="color" name="color2" class="color2" value="#3DE3F0">
+		</div>
+		<p align="center" class="tcc h1color">text color change</p>
+		<div align="center"><select id="selectcolor" oninput="changeColor()">
+		<option value="white">default</option>
+		<option value="blue">Blue</option>
+		<option value="red">Red</option>
+		<option value="green">Green</option>
+		<option value="purple">Purple</option>
+		<option value="grey">Gray</option>
+		<option value="navy">Navy</option>
+		<option value="lime">Lime</option>
+		<option value="black">Black</option>
+		<option value="white">White</option>
+		<option value="yellow">Yellow</option>
+	</select></div>
+	<p align="center" class="ocbg h1color">One-color background change</p>
+	<div align="center" class="radiobar">
+	<input oninput="customChangew()" type="radio" name="bgcolor" class="bgcolorw" value="white"><span class="h1color">white</span>&nbsp;	
+	<input oninput="customChangey()" type="radio" name="bgcolor" class="bgcolory" value="yellow"><span class="h1color">yellow</span>&nbsp;
+	<input oninput="customChangeg()" type="radio" name="bgcolor" class="bgcolorg" value="green"><span class="h1color">green</span>&nbsp;
+	<input oninput="customChanger()" type="radio" name="bgcolor" class="bgcolorr" value="red"><span class="h1color">red</span>&nbsp;
+	<input oninput="customChangeb()" type="radio" name="bgcolor" class="bgcolorb" value="black"><span class="h1color">black</span>
+</div>
+		<!-- </h1><button id = "clear_data">Clear</button> -->
+		<hr>
+	<ul class="ol">
+		<!-- <li>hi</li> -->
+	</ul>
+	<div class="hr"><hr></div>
+	<h4 align="center" class="h1color"></h4>
+	<p class="h33 h1color" align="center">Copyright © 2020 Myint Ko Ko Oo Inc. All rights reserved.</p>
+	<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
