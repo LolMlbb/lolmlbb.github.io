@@ -48,7 +48,7 @@ const decide = () =>{
 		QnA.style.display = "none";
 		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>ဘုန်းနေလဇော်</h1><div align=center><img style='border-radius:25px' src=bnlz.jpg width=300 height=240></div><p>သူက ချီးထုပ်ကြီးပါ။ သူလိုချင်ရာ မရရင် အသံဗြဲကြီးနဲ့အော်ငိုတတ်သူဖြစ်ပီး ဖုန်းကိုင်ရတာ မတအားကြိုက်သူပါ။ </p><p>ဖုန်းကို ဘယ်သူ့ဆီကနေနေ လုကိုင်တတ်ပီး လူတိုင်းကိုလဲ အနိုင်ကျင့်တတ်သူတစ်ဦးပါ။</p><p>ဘနားနား ကာတွန်းကို ခနတိုင်းဖွင့်ခိုင်းပီး အီးပါရင်လဲ ချီးတုံးအကြီးကြီးတွေ ပါတတ်ပါတယ်</p><p>သူမရတဲ့ သီချင်းတွေကို လျှောက်ဆိုတတ်ပီး ဝါးချနေတတ်သူလဲဖြစ်ပါတယ်။မုန့်တွေအမြဲစားချင်နေသူ ပုဂ္ဂိုလ်တစ်ဦးပါ။BTSသီချင်းတွေကိုလဲ လျှောက်ဆိုတတ်ပါသေးတယ်။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
 	}
-	င်(selectname.value === "kyawswarwin"){
+	if(selectname.value === "kyawswarwin"){
 		QnA.style.display = "none";
 		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>ကျော်စွာဝင်း</h1><div align=center><img style='border-radius:25px' src=ksw.jpg width=320 height=230></div><p>သူ့နာမည်ကိုပြောလိုက်တာနဲ့ အရပ်မောင်းကောင်းကောင်းနဲ့အားကိုးထိုက်သူကို ခင်ဗျားတို့တန်းမြင်သွားမှာပါပဲ။ </p><p>သူက အေးချမ်းပီး  တိတ်ဆိတ်စွာနေတတ်တဲ့ ရေခဲတုံးကြီးတစ်တုံပါ။သူ့အတွက် Mobile Legendsဆော့တယ်ဆိုတာ ကြယ်တွေလျှော့ဖို့ဆော့တာပါ။ Mythicလဲ ရောက်ဖူးမယ့်ပုံမပေါ်ပါဘူး။</p><p>သဘောလဲကောင်းသလို ညှာတာစိတ်တွေက သူ့ရင်ဘတ်ထဲမှာကိန်းအောင်းနေပါတယ် အပြင်မှာတော့ထွက်မလာပါဘူး။</p><p>ညညဆို စူပါကပ်တစ်စီးနဲ့ မြို့တစ်ပတ်ပတ်ပီး လမ်းသလားနေတတ်ပါတယ်။ ည ၁၂လောက်ကြီး စူပါကပ်နဲ့အအေးသောက်နေတဲ့လူကိုမြင်မိတယ်ဆိုရင် အဲ့ဒါသူပါပဲ။စော်လဲမရှိဘူး</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
 
