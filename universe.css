@@ -1,0 +1,31 @@
+#search{
+	width : 320px;
+	height : 40px;
+}
+#rangenum{
+	font-weight: bold;
+	font-size : 23px;
+}
+#main{
+	position: absolute;
+	top: 0;
+	bottom : 0;
+	right : 0;
+	left : 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#mainbtn{
+	width : 50px;
+	height : 40px;
+}
+#comain{
+	background-color : skyblue;
+	padding : 20px;
+	border-radius : 25px;
+}
+body{
+	background-color : rgb(231, 76, 60);
+}
