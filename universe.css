@@ -40,7 +40,6 @@
 }
 #main{
   opacity: 0;
-  transition : 2s;
   visibility: hidden;
   position: absolute;
   top: 0;
