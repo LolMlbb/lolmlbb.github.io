@@ -1,6 +1,5 @@
-#search{
-	width : 320px;
-	height : 40px;
+#selectname{
+	height : 30px;
 }
 #rangenum{
 	font-weight: bold;
@@ -20,6 +19,10 @@
 #mainbtn{
 	width : 50px;
 	height : 40px;
+	border-radius: 50px;
+	background : -webkit-linear-gradient(skyblue,yellow);
+	font-size : 25px;
+	font-family: 'Anton', sans-serif;
 }
 #comain{
 	background-color : skyblue;
