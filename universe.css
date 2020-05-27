@@ -5,6 +5,9 @@
 	font-weight: bold;
 	font-size : 23px;
 }
+.profile{
+  border-radius: 25px;
+}
 #about{
 	position: absolute;
 	top: 0;
