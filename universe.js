@@ -28,7 +28,10 @@ const decide = () =>{
 	if(selectname.value === "khaingnininainghtwe"){
 		QnA.style.display = "none";
 		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>ခိုင်နီနီနိုင်ထွေး</h1><div align=center><img style='border-radius:25px' src=knnnh.jpg width=220 height=320></div><p>သူမအကြောင်းပြောရရင် ပြောလို့ကိုကုန်မှာမဟုတ်ပါဘူးဗျာ သူမက ကမ္ဘာမှာ အလှပဆုံးနတ်သမီးလေးဆိုလဲ မမှားဘူးဗျ </p><p>သူမရဲ့ အပြုံးလေးတစ်ခုက လောကကြီးတစ်ခုလုံးကို ကိုင်လှုပ်နိုင်တယ် အရမ်းချစ်ဖို့ကောင်းတဲ့ ကောင်မလေးပါ</p><p>Anime ဇာတ်လမ်းတွဲတွေ နှစ်ခြိုက်ပီးတော့ ခလေးလေးတစ်ယောက်လို မုန့်လေးတွေစားရတာကိုကြိက်နှစ်သက်သူပါ။</p><p>ဂျပန်နိုင်ငံမှာ အခြေချဖို့ စိတ်ကူးရှိပီး  အားကိုးထိုက်လောက်တဲ့ယောက်ျားကိုပိုင်ဆိုင်ထားသူပါ။ အသားအရမ်းဖြူပီး စိတ်ထားကောင်းသူလေးတစ်ယောက်ပါဗျ။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
-
+	}
+	if(selectname.value === "bhonenaylazaw"){
+		QnA.style.display = "none";
+		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>ဘုန်းနေလဇော်</h1><div align=center><img style='border-radius:25px' src=bnlz.jpg width=220 height=320></div><p>သူက ချီးထုပ်ကြီးပါ။ သူလိုချင်ရာ မရရင် အသံဗြဲကြီးနဲ့အော်ငိုတတ်သူဖြစ်ပီး ဖုန်းကိုင်ရတာ မတအားကြိုက်သူပါ။ </p><p>ဖုန်းကို ဘယ်သူ့ဆီကနေနေ လုကိုင်တတ်ပီး လူတိုင်းကိုလဲ အနိုင်ကျင့်တတ်သူတစ်ဦးပါ။</p><p>ဘနားနား ကာတွန်းကို ခနတိုင်းဖွင့်ခိုင်းပီး အီးပါရင်လဲ ချီးတုံးအကြီးကြီးတွေ ပါတတ်ပါတယ်</p><p>သူမရတဲ့ သီချင်းတွေကို လျှောက်ဆိုတတ်ပီး ဝါးချနေတတ်သူလဲဖြစ်ပါတယ်။မုန့်တွေအမြဲစားချင်နေသူ ပုဂ္ဂိုလ်တစ်ဦးပါ။BTSသီချင်းတွေကိုလဲ လျှောက်ဆိုတတ်ပါသေးတယ်။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
 	}
 }
 button.addEventListener("click",decide);
