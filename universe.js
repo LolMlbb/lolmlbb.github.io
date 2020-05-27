@@ -3,19 +3,25 @@ const rangebar = document.getElementById("myrange");
 const rangenum = document.getElementById("rangenum");
 const button = document.getElementById("mainbtn");
 const QnA = document.getElementById("main");
+const qage = document.getElementById("qage");
 const about = document.getElementById("about");
-const age = prompt("\nသင့်အသက်ကိုပြောပါ။(1 to 100)");
-if(age < 18){
-	button.style.display = "none";
-}
-if(age === 18 || age>18){
-	button.style.display = "block";
-}
 function rangefunction(){
 	rangenum.innerHTML=rangebar.value;
 }
 rangebar.addEventListener("input",rangefunction);
  
+const agebtn = document.getElementById("agebtn");
+function QnAage(){
+	if(rangebar.value<18){
+		qage.style.display = "none";
+		about.innerHTML = "<div><h1 align=center>Sorry, You're not allowed!</h1></div>";
+	}
+	if(rangebar.value === 18 || rangebar.value >18){
+		qage.style.display = "none";
+		QnA.style.display = "block";
+	}
+}
+agebtn.addEventListener("click",QnAage);
 const decide = () =>{
 	if(selectname.value === "empty"){
 		alert("\nနာမည်ကိုရွေးပေးပါဦးခင်ဗျ");
