@@ -1,5 +1,5 @@
 #selectname{
-	height : 30px;
+  height : 30px;
 }
 #agebtn{
   width: 50px;
@@ -7,10 +7,28 @@
   border-radius: 25px;
 }
 #rangenum{
-	font-weight: bold;
-	font-size : 23px;
+  font-weight: bold;
+  font-size : 23px;
+}
+#qcolor{
+  background-color: purple;
+  padding : 40px;
+  border-radius: 25px;
+  color : white;
 }
 #qage{
+  display:block;
+  position: absolute;
+  top: 0;
+  bottom : 0;
+  right : 0;
+  left : 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+#about{
   position: absolute;
   top: 0;
   bottom : 0;
@@ -20,43 +38,35 @@
   justify-content: center;
   align-items: center;
 }
-#about{
-	position: absolute;
-	top: 0;
-	bottom : 0;
-	right : 0;
-	left : 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 #main{
-  display: none;
-	position: absolute;
-	top: 0;
-	bottom : 0;
-	right : 0;
-	left : 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  opacity: 0;
+  transition : 2s;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom : 0;
+  right : 0;
+  left : 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 #mainbtn{
-	width : 50px;
-	height : 40px;
-	border-radius: 50px;
-	background : -webkit-linear-gradient(skyblue,yellow);
-	font-size : 25px;
-	font-family: 'Anton', sans-serif;
+  width : 50px;
+  height : 40px;
+  border-radius: 50px;
+  background : -webkit-linear-gradient(skyblue,yellow);
+  font-size : 25px;
+  font-family: 'Anton', sans-serif;
 }
 #comain{
-	background-color : skyblue;
-	padding : 20px;
-	border-radius : 25px;
+  background-color : skyblue;
+  padding : 20px;
+  border-radius : 25px;
 }
 body{
-	background-color : rgb(231, 76, 60);
+  background-color : rgb(231, 76, 60);
 }
 
 

@@ -16,9 +16,11 @@ function QnAage(){
 		qage.style.display = "none";
 		about.innerHTML = "<div><h1 align=center>Sorry, You're not allowed!</h1></div>";
 	}
-	if(rangebar.value === 18 || rangebar.value >18){
+	if(rangebar.value >17){
 		qage.style.display = "none";
-		QnA.style.display = "block";
+		QnA.style.visibility = "visible";
+		QnA.style.opacity = "1";
+		QnA.style.transition = "2.5s";
 	}
 }
 agebtn.addEventListener("click",QnAage);
