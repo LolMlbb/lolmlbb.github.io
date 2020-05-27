@@ -50,7 +50,7 @@ const decide = () =>{
 	}
 	if(selectname.value === "kyawswarwin"){
 		QnA.style.display = "none";
-		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>ကျော်စွာဝင်း</h1><div align=center><img style='border-radius:25px' src=ksw.jpg width=320 height=230></div><p>သူ့နာမည်ကိုပြောလိုက်တာနဲ့ အရပ်မောင်းကောင်းကောင်းနဲ့အားကိုးထိုက်သူကို ခင်ဗျားတို့တန်းမြင်သွားမှာပါပဲ။ </p><p>သူက အေးချမ်းပီး  တိတ်ဆိတ်စွာနေတတ်တဲ့ ရေခဲတုံးကြီးတစ်တုံးပါ။သူ့အတွက် Mobile Legendsဆော့တယ်ဆိုတာ ကြယ်တွေလျှော့ဖို့ဆော့တာပါ။ Mythicလဲ ရောက်ဖူးမယ့်ပုံမပေါ်ပါဘူး။</p><p>သဘောလဲကောင်းသလို ညှာတာစိတ်တွေက သူ့ရင်ဘတ်ထဲမှာကိန်းအောင်းနေပါတယ် အပြင်မှာတော့ထွက်မလာပါဘူး။</p><p>ညညဆို စူပါကပ်တစ်စီးနဲ့ မြို့တစ်ပတ်ပတ်ပီး လမ်းသလားနေတတ်ပါတယ်။ ည ၁၂လောက်ကြီး စူပါကပ်နဲ့အအေးသောက်နေတဲ့လူကိုမြင်မိတယ်ဆိုရင် အဲ့ဒါသူပါပဲ။စော်လဲမရှိဘူး</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
+		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br><br><br>ကျော်စွာဝင်း</h1><div align=center><img style='border-radius:25px' src=ksw.jpg width=320 height=230></div><p>သူ့နာမည်ကိုပြောလိုက်တာနဲ့ အရပ်မောင်းကောင်းကောင်းနဲ့အားကိုးထိုက်သူကို ခင်ဗျားတို့တန်းမြင်သွားမှာပါပဲ။ </p><p>သူက အေးချမ်းပီး  တိတ်ဆိတ်စွာနေတတ်တဲ့ ရေခဲတုံးကြီးတစ်တုံးပါ။သူ့အတွက် Mobile Legendsဆော့တယ်ဆိုတာ ကြယ်တွေလျှော့ဖို့ဆော့တာပါ။ Mythicလဲ ရောက်ဖူးမယ့်ပုံမပေါ်ပါဘူး။</p><p>သဘောလဲကောင်းသလို ညှာတာစိတ်တွေက သူ့ရင်ဘတ်ထဲမှာကိန်းအောင်းနေပါတယ် အပြင်မှာတော့ထွက်မလာပါဘူး။</p><p>ညညဆို စူပါကပ်တစ်စီးနဲ့ မြို့တစ်ပတ်ပတ်ပီး လမ်းသလားနေတတ်ပါတယ်။ ည ၁၂လောက်ကြီး စူပါကပ်နဲ့အအေးသောက်နေတဲ့လူကိုမြင်မိတယ်ဆိုရင် အဲ့ဒါသူပါပဲ။စော်လဲမရှိဘူး</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
 	}
 	if(selectname.value === "minthwinkhant"){
 		QnA.style.display = "none";
@@ -59,6 +59,10 @@ const decide = () =>{
 	if(selectname.value === "kyawhtaketinmaung"){
 		QnA.style.display = "none";
 		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br><br><br>ကျော်ထိပ်တင်မောင်</h1><div align=center><img style='border-radius:25px' src=khtm.jpg width=220 height=310></div><p>သူ့ဘဝကြီးကို ဘီယာနဲ့အသက်ဆက်နေသူတစ်ဦးပါ။ ဘီယာအရမ်းကြိုက်သလို အပျော်အပါးလဲခုံမင်သူတစ်ဦးဖြစ်ပါတယ်။</p><p>လူတစ်ယောက်နားကပ်လိုက်ရင် ပျော်သွားချင်တယ်ဆို သူ့နားသာကပ်လိုက်ပါ။ ဘီယာတော့တူတူထိုင်သောက်ပေးရပါမယ်။</p><p>KTVမှာ ဘော်ဒါတွေစုံလို့ သီချင်းတွေဟဲရင် မျက်ဖြူကြီးစိုက်ပီး rockသီချင်းတွေကုန်းအော်တတ်ပါတယ်။ သဘောကောင်းတဲ့လူငယ်တစ်ယောက်မို့ စော်ကြွေစရာအကွက်တွေချည်းပါပဲ</p><p>ဆံပင်ရှည်ကြီးထားပီး အလန်းဆုံးပုံစံနဲ့နေနေပေမယ့် ရပ်ကွက်ထဲကလူတွေက ဆံပင်ရှည်ကြီးနဲ့ ယောကျ်ားရတော့မှာဆိုပီး မကြာခဏ စွပ်စွဲခံရပါတယ်။ အချစ်စစ်ကိုရှာဖွေနေသူတစ်ဦးပါ။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
+	}
+	if(selectname.value === "soewinhtun"){
+		QnA.style.display = "none";
+		about.innerHTML = "<div class='animated delay-1s flipInY sehun’><h1 align=center><br><br><br><br><br><br>စိုးဝင်းထွန်း</h1><div align=center><img style='border-radius:25px' src=swh.jpg width=320 height=230></div><p>သူ့အကြောင်းပြောပါဆိုရင် မသေချာမရေရာကနေ စရပါလိမ့်မယ်။ အသဲကွဲနေတာလား ဝမ်းနည်းနေတာလား ပျော်နေတာလား မသိရပဲ မျက်နှာကတစ်မျိုးတည်းဖြစ်နေတတ်တဲ့ဘစိုင်းလိုလူမျိုးပါ။</p><p>သူက ကျောင်းမှာစာအတော်ဆုံးအဖြစ်သတ်မှတ်ခံရသလို မိဘအပေါ်လဲသိတတ်သူတစ်ဦးပါ။</p><p>သူ့ရဲ့ရည်မှန်းချက်က သူကြိုက်နေတဲ့ကောင်မလေး သတိထားမိလာပီး သူ့ကိုပြန်ကြိုက်လာစေချင်တာပါ။</p><p>နေရာတကာမှာ ငံတတ်သလို လူတိုင်းနဲ့လဲတည့်အောင်ပေါင်းတတ်သူတစ်ဦးပါ။ Exo big fanဖြစ်ပီး ဖေ့ဘုတ်မှာ အသည်းကွဲစာတွေလျှောက်ရေးနေသူတစ်ဦးပါ။ အချစ်စစ်ကိုရှာဖွေနေတဲ့ပုဂ္ဂိုလ်တစ်ဦးဖြစ်ပါတယ်ခင်ဗျ။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
 	}
 }
 button.addEventListener("click",decide);

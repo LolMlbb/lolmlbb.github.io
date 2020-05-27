@@ -2,6 +2,7 @@
   background-image : url("https://66.media.tumblr.com/726edd004bcfb60fbfc676f695ba00eb/tumblr_opalxtrmkU1verhtxo5_250.jpg");
   background-size : cover;
   background-position: center;
+  padding : 20px;
 }
 #selectname{
   height : 30px;
