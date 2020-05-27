@@ -4,6 +4,13 @@ const rangenum = document.getElementById("rangenum");
 const button = document.getElementById("mainbtn");
 const QnA = document.getElementById("main");
 const about = document.getElementById("about");
+const age = prompt("\nသင့်အသက်ကိုပြောပါ။(1 to 100)");
+if(age < 18){
+	button.style.display = "none";
+}
+if(age === 18 || age>18){
+	button.style.display = "block";
+}
 function rangefunction(){
 	rangenum.innerHTML=rangebar.value;
 }
