@@ -9,7 +9,7 @@ rangebar.addEventListener("input",rangefunction);
  
 const decide = () =>{
 	if(selectname.value === "empty"){
-		alert("နာမည်ကိုရွေးပေးပါဦးခင်ဗျ");
+		alert("\nနာမည်ကိုရွေးပေးပါဦးခင်ဗျ");
 	}
 }
 button.addEventListener("click",decide);
