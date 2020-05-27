@@ -21,5 +21,9 @@ const decide = () =>{
 		QnA.style.display = "none";
 		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>မြင့်ကိုကိုဦး</h1><div align=center><img style='border-radius:25px' src=mkko.jpg width=220 height=320></div><p>ခင်ဗျားသူ့အကြောင်းသိသွားရင်တော့ ဝေးဝေးကရှောင်ဖယ်သွားလောက်တယ် အဲ့ကောင်က လူမိုက်ဗျ</p><p>သူ့အကြောင်းသေချာတော့မသိရပေမယ့် တော်တော်အကျင့်မကောင်းတဲ့ကောင် အချစ်စစ်နဲ့ချစ်တတ်သူတစ်ဦးပေ့ါဗျာ</p><p>လူအများပေါ်ကိုကူညီတတ်သလို အနိုင်လဲကျင့်တတ်ပါသေးသဗျ သူ့အကြောင်းသိချင်ရင်တော့ သူ့မိန်းမသာ မေးကြည့်တော့။ ဟင် အထင်မသေးနဲ့သူ့မိန်းမက ချစ်စရာလေးဗျ</p><p>စောက်လုပ်စောက်ကိုင်မရှိ လျှောက်သွားနေတတ်ပေမယ့် တကယ်ကိုလူကောင်းတစ်ဦးပါ။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
 	}
+	if(selectname.value === "khinyatizaw"){
+		QnA.style.display = "none";
+		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br>ခင်ရတီဇော်</h1><div align=center><img style='border-radius:25px' src=mkko.jpg width=320 height=240></div><p>သူမက အရမ်းကိုချစ်စရာကောင်းတဲ့ ကောင်မလေးတစ်ယောက်ပါ။ သိုင်းပညာကိုလဲကျွမ်းကျွမ်းကျင်ကျင်တတ်မြောက်သူလဲဖြစ်ပါတယ်ခင်ဗျ</p><p>သူမရဲ့ အိပ်မက်က ကိုရီးယားနိုင်ငံမှာ အခြေချနေထိုင်ဖို့ဖြစ်ပီး သူမကတော့ BTS တုတ်တံကို လိုချင်နေသူတစ်ဦးလဲဖြစ်ပါတယ်။</p><p>BlackPinkအဖွဲ့ကို အရမ်းကြိုက်နှစ်သက်ပီးတော့ ကြုံရာနေရာမှာလဲ ကခုန်နေတတ်သူတစ်ဦးပါ။</p><p>TikTokမှာ ဆယ်လီမလေးဖြစ်ပီး tiktokဗီဒီယိုရိုက်ရတာကို ပျော်ရွှင်နေတတ်သူပါ။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";
+	}
 }
 button.addEventListener("click",decide);
