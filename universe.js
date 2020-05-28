@@ -5,6 +5,8 @@ const button = document.getElementById("mainbtn");
 const QnA = document.getElementById("main");
 const qage = document.getElementById("qage");
 const about = document.getElementById("about");
+const song = document.getElementById("515");
+const fart = document.getElementById("fart");
 function rangefunction(){
 	rangenum.innerHTML=rangebar.value;
 }
@@ -13,10 +15,12 @@ rangebar.addEventListener("input",rangefunction);
 const agebtn = document.getElementById("agebtn");
 function QnAage(){
 	if(rangebar.value<18){
+		fart.play();
 		qage.style.display = "none";
 		about.innerHTML = "<div><h1 align=center>Sorry, You're not allowed!</h1></div>";
 	}
 	if(rangebar.value >17){
+		song.play();
 		qage.style.display = "none";
 		QnA.style.visibility = "visible";
 		QnA.style.opacity = "1";
@@ -65,3 +69,6 @@ const decide = () =>{
 about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br><br><br>စိုးဝင်းထွန်း</h1><div align=center><img style='border-radius:25px' src=swh.jpg width=320 height=230></div><p>သူ့အကြောင်းပြောပါဆိုရင် မသေချာမရေရာကနေ စရပါလိမ့်မယ်။ အသဲကွဲနေတာလား ဝမ်းနည်းနေတာလား ပျော်နေတာလားမသိရပဲ မျက်နှာကတစ်မျိုးတည်းဖြစ်နေတတ်တဲ့ဘစိုင်းလိုလူမျိုးပါ။</p><p>သူက ကျောင်းမှာစာအတော်ဆုံးအဖြစ်သတ်မှတ်ခံရသလို မိဘအပေါ်လဲသိတတ်သူတစ်ဦးပါ။</p><p>သူ့ရဲ့ရည်မှန်းချက်က သူကြိုက်နေတဲ့ကောင်မလေး သတိထားမိလာပီး သူ့ကိုပြန်ကြိုက်လာစေချင်တာပါ။</p><p>နေရာတကာမှာ ငံတတ်သလို လူတိုင်းနဲ့လဲတည့်အောင်ပေါင်းတတ်သူတစ်ဦးပါ။</p><p> Exo big fanဖြစ်ပီး ဖေ့ဘုတ်မှာ အသည်းကွဲစာတွေလျှောက်ရေးနေသူတစ်ဦးပါ။ အချစ်စစ်ကိုရှာဖွေနေတဲ့ပုဂ္ဂိုလ်တစ်ဦးဖြစ်ပါတယ်ခင်ဗျ။</p><div align=center><a href='https://myintkokooo.github.io'>HOME</a><br><br></div></div>";	}
 }
 button.addEventListener("click",decide);
+const warninghey = () =>{
+	alert("\nဟိတ်! ဘာတွေလျှောက်ကူးနေတာလဲ?");
+}
