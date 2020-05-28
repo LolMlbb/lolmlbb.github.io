@@ -108,8 +108,6 @@ about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><
 		about.style.zIndex = "1";
 		about.style.display = "block";
 		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br>ဖြူနှင်းထက်</h1><div align=center><img style='border-radius:25px' src=phh.jpg width=220 height=310></div><p>သူမက တစ်ယောက်တည်းနေတတ်သူဖြစ်ပီး တစ်ယောက်တည်းမနေတတ်ပါဘူး။ ဘော်ဒါတွေနဲ့လည်ပတ်ရတာကြိုက်ပီး အချစ်ဆိုတဲ့အရာကို မယုံ့တယုံဖြစ်နေသူပါ။အရာရာတိုင်းကို သူ့အမှားလို့ပုံချတတ်ပီး တွေးရင်းဝမ်းနည်းနေတတ်သူပါ။</p><p>အိမ်မှာနေရတာကိုမကြိုက်တဲ့သူမို့ ကိုဗစ်ကာလကြီးကိုကျိန်ဆဲလို့နေတတ်ပါတယ်။ကျောင်းနေပျော်၍စာတော်မည်ဆိုတဲ့ဆောင်ပုဒ်နဲ့အညီ ကျောင်းဖွင့်ချင်နေသူတစ်ယောက်ပါ။</p><p>လူတိုင်းအပေါ်ကို ခင်မင်တတ်သလို သဘောလဲအရမ်းကောင်းသူလေးတစ်ယောက်ပါ။</p><p>နူးညံ့သိမ်မွေ့ပီး ရိုးရိုးလေးနဲ့လှသူလေးပါ။ သူတစ်ပါးကိုကူညီပေးရင်း ကိုယ့်ကိုကိုယ်မေ့နေတတ်သူပါခင်ဗျ။</p><div align=center><p onclick='rehome()' style='cursor:pointer; color:blue;'>ထပ်ကြည့်မယ်</p><br><br></div></div>";	}
-
-	}
 }
 button.addEventListener("click",decide);
 const warninghey = () =>{
