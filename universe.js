@@ -94,6 +94,22 @@ const decide = () =>{
 		about.style.zIndex = "1";
 		about.style.display = "block";
 about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br><br><br>စိုးဝင်းထွန်း</h1><div align=center><img style='border-radius:25px' src=swh.jpg width=320 height=230></div><p>သူ့အကြောင်းပြောပါဆိုရင် မသေချာမရေရာကနေ စရပါလိမ့်မယ်။ အသဲကွဲနေတာလား ဝမ်းနည်းနေတာလား ပျော်နေတာလားမသိရပဲ မျက်နှာကတစ်မျိုးတည်းဖြစ်နေတတ်တဲ့ဘစိုင်းလိုလူမျိုးပါ။</p><p>သူက ကျောင်းမှာစာအတော်ဆုံးအဖြစ်သတ်မှတ်ခံရသလို မိဘအပေါ်လဲသိတတ်သူတစ်ဦးပါ။</p><p>သူ့ရဲ့ရည်မှန်းချက်က သူကြိုက်နေတဲ့ကောင်မလေး သတိထားမိလာပီး သူ့ကိုပြန်ကြိုက်လာစေချင်တာပါ။</p><p>နေရာတကာမှာ ငံတတ်သလို လူတိုင်းနဲ့လဲတည့်အောင်ပေါင်းတတ်သူတစ်ဦးပါ။</p><p> Exo big fanဖြစ်ပီး ဖေ့ဘုတ်မှာ အသည်းကွဲစာတွေလျှောက်ရေးနေသူတစ်ဦးပါ။ အချစ်စစ်ကိုရှာဖွေနေတဲ့ပုဂ္ဂိုလ်တစ်ဦးဖြစ်ပါတယ်ခင်ဗျ။</p><div align=center><p onclick='rehome()' style='cursor:pointer; color:blue;'>ထပ်ကြည့်မယ်</p><br><br></div></div>";	}
+
+	if(selectname.value === "theintzarchiaung"){
+		QnA.style.visibility = "hidden";
+		QnA.style.opacity = "0";
+		about.style.zIndex = "1";
+		about.style.display = "block";
+		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br>သိမ့်ဇာခြည်အောင်</h1><div align=center><img style='border-radius:25px' src=tzca.jpg width=220 height=310></div><p>သူမကလှပပါတယ်။ သူမကလှသလိုလက်ရေးကလဲ လှပါတယ်ခင်ဗျ။ တစ်ယောက်တည်းဖြစ်နေချိန်တွေဆို အလိုလိုဝမ်းနည်းနေတတ်ပါတယ်။</p><p>ပျော်ရွှင်အောင်ကြိုးစားရင်း ပိုတောင်ဝမ်းနည်းလာတတ်သူပါ။ အရက်သမားတစ်ယောက်မို့ ကိုရီးယားနိုင်ငံထုတ် ဆိုဂျူးဆိုအလွန်ကြိုက်သူပါ။</p><p>အပြင်ထွက်လည်ပတ်ရတာနှစ်သက်ပီး သူမကိုလိမ်လည်ရင် လိမ်တဲ့သူကို သေလောက်အောင်မုန်းတီးသွားတတ်ပါတယ်</p><p>မြန်မာမလေးမို့ မြန်မာဝတ်စုံတွေကိုဝတ်ဆင်ပါတယ်။နူးညံ့သိမ်မွေ့ပီး အရမ်းသဘောကောင်းသူတစ်ယောက်ပါခင်ဗျ။</p><p>ညအိပ်ရင် သီချင်းနားထောင်ပီး အိပ်တတ်သူမို့ တီးလုံးတွေက သူမအတွက် ချော့သိပ်တဲ့အရာတွေပါပဲ။အချစ်စစ်နဲ့တွေ့ဆုံခြင်းမရှိသေးပါဘူးခင်ဗျ</p><div align=center><p onclick='rehome()' style='cursor:pointer; color:blue;'>ထပ်ကြည့်မယ်</p><br><br></div></div>";
+	}
+	if(selectname.value === "phyuhninhtet"){
+		QnA.style.visibility = "hidden";
+		QnA.style.opacity = "0";
+		about.style.zIndex = "1";
+		about.style.display = "block";
+		about.innerHTML = "<div class='animated delay-1s flipInY'><h1 align=center><br><br><br><br>ဖြူနှင်းထက်</h1><div align=center><img style='border-radius:25px' src=phh.jpg width=220 height=310></div><p>သူမက တစ်ယောက်တည်းနေတတ်သူဖြစ်ပီး တစ်ယောက်တည်းမနေတတ်ပါဘူး။ ဘော်ဒါတွေနဲ့လည်ပတ်ရတာကြိုက်ပီး အချစ်ဆိုတဲ့အရာကို မယုံ့တယုံဖြစ်နေသူပါ။အရာရာတိုင်းကို သူ့အမှားလို့ပုံချတတ်ပီး တွေးရင်းဝမ်းနည်းနေတတ်သူပါ။</p><p>အိမ်မှာနေရတာကိုမကြိုက်တဲ့သူမို့ ကိုဗစ်ကာလကြီးကိုကျိန်ဆဲလို့နေတတ်ပါတယ်။ကျောင်းနေပျော်၍စာတော်မည်ဆိုတဲ့ဆောင်ပုဒ်နဲ့အညီ ကျောင်းဖွင့်ချင်နေသူတစ်ယောက်ပါ။</p><p>လူတိုင်းအပေါ်ကို ခင်မင်တတ်သလို သဘောလဲအရမ်းကောင်းသူလေးတစ်ယောက်ပါ။</p><p>နူးညံ့သိမ်မွေ့ပီး ရိုးရိုးလေးနဲ့လှသူလေးပါ။ သူတစ်ပါးကိုကူညီပေးရင်း ကိုယ့်ကိုကိုယ်မေ့နေတတ်သူပါခင်ဗျ။</p><div align=center><p onclick='rehome()' style='cursor:pointer; color:blue;'>ထပ်ကြည့်မယ်</p><br><br></div></div>";	}
+
+	}
 }
 button.addEventListener("click",decide);
 const warninghey = () =>{
