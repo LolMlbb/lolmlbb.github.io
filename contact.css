@@ -1,9 +1,18 @@
+body{
+	margin : 0;
+	padding: 0;
+	background-color: #092c3e;
+}
 #namebox, #phonebox{
 	outline: none;
 }
 .container2{
 	display: flex;
 	justify-content: center;
+	position: absolute;
+	top : 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 	width: 350px;
 	height: 350px;
 	background-color: blue;
