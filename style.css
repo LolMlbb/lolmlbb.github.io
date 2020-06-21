@@ -157,6 +157,7 @@ nav .brand{
 		transition: transform .5s ease;	
 		box-shadow: inset 0 0 14px #333;
 		z-index: 1;
+		overflow: hidden;
 	}
 	nav .link_container li{
 		opacity: 0;
