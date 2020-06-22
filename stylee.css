@@ -39,8 +39,8 @@ body{
 	
 }
 .tabcontent .thing{
-	width : 115px;
-	height : 165px;
+	width : 120px;
+	height : 170px;
 	background-color: grey;
 	display: flex;
 	flex-direction: column;
