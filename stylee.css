@@ -1,7 +1,7 @@
 body{
 	margin : 0;
 	padding : 0;
-	background-color: maroon;
+	background-color: rgb(36,37,38);
 }
 #category{
 	background-color: grey;
@@ -41,7 +41,7 @@ body{
 .tabcontent .thing{
 	width : 120px;
 	height : 170px;
-	background-color: grey;
+	background-color: #ddd;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -58,6 +58,7 @@ body{
 	font-size: 18px;
 	text-transform: uppercase;
 	font-family: 'Poppins', sans-serif;
+	color : white;
 }
 .main_result{
 	display: none;
