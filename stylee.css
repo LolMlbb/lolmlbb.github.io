@@ -16,6 +16,7 @@ body{
 }
 .main_label{
 	font-family: 'Poppins', sans-serif;
+	color : white;
 }
 #category #chooseit{
 	border-radius: 20px;
