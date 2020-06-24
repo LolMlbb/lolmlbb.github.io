@@ -3,747 +3,241 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="stylesheet" type="text/css" href="stylee.css">
+	<link rel="icon" type="image/png" href="https://simpleicon.com/wp-content/uploads/rocket.png">
+	<title>Perfect Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-	<title>SwitchButton</title>
+	<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=notosan' />
 </head>
 <body>
-	<h1 id="brand">MYINT KO KO OO</h1>
-	<div id="category">
-	<span class="label">Choose Items</span>
-	<select id="chooseit" oninput="letselect(chooseit.value)">
-		<option value="22"></option>
-		<option value="0">Electronics</option>
-		<option value="1">Home Decoration</option>
-		<option value="2">Beauty Accessories</option>
-		<option value="3">Photography</option>
-		<option value="4">Puppy</option>
-		<option value="5">Kitchen</option>
-		<option value="6">Toys</option>
-		<option value="7">Movies</option>
-		<option value="8">Food</option>
-		<option value="9">Art</option>
-		<option value="10">Human Accessories</option>
-	</select>
+	<audio id="rocket_launch">
+		<source src="rocket.mp3" type="audio/mp3">
+	</audio>
+	<nav>
+		<div id="humburger" onclick="showbar()">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<div class="brand">
+			<i class="logo"><img src="https://simpleicon.com/wp-content/uploads/rocket.png" width="30" height="30"></i>
+			<h3 class="logo_label">Rocket Group<sup>&copy;</sup></h3>
+		</div>
+		<ul class="link_container hidebar">
+			<li><a href="calculator.html">Calculator</a></li>
+			<li><a href="https://khaingnini.github.io">KN3H</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="shop.html">Shop</a></li>
+			<li><a href="forlove.html">For Love</a></li>
+		</ul>
+	</nav><br>
+
+	<!-- <section class="somethingcontact">
+<div class="container2">
+	<div class="container1">
+<table align="center"><br>
+	<h1 align="center">CONTACT</h1><br>
+	<tr>
+		<td>Name</td>
+		<td><input type="text" name="" id="namebox"></td>
+	</tr>
+	<tr>
+		<td>Phone</td>
+		<td><input type="text" name="" id="phonebox"></td>
+	</tr>
+</table><br>
+<div align="center">
+<button id="opsubmit" onclick="clickSubmit()">Submit</button>
+<button id="opclear" onclick="clickClear()">Clear</button>
 </div><br>
-<div class="main_result">
-<h1 class="main_label">Electronics</h1>
-<div class="tabcontent">
-	<div class="thing0">
-		<img src="https://i.pcmag.com/imagery/reviews/07vjkhMyPEwY0l5cKyGvdqa-13.fit_lpad.size_624x364.v_1579215814.jpg">
-		<label>ကီးဘုတ်</label>
-	</div>
-	<div class="thing0">
-		<img src="https://abttechnologies.net/wp-content/uploads/2016/03/OBRONICS-100-Original-Apple-Iphone-SDL200708887-1-1f655.jpeg">
-		<label>နားကြပ်</label>
-	</div>
-	<div class="thing0">
-		<img src="https://i.dell.com/is/image/DellContent//content/dam/global-site-design/product_images/dell_client_products/desktops/inspiron_desktops/inspiron_3670/mt/pdp/desktop-inspiron-3670mt-gambit-pdp-design-02.jpg?fmt=png-alpha">
-		<label>desktop</label>
-	</div>
-	<div class="thing0">
-		<img src="https://ae01.alicdn.com/kf/HTB12iQ0bcrrK1RjSspaq6AREXXaZ/Xiaomi-Power-Bank-2-10000mAh-Mi-Powerbank-Quick-Charge-External-Battery-Micro-USB-Portable-Bateria-External.jpg">
-		<label>powerbank</label>
-	</div>
-	<div class="thing0">
-		<img src="https://cdn.pocket-lint.com/r/s/1200x/assets/images/120309-phones-buyer-s-guide-best-smartphones-2020-the-top-mobile-phones-available-to-buy-today-image1-eagx1ykift.jpg">
-		<label>phones</label>
-	</div>
-	<div class="thing0">
-		<img src="https://cdn.vox-cdn.com/thumbor/I59yVb5KYR1Z0y0eDD4qbv7uLyg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19166513/VLS_2759.jpg">
-		<label>Laptop</label>
-	</div>
-	<div class="thing0">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/81Si1dA-GtL._SX466_.jpg">
-		<label>harddrive</label>
-	</div>
-	<div class="thing0">
-		<img src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/00/09/dd0fd486-cec9-44da-9a0d-c400114174cc.jpg">
-		<label>adapter</label>
-	</div>
-	<div class="thing0">
-		<img src="https://i.ebayimg.com/images/g/ckEAAOSwYvFZJ-qm/s-l300.jpg">
-		<label>keypad</label>
-	</div>
-	<div class="thing0">
-		<img src="https://cnet4.cbsistatic.com/img/hu4itKtgK3j-6tbapbY4QekB0gg=/940x0/2020/04/10/61b41531-c828-4d90-90d8-9d4d2866f8ae/apple-watch-anniversary-2.jpg">
-		<label>smartwatch</label>
-	</div>
-	<div class="thing0">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/714eT%2Byq49L._AC_SL1500_.jpg">
-		<label>soundbox</label>
-	</div>
-	<div class="thing0">
-		<img src="https://images.samsung.com/is/image/samsung/ca-uhdtv-nu7090-un55nu6900fxzc-frontblack-115122587?$PD_GALLERY_L_JPG$">
-		<label>tv</label>
-	</div>
-	<div class="thing0">
-		<img src="https://cdn.shopify.com/s/files/1/0273/0763/8887/products/GOOD_DEVICE_AIRCON_1200x1200.jpg">
-		<label>aircon</label>
-	</div>
-	<div class="thing0">
-		<img src="https://assets.pcmag.com/media/images/513662-epson-ex3260-svga-3lcd-projector.jpg">
-		<label>projector</label>
-	</div>
-	<div class="thing0">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/81B9lH5GqjL._AC_SL1495_.jpg">
-		<label>ပန်ကာ</label>
-	</div>
+<div align="center" id="sign">.</div><br>
+<div align="center">
+<button id="opshow" onclick="clickShow()">Show Contact</button>
+</div>
+<div id="textboxs" class="orgtxtheight" style="color:black;" align="center">
+	<div class="name1"></div>
+	<div class="phone1"></div>
+	<div class="name2"></div>
+	<div class="phone2"></div>
+	<div class="name3"></div>
+	<div class="phone3"></div>
+	<div class="name4"></div>
+	<div class="phone4"></div>
+	<div class="name5"></div>
+	<div class="phone5"></div>
+	<div class="name6"></div>
+	<div class="phone6"></div>
+	<div class="name7"></div>
+	<div class="phone7"></div>
+	<div class="name8"></div>
+	<div class="phone8"></div>
+	<div class="name9"></div>
+	<div class="phone9"></div>
+	<div class="name10"></div>
+	<div class="phone10"></div>
+	<div class="name11"></div>
+	<div class="phone11"></div>
+	<div class="name12"></div>
+	<div class="phone12"></div>
+	<div class="name13"></div>
+	<div class="phone13"></div>
+	<div class="name14"></div>
+	<div class="phone14"></div>
+	<div class="name15"></div>
+	<div class="phone15"></div>
+	<div class="name16"></div>
+	<div class="phone16"></div>
+	<div class="name17"></div>
+	<div class="phone17"></div>
+	<div class="name18"></div>
+	<div class="phone18"></div>
+	<div class="name19"></div>
+	<div class="phone19"></div>
+	<div class="name20"></div>
+	<div class="phone20"></div>
+	<div class="name21"></div>
+	<div class="phone21"></div>
+	<div class="name22"></div>
+	<div class="phone22"></div>
+	<div class="name23"></div>
+	<div class="phone23"></div>
+	<div class="name24"></div>
+	<div class="phone24"></div>
+	<div class="name25"></div>
+	<div class="phone25"></div>
+	<div class="name26"></div>
+	<div class="phone26"></div>
+	<div class="name27"></div>
+	<div class="phone27"></div>
+	<div class="name28"></div>
+	<div class="phone28"></div>
+	<div class="name29"></div>
+	<div class="phone29"></div>
+	<div class="name30"></div>
+	<div class="phone30"></div>
+	<div class="name31"></div>
+	<div class="phone31"></div>
+	<div class="name32"></div>
+	<div class="phone32"></div>
+	<div class="name33"></div>
+	<div class="phone33"></div>
+	<div class="name34"></div>
+	<div class="phone34"></div>
+	<div class="name35"></div>
+	<div class="phone35"></div>
+	<div class="name36"></div>
+	<div class="phone36"></div>
+	<div class="name37"></div>
+	<div class="phone37"></div>
+	<div class="name38"></div>
+	<div class="phone38"></div>
+	<div class="name39"></div>
+	<div class="phone39"></div>
+	<div class="name40"></div>
+	<div class="phone40"></div>
+	<div class="name41"></div>
+	<div class="phone41"></div>
+	<div class="name42"></div>
+	<div class="phone42"></div>
+	<div class="name43"></div>
+	<div class="phone43"></div>
+	<div class="name44"></div>
+	<div class="phone44"></div>
+	<div class="name45"></div>
+	<div class="phone45"></div>
+	<div class="name46"></div>
+	<div class="phone46"></div>
+	<div class="name47"></div>
+	<div class="phone47"></div>
+	<div class="name48"></div>
+	<div class="phone48"></div>
+	<div class="name49"></div>
+	<div class="phone49"></div>
+	<div class="name50"></div>
+	<div class="phone50"></div>
+	<div class="name51"></div>
+	<div class="phone51"></div>
+	<div class="name52"></div>
+	<div class="phone52"></div>
+	<div class="name53"></div>
+	<div class="phone53"></div>
+	<div class="name54"></div>
+	<div class="phone54"></div>
+	<div class="name55"></div>
+	<div class="phone55"></div>
+	<div class="name56"></div>
+	<div class="phone56"></div>
+	<div class="name57"></div>
+	<div class="phone57"></div>
+	<div class="name58"></div>
+	<div class="phone58"></div>
+	<div class="name59"></div>
+	<div class="phone59"></div>
+	<div class="name60"></div>
+	<div class="phone60"></div>
+	<div class="name61"></div>
+	<div class="phone61"></div>
+	<div class="name62"></div>
+	<div class="phone62"></div>
+	<div class="name63"></div>
+	<div class="phone63"></div>
+	<div class="name64"></div>
+	<div class="phone64"></div>
+	<div class="name65"></div>
+	<div class="phone65"></div>
+	<div class="name66"></div>
+	<div class="phone66"></div>
+	<div class="name67"></div>
+	<div class="phone67"></div>
+	<div class="name68"></div>
+	<div class="phone68"></div>
+	<div class="name69"></div>
+	<div class="phone69"></div>
+	<div class="name70"></div>
+	<div class="phone70"></div>
+</div>
 </div></div>
-
-<div class="main_result">
-<h1 class="main_label">Home Decoration</h1>
-<div class="tabcontent">
-<div class="thing2">
-		<img src="https://www.furnitureworld.co.uk/images/products/standard/2405.jpg">
-		<label>pillow sofa</label>
-	</div>
-	<div class="thing2">
-		<img src="https://www-konga-com-res.cloudinary.com/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/media/catalog/product/F/L/134404_1558441115.jpg">
-		<label>ဧည့်ခန်းစားပွဲ</label>
-	</div>
-	<div class="thing2">
-		<img src="https://5.imimg.com/data5/WV/KR/MY-25925414/wooden-bookshelf-500x500.jpg">
-		<label>စာအုပ်စင်</label>
-	</div>
-	<div class="thing2">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/71iDy7XN91L._AC_SY355_.jpg">
-		<label>rugs</label>
-	</div>
-	<div class="thing2">
-		<img src="https://rukminim1.flixcart.com/image/352/352/jtvtz0w0/wall-lamp/x/s/3/sliver-120-patti-pack-of-2-arus-original-imaf42extj2vhpan.jpeg">
-		<label>wall lamp</label>
-	</div>
-	<div class="thing2">
-		<img src="https://ae01.alicdn.com/kf/HTB1YfmvmbZnBKNjSZFGq6zt3FXac/new-fashion-diy-acrylic-mirror-wall-clock-europe-3d-big-quartz-watch-still-life-clocks-living.jpg_640x640.jpg">
-		<label>wall clock</label>
-	</div>
-	<div class="thing2">
-		<img src="https://cdn.shopify.com/s/files/1/0039/4759/3795/products/dihinhome-home-textile-european-curtain-dihin-home-blue-and-beige-velvet-valance-blackout-curtains-grommet-window-curtain-for-living-room-52x84-inch-1-panel-6384013770819_grande.jpg">
-		<label>curtain</label>
-	</div>
-	<div class="thing2">
-		<img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1534879721-upholstered-cozy-chair-swivel-1534879712.jpg">
-		<label>room chair</label>
-	</div>
-	<div class="thing2">
-		<img src="https://ii1.pepperfry.com/media/catalog/product/t/o/494x544/torrie-king-size-bed-with-storage-by--home-torrie-king-size-bed-with-storage-by--home-hm8eul.jpg">
-		<label>bed</label>
-	</div>
-	<div class="thing2">
-		<img src="https://www.atkinandthyme.co.uk/media/catalog/product/cache/ff4df62209228869e2d6e438912332e8/a/t/atkin_feb_2016_18_of_138_.jpg">
-		<label>coffee table</label>
-	</div>
-	<div class="thing2">
-		<img src="https://secure.img1-fg.wfcdn.com/im/39936017/resize-h800-w800%5Ecompr-r85/4335/43358720/Forteau+TV+Stand+for+TVs+up+to+60+inches.jpg">
-		<label>tv shelf</label>
-	</div>
-	<div class="thing2">
-		<img src="https://www.organizedinteriors.com/blog/wp-content/uploads/2018/09/xCloset-storage-tips-organizer.jpg.pagespeed.ic.XT4WCF3isB.jpg">
-		<label>closet</label>
-	</div>
-	<div class="thing2">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/91CvWo3NY8L._AC_SX522_.jpg">
-		<label>money safety box</label>
-	</div>
-	<div class="thing2">
-		<img src="https://secure.img1-fg.wfcdn.com/im/49526141/resize-h310-w310%5Ecompr-r85/9189/91897385/tropical-6-piece-framed-graphic-art-print-set.jpg">
-		<label>wall pic</label>
-	</div>
-	<div class="thing2">
-		<img src="https://cdn.shopify.com/s/files/1/0207/8508/products/small-acrylic-wall-calendar-C-MM-_71413_2048x.jpg?v=1562702397">
-		<label>wall calendar</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Beauty Accessories</h1>
-<div class="tabcontent">
-<div class="thing3">
-		<img src="https://cdn11.bigcommerce.com/s-9d396/images/stencil/2048x2048/products/29/450/Lipstick_image_Website__25366.1510787662.jpg">
-		<label>နှုတ်ခမ်းနီ</label>
-	</div>
-	<div class="thing3">
-		<img src="https://i.ebayimg.com/images/g/cEUAAOSwmTdbdrqv/s-l640.jpg">
-		<label>ရေမွှေး</label>
-	</div>
-	<div class="thing3">
-		<img src="https://ae01.alicdn.com/kf/He4a1e978b8c84b7bba151c39a9ac98f5Q.jpg">
-		<label>မှန်</label>
-	</div>
-	<div class="thing3">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/51a5UP6w%2BSL._SL1000_.jpg">
-		<label>eye liner</label>
-	</div>
-	<div class="thing3">
-		<img src="https://lh3.googleusercontent.com/proxy/PLjxnhGBH8bEVSaNZ-GnZKUzf82qUqdzGnyQ97z9KwB9GODBalcw5AJ5vEf3atjv6UGrHDWYAHPvbXrqMdXiLenE3BzyTTAHkEqGHtigHjXJfIUNRPGBRPF8HtKxyRofkQwH5pvrJrb31bv5-wfudI0AMG5KW8-UQXM0BlzREWcoD-DNbBsTqFo0XwEmLrb0E2K7B2K2MzhJn8DInCqWYoKXhw">
-		<label>makeup brush</label>
-	</div>
-	<div class="thing3">
-		<img src="https://rukminim1.flixcart.com/image/352/352/k0463rk0/puff-sponge/d/v/7/6-in-1-makeup-sponge-and-puff-set-for-make-up-6-in-1-sponge-original-imafjyhsk8kbhymk.jpeg">
-		<label>makeup sponge</label>
-	</div>
-	<div class="thing3">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/71pyKU9f1jL._SL1500_.jpg">
-		<label>dryer & volumizer</label>
-	</div>
-	<div class="thing3">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/519uvKttKNL.jpg">
-		<label>eye lashes</label>
-	</div>
-	<div class="thing3">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/61ZULDIzc%2BL._SY550_.jpg">
-		<label>shampoo</label>
-	</div>
-	<div class="thing3">
-		<img src="https://cdn.shopify.com/s/files/1/1133/5964/products/kris-palette-close-up-revised_1024x1024.jpg">
-		<label>makeup</label>
-	</div>
-	<div class="thing3">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/615BjxbZ7oL._SL1000_.jpg">
-		<label>hair brush</label>
-	</div>
-	<div class="thing3">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/81qHRhFODRL._AC_UL200_SR200,200_.jpg">
-		<label>razors</label>
-	</div>
-	<div class="thing3">
-		<img src="https://lh3.googleusercontent.com/proxy/5ozuK_zmAYeAo1Z3QgMBvcC1sI_aFnZLmtLVSvsB9edIKmNBtRXGqt2tEM7knCwAdk9DD2wYGKLxyt8wl-Dw2MeJALPeq61rUKZ6oOmtpLspoFMuQj09lwbpNB4hQn-T">
-		<label>hairpin</label>
-	</div>
-	<div class="thing3">
-		<img src="https://clicks.co.za/medias/?context=bWFzdGVyfHByb2R1Y3QtaW1hZ2VzfDIxNTgxfGltYWdlL2pwZWd8cHJvZHVjdC1pbWFnZXMvaGI0L2hiMS85NDI4NTU5Mjk4NTkwLmpwZ3xmZTVlYjI2YzExYTFmZjllNDU4OTc3NGVlNDFiNGZjMjM5MzJjZjRhYmRlMTA5NzU3N2VjNzA1ZGFlZmJhOTJm">
-		<label>rollon</label>
-	</div>
-	<div class="thing3">
-		<img src="https://cdn10.bigcommerce.com/s-okmt58fj/products/1345/images/3517/1__99599.1524846873.1000.1000.jpg">
-		<label>chocker</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Photography</h1>
-<div class="tabcontent">
-<div class="thing4">
-		<img src="https://ae01.alicdn.com/kf/HTB1vV.oqoR1BeNjy0Fmq6z0wVXaN/WT3130-Aluminum-alloy-Camera-Tripod-Stand-with-Rocker-Arm-for-Canon-Nikon-Sony-DSLR-Camera-Camcorder.jpg">
-		<label>Tripod stand</label>
-	</div>
-	<div class="thing4">
-		<img src="https://www.powerplanetonline.com/cdnassets/gopro_hero_8_black_02_ad_l.jpg">
-		<label>go pro</label>
-	</div>
-	<div class="thing4">
-		<img src="https://s3.wp.wsu.edu/uploads/sites/609/2019/07/DJI-Phantom-3-drone-1188x792.jpg">
-		<label>drone</label>
-	</div>
-	<div class="thing4">
-		<img src="https://static.bhphoto.com/images/images1000x1000/1536120359_1433711.jpg">
-		<label>Camera</label>
-	</div>
-	<div class="thing4">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/71LN5UnxCrL._AC_SL1500_.jpg">
-		<label>instax camera</label>
-	</div>
-	<div class="thing4">
-		<img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/DC/A3/6c2d5f57-94cd-45c5-ba79-8d71ce9bb239.jpg">
-		<label>portable printer</label>
-	</div>
-	<div class="thing4">
-		<img src="https://mediaserver.goepson.com/ImConvServlet/imconv/17c7c10bdce198100f9383df4ad3a17c586ca41a/1200Wx1200H?use=banner&assetDescr=17Lio_MBL_MBX_Black_04_2">
-		<label>all-in-one printer</label>
-	</div>
-	<div class="thing4">
-		<img src="https://ae01.alicdn.com/kf/H431de0c827a24c0cb58f4f1043b54423b/NOVAGEAR-80302-Photo-Bag-Camera-Backpack-Universal-Large-Capacity-Travel-Camera-Backpack-For-Canon-Nikon-Digital.jpg">
-		<label>camera bag</label>
-	</div>
-	<div class="thing4">
-		<img src="https://cdn.vox-cdn.com/thumbor/I59yVb5KYR1Z0y0eDD4qbv7uLyg=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19166513/VLS_2759.jpg">
-		<label>laptop</label>
-	</div>
-	<div class="thing4">
-		<img src="https://i7a3x6u3.stackpathcdn.com/wp-content/uploads/2018/07/Xenvo-iPhone-Camera-Lens-Kit-Pro-Macro-Lens-n-Wide-Angle-Lens.jpg">
-		<label>mini-lens(phone)</label>
-	</div>
-	<div class="thing4">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/51BT-R7QuYL._AC_SX425_.jpg">
-		<label>flash(phone)</label>
-	</div>
-	<div class="thing4">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/41eew9NIY6L.jpg">
-		<label>storage</label>
-	</div>
-	<div class="thing4">
-		<img src="https://cdn.improb.com/wp-content/uploads/2019/07/Best-Camera-Shoulder-Mount-Rig.jpg">
-		<label>Camera rigs</label>
-	</div>
-	<div class="thing4">
-		<img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/12/3C/cfb868f5-ea9d-4b78-bf71-5197702e211d.jpg">
-		<label>card reader</label>
-	</div>
-	<div class="thing4">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/61doUFixTlL._AC_UX522_.jpg">
-		<label>gloves</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Puppy</h1>
-<div class="tabcontent">
-<div class="thing5">
-		<img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225538/Poodle-On-White-03.jpg">
-		<label>poddle</label>
-	</div>
-	<div class="thing5">
-		<img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/04135910/Chihuahua-longhaired-sitting-its-head-tilted.jpg">
-		<label>chihuahua</label>
-	</div>
-	<div class="thing5">
-		<img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12224329/Shih-Tzu-On-White-01.jpg">
-		<label>shih tzu</label>
-	</div>
-	<div class="thing5">
-		<img src="https://i.pinimg.com/originals/08/2e/ae/082eae223ac04cd63598e0478e29f451.jpg">
-		<label>dobermann</label>
-	</div>
-	<div class="thing5">
-		<img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/26114711/Shiba-Inu-standing-in-profile-outdoors.jpg">
-		<label>shiba inu</label>
-	</div>
-	<div class="thing5">
-		<img src="https://cdn3-www.dogtime.com/assets/uploads/gallery/chow-chow-dog-breed-pictures/3-fullbody.jpg">
-		<label>chow chow</label>
-	</div>
-	<div class="thing5">
-		<img src="https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/11234019/Bulldog-standing-in-the-grass.jpg">
-		<label>bulldog</label>
-	</div>
-	<div class="thing5">
-		<img src="https://lh3.googleusercontent.com/proxy/ZCAQG2EjG67QEATzu2CUYG_gtIoR2sZARYqi6IsO4CCPDW5i7iCzHr_54m35rjuKgEXBLfkxGL6EmmnsLs89Avr3Mifg7HOfMP0Cwg7Cmb-fwM0_7DpX7_NPVMdM8mLVcRV5GQ">
-		<label>siberian husky</label>
-	</div>
-	<div class="thing5">
-		<img src="https://www.allgoldenretriever.com/wp-content/uploads/2020/03/15-Reasons-Golden-Retrievers-Are-the-BEST-Dogs-Ever.jpg">
-		<label>golden retriever</label>
-	</div>
-	<div class="thing5">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Scottish_fold_cat.jpg">
-		<label>scottish fold</label>
-	</div>
-	<div class="thing5">
-		<img src="https://t1.ea.ltmcdn.com/en/images/3/4/0/img_caring_for_a_himalayan_cat_1043_orig.jpg">
-		<label>Himalayan cat</label>
-	</div>
-	<div class="thing5">
-		<img src="https://petguruhub.com/wp-content/uploads/2019/08/Exotic-Shorthair-1-500x405.jpg">
-		<label>Exotic Shorthair</label>
-	</div>
-	<div class="thing5">
-		<img src="https://www.thesprucepets.com/thmb/xCBYNz_e7zQjy5QG22uGSFIAjnc=/1500x1040/filters:fill(auto,1)/GettyImages-888877908-aaa9d6ad3dc0436695cd8ee42f006b8e.jpg">
-		<label>Peterbald</label>
-	</div>
-	<div class="thing5">
-		<img src="https://www.pets4homes.co.uk/images/breeds/232/large/78c589acdf9875140aeb97a37ee8bc15.jpeg">
-		<label>british-longhair</label>
-	</div>
-	<div class="thing5">
-		<img src="https://lh3.googleusercontent.com/proxy/nq8nW_GZ4PHRUfQ92LATelrzlg4MdURGw8kTvKu7WyG6Jhswri_GGuBG8ZlRaMQ9wD-6dfkJ0YffF74hWKOUdFpVHNpNKtZArj_1tF9u0lwxsJ3GDqPNgw">
-		<label>Siamese cat</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Kitchen</h1>
-<div class="tabcontent">
-<div class="thing6">
-		<img src="https://sc01.alicdn.com/kf/U548f89eb5ddb4187aede588370de7ffbg.jpg_350x350.jpg">
-		<label>ထမင်းစားခုံ</label>
-	</div>
-	<div class="thing6">
-		<img src="https://anymart.com.mm/image/cache/catalog/!!!!!!!!!!!!!!!!!ACER/13-1000x1000.jpg">
-		<label>ထမင်းပေါင်းအိုး</label>
-	</div>
-	<div class="thing6">
-		<img src="https://5.imimg.com/data5/UW/SB/MY-12731365/rolling-pin-board-500x500.jpg">
-		<label>rolling pin</label>
-	</div>
-	<div class="thing6">
-		<img src="https://sc01.alicdn.com/kf/HTB19Gf2rpuWBuNjSszbq6AS7FXav.jpg_350x350.jpg">
-		<label>လျှပ်စစ်မီးဖို</label>
-	</div>
-	<div class="thing6">
-		<img src="https://aumento.officemate.co.th/media/catalog/product/O/F/OFM0091640.jpg">
-		<label>ရေနွေးစက်</label>
-	</div>
-	<div class="thing6">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/817RjT77c0L._AC_SX522_.jpg">
-		<label>ဒယ်အိုး</label>
-	</div>
-	<div class="thing6">
-		<img src="https://lh3.googleusercontent.com/proxy/PWt1EBFpP368gUoTLrZbiltb7rqYNsJXukaZfkEhTVQzbtMb1Y3tmBU7r9rH4klrmOnpXwkDaUjL55r6yJ1vWsIgk42Dk7xYt4Bbs5NMQylRWqYE5R-sP1uxWSTAuQ">
-		<label>ငရုတ်ဆုံ</label>
-	</div>
-	<div class="thing6">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/71T%2B-iy7TvL._SL1500_.jpg">
-		<label>အဝတ်လျှော်စက်</label>
-	</div>
-	<div class="thing6">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/71wbUMbAnkL._AC_SY450_.jpg">
-		<label>bbqအိုး</label>
-	</div>
-	<div class="thing6">
-		<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/610ptyvekxl-sl1000-1563196528.jpg">
-		<label>microwave</label>
-	</div>
-	<div class="thing6">
-		<img src="https://i0.wp.com/freedsgn.com/wp-content/uploads/2019/08/Kitchen-Shelf-Design.jpg">
-		<label>မီးဖိုချောင်စင်</label>
-	</div>
-	<div class="thing6">
-		<img src="https://imgaz.staticbg.com/thumb/large/oaupload/banggood/images/ED/6A/ef2d9737-1351-4a58-8944-64acfdcc0f6f.jpg">
-		<label>ဓါးလှီးခုံ</label>
-	</div>
-	<div class="thing6">
-		<img src="https://static-01.shop.com.mm/p/4f3ff8fcd557394c5406632a36bf2c55.jpg">
-		<label>cooking tools</label>
-	</div>
-	<div class="thing6">
-		<img src="https://www.birite.com.au/wp-content/uploads/Haier-HDW13V1W1-13-Place-White-Dishwasher-Angle-open.jpg">
-		<label>ပန်းကန်ဆေးစက်</label>
-	</div>
-	<div class="thing6">
-		<img src="https://ae01.alicdn.com/kf/He6df52328a0c4081b0a3cdc968d40a37R/Manual-Vegetable-Cutter-Slicer-Kitchen-Accessories-Multifunctional-Round-3-in-1-Potato-Cheese-Slicer-Shredder-Kitchen.jpg">
-		<label>အသီးအနှံဖြတ်စက်</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Toys</h1>
-<div class="tabcontent">
-<div class="thing7">
-		<img src="https://k.nooncdn.com/t_desktop-pdp-v1/v1556195610/N24473334A_1.jpg">
-		<label>Savebox</label>
-	</div>
-	<div class="thing7">
-		<img src="https://resize.cdn.otakumode.com/exq/65/550.830/shop/product/9eb92dc22f7e41eaae69ce5f35dbca1c.jpg">
-		<label>Figure</label>
-	</div>
-	<div class="thing7">
-		<img src="https://i5.walmartimages.com/asr/38eeaff7-29f3-402a-8e6f-8bce40656f06_1.296854b664b47a60e0fe2dfe6493f389.jpeg?">
-		<label>keychain</label>
-	</div>
-	<div class="thing7">
-		<img src="https://cf.shopee.com.my/file/b2447bae3ccdd7468c62d8845f34644c">
-		<label>Soft Toy</label>
-	</div>
-	<div class="thing7">
-		<img src="https://www.greenbiz.com/sites/default/files/images/articles/featured/23146108380490e80e130.jpg">
-		<label>lego</label>
-	</div>
-	<div class="thing7">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/81btrHKgO0L._AC_SX425_.jpg">
-		<label>monopoly</label>
-	</div>
-	<div class="thing7">
-		<img src="https://ae01.alicdn.com/kf/HTB188a7Uq6qK1RjSZFmq6x0PFXa2.jpg">
-		<label>domino</label>
-	</div>
-	<div class="thing7">
-		<img src="https://wersm.com/wp-content/uploads/2018/02/wersm-you-can-now-play-uno-on-facebook-messenger.jpg">
-		<label>uno</label>
-	</div>
-	<div class="thing7">
-		<img src="https://www.candidsky.com/wp-content/uploads/2018/07/snakes-and-ladders-1680x1050.jpg">
-		<label>မြွေလှေကား</label>
-	</div>
-	<div class="thing7">
-		<img src="https://ae01.alicdn.com/kf/HTB1OtTycouF3KVjSZK9q6zVtXXax/Men-Women-s-Inline-Skates-Freestyle-Roller-Skates-Skating-Shoes-Patines-Adults-Inline-Skate-Sneakers.jpg">
-		<label>စကိတ်</label>
-	</div>
-	<div class="thing7">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/81BS4n2rdKL._AC_SX425_.jpg">
-		<label>အရုပ်ကောက်စက်</label>
-	</div>
-	<div class="thing7">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/71g9Q1Ft4cL._AC_SX425_.jpg">
-		<label>သေနတ်</label>
-	</div>
-	<div class="thing7">
-		<img src="https://rukminim1.flixcart.com/image/352/352/role-play-toy/p/c/d/sterling-disney-cute-mini-small-baby-toy-fan-barrery-operated-original-imaecjyndrhyvvhx.jpeg?q=70">
-		<label>ပန်ကာ</label>
-	</div>
-	<div class="thing7">
-		<img src="https://image.smythstoys.com/original/desktop/169147.jpg">
-		<label>ရေပြွတ်</label>
-	</div>
-	<div class="thing7">
-		<img src="https://media.karousell.com/media/photos/products/2017/12/16/hello_kitty_doraemon_calculator_1513428804_00193972.jpg">
-		<label>ဂဏန်းတွက်စက်</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">2021 Movies</h1>
-<div class="tabcontent">
-<div class="thing8">
-		<img src="https://image.tmdb.org/t/p/w500/iEqhF3dtajbTtNRCztgn0q5gWKG.jpg">
-		<label>Black-ardam</label>
-	</div>
-	<div class="thing8">
-		<img src="https://i.ytimg.com/vi/zeaen7rSabA/maxresdefault.jpg">
-		<label>suicide squad-2</label>
-	</div>
-	<div class="thing8">
-		<img src="https://i.ytimg.com/vi/viWy91HwO7o/maxresdefault.jpg">
-		<label>shang-chi</label>
-	</div>
-	<div class="thing8">
-		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1G5qR-ECs-5BbsK79TbF37t7WMKHxhNFePO1Q5xe5BpMU8zU2">
-		<label>F9</label>
-	</div>
-	<div class="thing8">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg0LEuag4RNowGfgjgO7-86uVy_5MbKkd8Iq4GUxkZBGIxJB4i">
-		<label>rise of guru</label>
-	</div>
-	<div class="thing8">
-		<img src="https://848550.smushcdn.com/1798804/wp-content/uploads/2020/05/download-100.jpg">
-		<label>fantastic beast 3</label>
-	</div>
-	<div class="thing8">
-		<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFz5jRoUzUx94cxdENlM5OcSnPxwFJ3b2FVUqhPALe_qm1Un0W">
-		<label>peter rabbit 2</label>
-	</div>
-	<div class="thing8">
-		<img src="https://static.metacritic.com/images/products/movies/9/60e470a29c590ec76a816073cbd59817.jpg">
-		<label>sherlock holmes 3</label>
-	</div>
-	<div class="thing8">
-		<img src="https://m.media-amazon.com/images/M/MV5BZGQ1NjNlN2MtNDNlOS00YWRkLTg2OTMtZmVkNmU0NmJhZjkwXkEyXkFqcGdeQXVyMzY3MDEzMTA@._V1_.jpg">
-		<label>boss baby 2</label>
-	</div>
-	<div class="thing8">
-		<img src="https://vignette.wikia.nocookie.net/sing-2-2020-film/images/8/87/Sing_2_poster.jpg/revision/latest?cb=20170805201918">
-		<label>sing 2</label>
-	</div>
-	<div class="thing8">
-		<img src="https://i.ytimg.com/vi/SO3d5FEBveA/maxresdefault.jpg">
-		<label>avatar 2</label>
-	</div>
-	<div class="thing8">
-		<img src="https://heraldjournalism.com/wp-content/uploads/2020/05/JW_3-e1589823088625.png">
-		<label>dominion</label>
-	</div>
-	<div class="thing8">
-		<img src="https://worldnewsbox.com/wp-content/uploads/2020/05/Venom-2-Release-Date-Cast-Plot-and-other-Latest-updates-990x1213.jpg">
-		<label>let there be carnage</label>
-	</div>
-	<div class="thing8">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCoKGyjhzEtmjkODG9p_msjN9lvf4meA8UX0gMqPw9FIXPAHAY">
-		<label>eternals</label>
-	</div>
-	<div class="thing8">
-		<img src="https://www.gstatic.com/tv/thumb/movieposters/16668728/p16668728_p_v8_aa.jpg">
-		<label>escape room 2</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Food</h1>
-<div class="tabcontent">
-<div class="thing9">
-		<img src="https://s23991.pcdn.co/wp-content/uploads/2018/05/best-hot-dog.jpg">
-		<label>ဟော့ဒေါ့</label>
-	</div>
-	<div class="thing9">
-		<img src="https://yangonlife.com.mm/sites/yangonlife.com.mm/files/styles/articles_gallery_style/public/article_images/papaya%20salad%204.jpg?">
-		<label>သဘ်ောသီးထောင်း</label>
-	</div>
-	<div class="thing9">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Cappuccino_at_Sightglass_Coffee.jpg/640px-Cappuccino_at_Sightglass_Coffee.jpg">
-		<label>ကော်ဖီ</label>
-	</div>
-	<div class="thing9">
-		<img src="https://static.lotayamm.com/news/2019/09/24/5d89f6b7d8f0d_480x320.jpg">
-		<label>ပင်လယ်စာ</label>
-	</div>
-	<div class="thing9">
-		<img src="https://addapinch.com/wp-content/uploads/2019/09/instant-pot-spaghetti-recipe-2347-1.jpg">
-		<label>Spaghetti</label>
-	</div>
-	<div class="thing9">
-		<img src="https://www.redchillimart.co.uk/wp-content/uploads/2019/11/9555022304762.jpeg">
-		<label>Mamee</label>
-	</div>
-	<div class="thing9">
-		<img src="https://www.cosyowl.com/images/fragrance-marshmallow-NMAR.jpg">
-		<label>Marshmallow</label>
-	</div>
-	<div class="thing9">
-		<img src="https://i2.wp.com/asiatimes.com/wp-content/uploads/2020/03/File-photo-3.png">
-		<label>Coca Cola</label>
-	</div>
-	<div class="thing9">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Ice_cream_with_whipped_cream%2C_chocolate_syrup%2C_and_a_wafer_%28cropped%29.jpg">
-		<label>ရေခဲမုန့်</label>
-	</div>
-	<div class="thing9">
-		<img src="https://myfoodmyanmar.com/wp-content/uploads/2016/07/2.jpg">
-		<label>ကြာဇံကြော်</label>
-	</div>
-	<div class="thing9">
-		<img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2019/7/11/0/FNK_the-best-pancakes_H_s4x3.jpg.rend.hgtvcom.826.620.suffix/1562853903667.jpeg">
-		<label>ပန်ကိတ်</label>
-	</div>
-	<div class="thing9">
-		<img src="https://fastly.4sqi.net/img/general/600x600/92243238_5IFJsreALNlp74oc08bqFobs9tfaeOXeRvxYyhx8lmw.jpg">
-		<label>ဝက်သားတုတ်ထိုး</label>
-	</div>
-	<div class="thing9">
-		<img src="https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/egg-cress-club-sandwich_0.jpg">
-		<label>ဆန်းဝှစ်ချ်</label>
-	</div>
-	<div class="thing9">
-		<img src="https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/master/pass/the-ultimate-hamburger.jpg">
-		<label>ဟန်ဘာဂါ</label>
-	</div>
-	<div class="thing9">
-		<img src="https://www.pizzamarumyanmar.com/wp-content/uploads/2019/04/Bulgogi-pizza-2.jpg">
-		<label>ပီဇာ</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Art</h1>
-<div class="tabcontent">
-<div class="thing10">
-		<img src="https://ae01.alicdn.com/kf/HTB1yhXHorZnBKNjSZFrq6yRLFXaq/PICASSO-Pimio-best-fountain-pen-903-DARK-BLUE-expensive-metal-ink-pen-F-NIB-calligraphy-pens.jpg_640x640.jpg">
-		<label>ဖောင်တိန်</label>
-	</div>
-	<div class="thing10">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/41qeZ43w1zL.jpg">
-		<label>ကာလာစာရွက်</label>
-	</div>
-	<div class="thing10">
-		<img src="https://www.twinschip.com/image/cache/catalog/Products%20Twins%20Chip%20Store%202020/Electronic%20Tools/HELI%20Hot%20Melt%20Glue%20Gun/HELI%20Hot%20Melt%20Glue%20Gun%201%20Twins%20Chip-550x550h.jpeg">
-		<label>ကော်gun</label>
-	</div>
-	<div class="thing10">
-		<img src="https://images.officeworks.com.au/api/2/img/https://s3-ap-southeast-2.amazonaws.com/wc-prod-pim/JPEG_300x300/SM388400_large_eraser.jpg/resize?size=300&auth=MjA5OTcwODkwMg__">
-		<label>ခဲဖျက်</label>
-	</div>
-	<div class="thing10">
-		<img src="https://ae01.alicdn.com/kf/HTB1nSAXXL5G3KVjSZPxq6zI3XXaC/30X-Handheld-Magnifier-with-13X-Lamp-High-Power-for-Map-Reading-Phone-Repairing-Amplifier-Magnifying-Glass.jpg_640x640q70.jpg">
-		<label>မှန်ဘီလူး</label>
-	</div>
-	<div class="thing10">
-		<img src="https://www.gogsg.com/ASSETS/IMAGES/PRODUCTS/LIST_DISPLAY/FAI20-112.jpg">
-		<label>ပေတံ</label>
-	</div>
-	<div class="thing10">
-		<img src="https://www.sentryair.com/blog/wp-content/uploads/2013/04/FH17JUN_579_07_034.jpg">
-		<label>ဖျန်းဘူး</label>
-	</div>
-	<div class="thing10">
-		<img src="https://imgaz3.staticbg.com/thumb/large/oaupload/banggood/images/B6/D2/325f16c3-0e86-2aac-7d67-c5ee39dc9ab6.jpg">
-		<label>သစ်ဘောင်</label>
-	</div>
-	<div class="thing10">
-		<img src="https://previews.123rf.com/images/ifong/ifong1208/ifong120800007/14776960-bottles-of-ink-in-cmyk-colors-cyan-with-splash.jpg">
-		<label>မှင်အိုး</label>
-	</div>
-	<div class="thing10">
-		<img src="https://classroomclipart.com/images/gallery/Clipart/Art_Supplies/colored_pencils_16A.jpg">
-		<label>ခဲတံ</label>
-	</div>
-	<div class="thing10">
-		<img src="https://images0.greatart.co.uk/out/pictures/generated/1500_1500/pboxx-pixelboxx-1600084/Arcoprint+Drawing+%26amp%3B+Printing+Paper+300gsm.jpg">
-		<label>ပန်းချီစာရွက်</label>
-	</div>
-	<div class="thing10">
-		<img src="https://ae01.alicdn.com/kf/HTB1Ub81au6sK1RjSsrbq6xbDXXau/5-pcs-scrubbing-brush-Painting-fan-shaped-bristles-Artist-s-Paint-for-Hook-line-Oil-Brush.jpg">
-		<label>Brush</label>
-	</div>
-	<div class="thing10">
-		<img src="https://images-na.ssl-images-amazon.com/images/I/61qRlZFR2lL._AC_SX466_.jpg">
-		<label>ဆေးခွက်</label>
-	</div>
-	<div class="thing10">
-		<img src="https://www.facepaintshop.eu/media/catalog/product/cache/2ca4548734246d7140d6d2a380c00367/1/3/13594.jpg">
-		<label>စုပ်တံ</label>
-	</div>
-	<div class="thing10">
-		<img src="https://www.kindpng.com/picc/m/184-1848760_old-easel-with-canvas-png-png-download-blank.png">
-		<label>ဒေါက်တိုင်</label>
-	</div>
-</div></div>
-
-<div class="main_result">
-<h1 class="main_label">Human Accessories</h1>
-<div class="tabcontent">
-<div class="thing11">
-		<img src="https://www.724usa.com/ksa-10-best-womens-perfumes-women-fragrances-best-perfume-724usacom-men-women-clothing-shoes-accessories-online-shopping-475716-43-B.png">
-		<label>ရေမွှေး</label>
-	</div>
-	<div class="thing11">
-		<img src="https://contestimg.wish.com/api/webimage/5d3bc2a891efda6e59cb739c-large.jpg">
-		<label>ကျောပိုးအိတ်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://www.fjallraven.com/globalassets/catalogs/fjallraven/f7/f773/f77307/f249/7323450091569_ss18_a_oevik_wallet_21.jpg">
-		<label>ပိုက်ဆံအိတ်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1561064088-kors-1561064079.jpg">
-		<label>မျက်မှန်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://cdn.shiels.com.au/30256279-a.jpg">
-		<label>နာရီ</label>
-	</div>
-	<div class="thing11">
-		<img src="https://cdn11.bigcommerce.com/s-pkla4xn3/images/stencil/1280x1280/products/27538/255655/2019-Summer-Casual-Shorts-Mens-Bermuda-Breathable-Linen-Cotton-Trousers-Beach-Board-Short-Pants-Male-bermuda__96170.1553321523.jpg">
-		<label>ဘောင်းဘီတို</label>
-	</div>
-	<div class="thing11">
-		<img src="https://smhttp-ssl-75217.nexcesscdn.net/media/catalog/product/cache/1/image/700x700/9df78eab33525d08d6e5fb8d27136e95/m/a/man-front_yellow.jpg">
-		<label>အတွင်းခံ</label>
-	</div>
-	<div class="thing11">
-		<img src="https://4.imimg.com/data4/IX/TG/MY-27915579/men-s-hoddie-500x500.jpg">
-		<label>ဟူဒီ</label>
-	</div>
-	<div class="thing11">
-		<img src="https://cdn11.bigcommerce.com/s-ishrbqicno/images/stencil/1280x1280/attribute_rule_images/8388_source_1579814644.jpg">
-		<label>လက်ရှည်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://image.skechers.com/img/productimages/xlarge/232040_WNV.jpg">
-		<label>ဖိနပ်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://www.excellion.com/wp-content/uploads/2019/08/ca8e6147-product_image_hats_toxic.jpg">
-		<label>ဦးထုပ်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://d1flfk77wl2xk4.cloudfront.net/Assets/GalleryImage/16/295/L_g0081129516.jpg">
-		<label>မီနီစကတ်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://ae01.alicdn.com/kf/HTB1um_HbirxK1RkHFCcq6AQCVXae/jeans-for-mens-pants-classic-denim-jean-men-Business-Trousers-Casual-Loose-Straight-Elasticity-pant-male.jpg">
-		<label>ဘောင်းဘီရှည်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://ae01.alicdn.com/kf/HTB107hnJFXXXXbWXXXXq6xXFXXXw/Leather-Belt-Man-Automatic-Buckle-Belt-New-Design-Fashion-Business-Belt-For-T-Shirt-Free-Shipping.jpg">
-		<label>ခါးပတ်</label>
-	</div>
-	<div class="thing11">
-		<img src="https://ae01.alicdn.com/kf/HTB1O3mZLxnaK1RjSZFtq6zC2VXaN/Waifu-Material-Ahegao-TShirt-Otaku-Lewd-Hentai-Cute-Girl-Anime-T-Shirt-for-Men-StreetWear-T.jpg_q50.jpg">
-		<label>တီရှပ်</label>
-	</div>
-</div></div>
+</section> -->
 
 
 
-<script type="text/javascript" src="scriptt.js"></script>
+<!-- 
+	<section class="something">
+	<div class="panel">
+		<div class="paneltab">
+		<button onclick="clicks(0,'rgba(245,252,0,0.4)','black')">ပူတူးလေးအတွက်-၁</button>
+		<button onclick="clicks(1,'rgba(0,137,8,0.4)','black')">ပူတူးလေးအတွက်-၂</button>
+		<button onclick="clicks(2,'rgba(255,0,0,0.4)','black')">ပူတူးလေးအတွက်-၃</button>
+		<button onclick="clicks(3,'rgba(70,0,255,0.4)','black')">ပူတူးလေးအတွက်-၄</button>
+	</div>
+		<div class="panelcontent">
+			ချစ်ဆုံးဂူဂူးလေးရေ ခလေးလေးက တကယ်ကိုအရမ်းလှပတဲ့ကောင်မလေးပါကွာ။
+			ကိုကိုကတော့ အရမ်းကိုစွဲမက်နေပါပီ။ ကိုကို့မှာလေ ပူတူတူးလေးကိုပဲအချိန်တိုင်း တွေးနေမိတယ်သိလား။
+			အိပ်ပြန်တော့လဲ ပူတူတူးလေးအကြောင်း စားပြန်တော့လဲ ပူတူတူးလေးအကြောင်း။ 
+			ကိုကို့ကိုပဲယူပါနော် ပူတူတူးလေးရေ ။ ပူတူတူးလေးကို ကိုကိုပဲဘဝဆက်တိုင်း ပိုင်ဆိုင်ရပါလို၏လို့ 
+			အမြဲဆုတောင်းဖြစ်တယ်။ ❤️
+		</div>
+		<div class="panelcontent">
+			ဘဝမှာမွေးခါစကနေ အခုအချိန်ထိ ကံအကောင်းဆုံးအချိန်ကို ပြောပါဆိုရင်
+			ပူတူတူးလေးနဲ့ ချစ်သူဖြစ်တဲ့နေ့က ကိုကို့အတွက် ကံအကောင်းဆုံးပဲ။လူတွေက
+			ပြောကြတယ် ကျောက်မြတ်ရတနာ စိန်ရွှေငွေ ပတ္တမြားတွေဆိုတာက လောကမှာတန်ဖိုးအကြီးဆုံးပဲတဲ့။
+			ကိုကို့အတွက်တော့ လုံးဝမှားယွင်းနေတယ် ပူတူတူးလေးကမှ လောကမှာတင်မဟုတ်ဘူး
+			စကြာဝဠာမှာပါ တကယ်တန်ဖိုးအကြီးဆုံး ❤️
+		</div>
+		<div class="panelcontent">
+			နေပူတယ် မိုးရွာတယ် နှင်းကျတယ်ဆိုပီး မြန်မာနိုင်ငံမှာ ရာသီဥတုသုံးပါးကို ဖြတ်ကျော်ရင်း လူတွေက ပင်ပန်းမှုဒဏ်တွေ စိတ်ဒဏ်ရာတွေ လောဘ ဒေါသ မောဟတွေနဲ့အတူ ဖြတ်သန်းနေကြရတယ်။
+			ကိုကို့အတွက် ကံကောင်းသွားတာတစ်ခုက ပူတူတူးလေးဘေးမှာ ရှိနေရရင် အပူအပင်တွေ မောပန်းမှုတွေ ပျောက်ကွယ်ပီး အေးချမ်းမှု နူးညံ့မှုလေးတွေပဲခံစားမိတယ်။ပူတူတူးလေးဘေးမှာတစ်သက်လုံးနေခွင့်ပြုပါနော် ❤️
+		</div>
+		<div class="panelcontent">
+			လူသားတိုင်းက အိမ်လှလှလေးတွေ သစ်ပင်လှလှလေးတွေ အိမ်မွေးတိရစ္ဆာန်လှလှလေးတွေ ပစ္စည်းလှလှလေးတွေ ပန်းလှလှလေးတွေကို အလှတရားလို့မြင်ပီး ထိန်းသိမ်းမွမ်းမံ မွေးမြူကြတယ်။
+			အဲ့ဒါတွေက ကျွန်တော့်အတွက်တော့ လှတယ်လို့ကို မမြင်မိပါဘူးဗျာ။ တစ်ခုတော့ရှိတယ်။ ကျွန်တော့်အတွက် အလှပဆုံးလေးတစ်မျိုးပဲရှိတယ်။ အဲ့ဒါ ခိုင်နီနီနိုင်ထွေးလေးရဲ့ ပင်ဂိုအလှလေးပဲ ❤️
+		</div>
+	</div>
+</section>
+
+<h4 class="footer">Made with ❤️ By MKKO</h4> -->
+
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
