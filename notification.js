@@ -1,6 +1,7 @@
 const btn = document.querySelectorAll(".btn");
-
+const btnaudio = document.getElementById("btnaudio");
 const clickbtn = (index) =>{
+	btnaudio.play();
 	btn[index].classList.toggle("boxpopup");
 	btn[index].classList.toggle("boxpressed");
 }
