@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="notification.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<title>...</title>
+</head>
+<body>
+	<div class="notification boxpopup">
+
+
+	<div class="network boxpopup">
+		<button onclick="clickbtn(0)" id="airplane" class="boxpopup btn"><img align="center" src="https://static.thenounproject.com/png/539324-200.png"></button>
+		<button onclick="clickbtn(1)" id="hotspot" class="boxpopup btn"><img align="center" src="https://image.flaticon.com/icons/png/512/99/99529.png"></button>
+		<button onclick="clickbtn(2)" id="wifi" class="boxpopup btn"><img align="center" src="https://simpleicon.com/wp-content/uploads/wifi-signal-normal.png"></button>
+		<button onclick="clickbtn(3)" id="bluetooth" class="boxpopup btn"><img align="center" src="https://i.stack.imgur.com/hrjWp.png"></button>
+	</div>
+	<div class="music boxpopup" align="center">
+		 <p>ပြည်ပသို့ပေးစာ</p>
+		 <p>G-Fatt</p>
+		 <div class="musicbtn">
+		 	<button id="backwar">&#x23ea;</button>
+		 	<button id="paus">&#x23f8;</button>
+		 	<button id="forwar"> &#x23e9;</button>
+		 </div>
+	</div>
+	<div class="dnd">
+		<button onclick="clickbtn(4)" class="boxpopup btn" id="slock"><img align="center" src="https://image.flaticon.com/icons/png/512/733/733476.png"></button>
+		<button onclick="clickbtn(5)" class="boxpopup btn" id="moon"><img src="https://media.idownloadblog.com/wp-content/uploads/2016/07/Do-Not-Disturb-Status-Bar-Icon-Large.png"></button>
+		<button onclick="clickbtn(6)" class="boxpopup btn" id="sshare">
+			<img src="https://static.thenounproject.com/png/714339-200.png">
+			<p>screen mirroring</p>
+		</button>
+	</div>
+	<div class="adjusting">
+		<div>
+				<span class="light">0</span>
+			<input oninput="lightinput()" type="range" name="" class="boxpressed" min="0" max="100" value="0" id="brightslide">
+			<span class="shit">☀️</span>
+		</div>
+		<div>
+			<span class="speak">0</span>
+			<input oninput="volinput()" type="range" name="" class="boxpressed" min="0" max="100" value="0" id="volumeslide">
+			<span class="shit">🔈</span>
+		</div>
+	</div>
+	<div class="misc">
+		<button onclick="clickbtn(7)" class="btn boxpopup"><img src="https://cdn0.iconfinder.com/data/icons/zondicons/20/flashlight-512.png"></button>
+		<button onclick="clickbtn(8)" class="btn boxpopup"><img src="https://www.freeiconspng.com/uploads/timer-icon-2.png"></button>
+		<button onclick="clickbtn(9)" class="btn boxpopup"><img src="https://img.icons8.com/dotty/2x/calculator.png"></button>
+		<button onclick="clickbtn(10)" class="btn boxpopup"><img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/media-pict-camera.png"></button>
+	</div>
+
+
+</div>
+	<script type="text/javascript" src="notification.js"></script>
+</body>
+</html>
