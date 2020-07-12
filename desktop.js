@@ -51,28 +51,58 @@ const picopen = () =>{
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Pictures";
 	desktop.classList.toggle("disabledesk");
+	Mainclick(3);
 }
 const vidopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Videos";
 	desktop.classList.toggle("disabledesk");
+	Mainclick(1);
 }
 const muopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Music";
 	desktop.classList.toggle("disabledesk");
+	Mainclick(2);
 }
 const downopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Downloads";
 	desktop.classList.toggle("disabledesk");
+	Mainclick(4);
 }
 const docopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Documents";
 	desktop.classList.toggle("disabledesk");
+	Mainclick(0);
+}
+
+const contents = document.querySelectorAll(".tabcontent div");
+const btns = document.querySelectorAll(".tabbtn div");
+const realbtns = document.querySelectorAll(".tabbtn div button");
+
+const Mainclick = (index) =>{
+	contents.forEach((node)=>{
+		node.style.maxHeight = "0";
+	});
+	btns.forEach((node)=>{
+		node.style.backgroundColor = "";
+		node.style.color = "";
+	});
+	realbtns.forEach((node)=>{
+		node.style.backgroundColor = "";
+		node.style.color = "";
+	});
+	realbtns[index].style.color = "white";
+	realbtns[index].style.backgroundColor = "rgba(0,0,0,0)";
+	btns[index].style.backgroundColor = "rgba(0,0,0,0.6)";
+	contents[index].style.position = "absolute";
+	contents[index].style.top = "0";
+	contents[index].style.width = "100%";
+	contents[index].style.maxHeight = `${contents[index].scrollHeight+20}`+"px";
 }
