@@ -24,3 +24,14 @@ const checkTime = (i) => {
 	}
 	return i;
 }
+const logo = document.getElementsByClassName("logo")[0];
+const about = document.getElementById("about");
+const quitabout = document.getElementById("quitabout");
+const clicklogo = () =>{
+	about.classList.toggle("cssabout");
+	about.classList.toggle("cssno");
+}
+const quitx = () =>{
+	about.classList.toggle("cssabout");
+	about.classList.toggle("cssno");
+}
