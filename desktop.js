@@ -35,3 +35,37 @@ const quitx = () =>{
 	about.classList.toggle("cssabout");
 	about.classList.toggle("cssno");
 }
+
+const filexit = document.getElementById("filexit");
+const main = document.getElementsByClassName("main")[0];
+const picfolder = document.getElementsByClassName("picfolder")[0];
+const navipoint = document.getElementsByClassName("navipoint")[0];
+const filexitclick = () =>{
+	main.classList.toggle("maincl");
+	main.classList.toggle("mainop");
+}
+const picopen = () =>{
+	main.classList.toggle("maincl");
+	main.classList.toggle("mainop");
+	navipoint.innerHTML = "Pictures";
+}
+const vidopen = () =>{
+	main.classList.toggle("maincl");
+	main.classList.toggle("mainop");
+	navipoint.innerHTML = "Videos";
+}
+const muopen = () =>{
+	main.classList.toggle("maincl");
+	main.classList.toggle("mainop");
+	navipoint.innerHTML = "Music";
+}
+const downopen = () =>{
+	main.classList.toggle("maincl");
+	main.classList.toggle("mainop");
+	navipoint.innerHTML = "Downloads";
+}
+const docopen = () =>{
+	main.classList.toggle("maincl");
+	main.classList.toggle("mainop");
+	navipoint.innerHTML = "Documents";
+}
