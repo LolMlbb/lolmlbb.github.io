@@ -19,7 +19,7 @@ nav{
 }
 nav .time{
   display: flex;
-  width: 60%;
+  width: 50%;
   justify-content: space-around;
   align-items: center;
   margin-right : 5px;
