@@ -182,7 +182,7 @@ nav .time{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 .filebox .tabbtn div:hover{
