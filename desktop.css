@@ -248,6 +248,7 @@ nav .time{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  color : rgb(39,39,39);
 }
 .tabcontent div a img{
   height : 30px;
