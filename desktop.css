@@ -45,6 +45,7 @@ nav .time{
   width : 20%;
   align-items: center;
   cursor: pointer;
+  outline : none;
 }
 .desktop{
   display: flex;
