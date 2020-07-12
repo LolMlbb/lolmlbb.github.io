@@ -19,9 +19,10 @@ nav{
 }
 nav .time{
   display: flex;
-  width: 40%;
+  width: 60%;
   justify-content: space-around;
   align-items: center;
+  margin-right : 5px;
 }
 .desktop div img{
   width : 60px;
