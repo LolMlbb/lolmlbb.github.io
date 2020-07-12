@@ -40,32 +40,39 @@ const filexit = document.getElementById("filexit");
 const main = document.getElementsByClassName("main")[0];
 const picfolder = document.getElementsByClassName("picfolder")[0];
 const navipoint = document.getElementsByClassName("navipoint")[0];
+const desktop = document.getElementsByClassName("desktop")[0];
 const filexitclick = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
+	desktop.classList.toggle("disabledesk");
 }
 const picopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Pictures";
+	desktop.classList.toggle("disabledesk");
 }
 const vidopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Videos";
+	desktop.classList.toggle("disabledesk");
 }
 const muopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Music";
+	desktop.classList.toggle("disabledesk");
 }
 const downopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Downloads";
+	desktop.classList.toggle("disabledesk");
 }
 const docopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
 	navipoint.innerHTML = "Documents";
+	desktop.classList.toggle("disabledesk");
 }
