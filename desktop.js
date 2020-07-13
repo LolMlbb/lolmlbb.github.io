@@ -117,7 +117,7 @@ const Mainclick = (index) =>{
 	realbtns[index].style.backgroundColor = "rgba(0,0,0,0)";
 	btns[index].style.backgroundColor = "rgba(0,0,0,0.6)";
 	contents[index].style.position = "absolute";
-	contents[index].style.top = "0";
+	contents[index].style.top = "-3%";
 	contents[index].style.width = "100%";
 	contents[index].style.maxHeight = `${contents[index].scrollHeight+20}`+"px";
 }
