@@ -98,6 +98,21 @@ const Mainclick = (index) =>{
 		node.style.backgroundColor = "";
 		node.style.color = "";
 	});
+	if(index === 0){
+		navipoint.innerHTML = "Document";
+	}
+	if(index === 1){
+		navipoint.innerHTML = "Videos";
+	}
+	if(index === 2){
+		navipoint.innerHTML = "Music";
+	}
+	if(index === 3){
+		navipoint.innerHTML = "Pictures";
+	}
+	if(index === 4){
+		navipoint.innerHTML = "Downloads";
+	}
 	realbtns[index].style.color = "white";
 	realbtns[index].style.backgroundColor = "rgba(0,0,0,0)";
 	btns[index].style.backgroundColor = "rgba(0,0,0,0.6)";
