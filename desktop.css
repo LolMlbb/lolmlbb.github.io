@@ -274,6 +274,10 @@ nav .time{
   opacity: 0;
   visibility: hidden;
 }
+.tabcontent div a:hover{
+  background-color: blue;
+  color : white;
+}
 
 
 
