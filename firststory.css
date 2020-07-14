@@ -3,7 +3,6 @@
 	opacity: 1;
 }
 .storypage1{
-	transition: .8s;
 	opacity: 0;
 	z-index: -1;
 	background-color: sandybrown;

@@ -43,7 +43,7 @@ charconfirm.addEventListener("click",()=>{
 	else if(localStorage.getItem("choosehero") === "kng"){
 		storyline.innerHTML = localStorage.getItem("kokong1");
 	}
-
+	storypage1.style.transition = ".8s";
 	storypage1.style.opacity = "1";
 	storypage1.style.zIndex = "1";
 }
