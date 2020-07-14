@@ -6,6 +6,9 @@ let charr = document.querySelectorAll(".charr");
 let storypage1 = document.getElementsByClassName("storypage1")[0];
 let storyhero = document.querySelector(".storypage1 #charhero");
 let storyline = document.querySelector(".storypage1 #storyline .storypg");
+let choose1label = document.getElementById("choose1label");
+let choose2label = document.getElementById("choose2label");
+
 
 if(typeof(Storage) !== "undefined"){
 	localStorage.setItem("ayemya1","အေးမြအိပ်ရာနိုးပီ");
