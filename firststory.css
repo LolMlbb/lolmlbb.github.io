@@ -1,0 +1,24 @@
+.intropage{
+	transition: 1s;
+	opacity: 1;
+}
+@media screen and (max-width: 2480px){
+	body{
+		display: none;
+	}
+}
+@media screen and (max-width: 4080px){
+	body{
+		display: none;
+	}
+}
+@media screen and (max-width: 1080px){
+	body{
+		display: block;
+	}
+}
+@media screen and (max-width: 720px){
+	body{
+		display: block;
+	}
+}

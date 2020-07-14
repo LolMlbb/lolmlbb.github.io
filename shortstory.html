@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="firststory.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=GHKKengtung' />
+    
+    <style>
+    
+    body{
+    				background-color: skyblue;
+    				overflow: hidden;
+    				user-select: none;
+    				}
+    
+    .sname{
+    				font-size: 80px;
+    				font-family:'GHK KengTung';
+    				color: lavender;
+    				-webkit-text-stroke: 3px black;
+    				}
+    
+    .sline{
+    				position: absolute;
+    				top: 50%;
+    				left: 50%;
+    				transform: translate(-50%,-50%);
+    				
+    				}
+    .sline .cc{
+    				border-radius: 25px;
+    				background-color: yellow;
+    				padding: 10px;
+    				width: 390px;
+    				height: 350px;
+    				display: flex;
+    				flex-direction: column;
+    				align-items: center;
+    				}
+    				
+   			.choosec{
+   							font-weight: bold;
+                            transition: .6s;
+                            visibility: hidden;
+                            opacity: 0;
+   							}
+            .choosec .cname{
+                background-color: grey;
+                padding : 5px;
+                margin : 3px;
+                color : white;
+            }
+   							
+   				.choosec button{
+   								background-color: purple;
+   								color: white;
+   								font-weight: bold;
+   								}
+    		.warn{
+    						background-color: red;
+    						color: white;
+                            margin: 3px;
+    						position: absolute;
+    		 			bottom: 30px;
+                        display: flex;
+                        justify-content: center;
+    						}		
+    
+    </style>
+    
+    
+    
+</head>
+<body>   
+
+ <div class="intropage">
+    <h1
+    class="sname"align="center">ဇာတ်လမ်းတို</h1>
+ 
+ 
+    <div class="sline">
+    <div class="cc">
+    <h4>ဇာတ်ကောင်ရွေးခြယ်ပါ</h4>
+    
+    <div>
+    <div><input class="charr" type="radio" name="zkong" value="ကောင်းကောင်း" oninput="inputchar(0)">ကောင်းကောင်း(မင်းသား)</div>
+    <div><input class="charr" type="radio" name="zkong" value="အေးမြ" oninput="inputchar(1)">အေးမြ(မင်းသမီး)</div>
+    <div><input class="charr" type="radio" name="zkong" value="ကိုကိုနိုင်" oninput="inputchar(2)">ကိုကိုနိုင်(ဗီလိန်)</div><br>
+    <div class="choosec" align="center">
+    <p>ဇာတ်ကောင်<span class="cname"></span>သေချာပြီလား?</p>
+    <button id="charconfirm">အိုကေ</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="warn" align="center">
+    သတိပြုရန် : ဇာတ်လမ်းပြီးဆုံးမှသာ ဇာတ်ကောင်ရွေးခြယ်မှုများပြန်လည်ပြုလုပ်ခွင့်ရှိသဖြင့် သေချာစဉ်းစားပြီးမှသာ ဆော့ကစားပါရန်။
+    </div>
+    </div>
+    <div class="storypage1">
+        
+    </div>
+<script type="text/javascript" src="storyscript.js">
+</script>    
+</body>
+</html>
