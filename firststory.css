@@ -6,6 +6,12 @@
 	transition: .8s;
 	opacity: 0;
 	z-index: -1;
+	background-color: sandybrown;
+	position: absolute;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right : 0;
 }
 @media screen and (max-width: 2480px){
 	body{
