@@ -238,7 +238,6 @@ nav .time{
   display: flex;
   flex-direction: column;
   padding : 5px;
-  overflow: hidden;
      margin-left : -5px;
 }
 .tabcontent div a{

@@ -88,7 +88,7 @@ const realbtns = document.querySelectorAll(".tabbtn div button");
 
 const Mainclick = (index) =>{
 	contents.forEach((node)=>{
-		node.style.maxHeight = "0";
+		node.style.display = "none";
 	});
 	btns.forEach((node)=>{
 		node.style.backgroundColor = "";
@@ -119,8 +119,6 @@ const Mainclick = (index) =>{
 	realbtns[index].style.color = "white";
 	realbtns[index].style.backgroundColor = "rgba(0,0,0,0)";
 	btns[index].style.backgroundColor = "rgba(0,0,0,0.6)";
-	contents[index].style.position = "absolute";
-	contents[index].style.top = "-3%";
-	contents[index].style.width = "100%";
-	contents[index].style.maxHeight = `${contents[index].scrollHeight+20}`+"px";
+	contents[index].style.display = "block";
+	
 }
