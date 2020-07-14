@@ -2,6 +2,11 @@
 	transition: 1s;
 	opacity: 1;
 }
+.storypage1{
+	transition: .8s;
+	opacity: 0;
+	z-index: -1;
+}
 @media screen and (max-width: 2480px){
 	body{
 		display: none;
