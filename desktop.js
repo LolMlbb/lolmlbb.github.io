@@ -70,7 +70,7 @@ const muopen = () =>{
 const downopen = () =>{
 	main.classList.toggle("maincl");
 	main.classList.toggle("mainop");
-	navipoint.innerHTML = "Downloads";
+	navipoint.innerHTML = "Game";
 	desktop.classList.toggle("disabledesk");
 	Mainclick(4);
 }
@@ -111,7 +111,10 @@ const Mainclick = (index) =>{
 		navipoint.innerHTML = "Pictures";
 	}
 	if(index === 4){
-		navipoint.innerHTML = "Downloads";
+		navipoint.innerHTML = "Game";
+	}
+	if(index === 5){
+		navipoint.innerHTML = "HardDisk";
 	}
 	realbtns[index].style.color = "white";
 	realbtns[index].style.backgroundColor = "rgba(0,0,0,0)";
