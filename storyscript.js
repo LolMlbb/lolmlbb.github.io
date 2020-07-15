@@ -13,7 +13,7 @@ let choose2label = document.getElementById("choose2label");
 if(typeof(Storage) !== "undefined"){
 	localStorage.setItem("ayemya1","အေးမြအိပ်ရာနိုးပီ");
 	localStorage.setItem("kokong1","<div align='center'><iframe class='iframeedit' src='kokonaing1.html' frameborder=0></div>");
-	localStorage.setItem("kaungkaung1","တော်ဝင်မင်းသားတစ်ပါးလို ချမ်းသာကြွယ်ဝခြင်းနှင့်အတူ ကိုကောင်းကောင်းတစ်ယောက် ဇိမ်ခံရသည့်အခိုက်အတန့်ဆိုသည်မှာ ဘယ်တုန်းကမှမရှိ။ ကြွက်တွင်းလောက်တောင်မခမ်းနား၊ မိုးရွာရင်တောင်မိုးမလုံသည့်ခေါင်းမိုးတစ်စုံ၊ ထိုကဲ့သို့သောနေရာတွင် နေထိုင်ရသည့်ကိုကောင်းအတွက် မနက်စာ စားစရာဆိုရာမှာလည်း ပေါင်မုန့်ခြောက်နှင့် နက်စ်ပလိန်းတစ်ခွက်မျှသာ");
+	localStorage.setItem("kaungkaung1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.html' frameborder=0></div>");
 }
 const inputchar = (index) =>{
 	if(typeof(Storage) !== "undefined"){
