@@ -10,6 +10,7 @@ let chooselabel1 = document.getElementById("choose1label");
 let chooselabel2 = document.getElementById("choose2label");
 let storyok = document.getElementById("storyok");
 let realchoice = document.querySelectorAll(".choice #realchoice");
+let buttonalter = document.getElementById("buttonalter");
 
 	localStorage.setItem("clabel1","");
 	localStorage.setItem("clabel2","");
@@ -38,6 +39,12 @@ const inputchar = (index) =>{
 }
 }
 charconfirm.addEventListener("click",()=>{
+	chooselabel1.style.opacity = "0";
+	chooselabel2.style.opacity = "0";
+	setTimeout(()=>{
+		chooselabel1.style.opacity = "1";
+		chooselabel2.style.opacity = "1";
+	},8000);
 	if(typeof(Storage) !== "undefined"){
 	intropage.style.opacity = "0";
 	intropage.style.zIndex = "-1";
@@ -72,17 +79,23 @@ const ingamechoose = (index) =>{
 const confirmclick = () =>{
 	storyline.style.visibility = "hidden";
 	storyline.style.opacity = "0";
+	chooselabel1.style.opacity = "0";
+	chooselabel2.style.opacity = "0";
 	setTimeout(()=>{
-		storyline.style.transition = "2.5s";
 		storyline.style.visibility = "visible";
 		storyline.style.opacity = "1";
 	},500);
+	setTimeout(()=>{
+		chooselabel1.style.opacity = "1";
+		chooselabel2.style.opacity = "1";
+	},8000);
 	if(typeof(Storage) !== "undefined"){
 		if(localStorage.getItem("choosehero") === "kgkg"){
 			if(localStorage.getItem("userchoice") === "ans1"){
 				storyline.innerHTML = localStorage.getItem("kaungkaung1.1");
-				chooselabel1.innerHTML = "";
-				chooselabel2.innerHTML = "";
+				buttonalter.innerHTML = "<button id='kgkg11' class='storybutton'>အိုခေ</button>";
+				chooselabel1.innerHTML = "အတန်းထဲရည်းစားစာသွားပေးမယ်";
+				chooselabel2.innerHTML = "ပြန်တဲ့အချိန်လမ်းမှာလိုက်ပြောမယ်";
 			}
 			else{
 				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
