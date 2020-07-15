@@ -44,6 +44,12 @@
 #storyok{
 	background-color: purple;
 	color : white;
+	-webkit-appearance : none;
+	border : none;
+	outline : none;
+	height : 50px;
+	width: 50px;
+	border-radius: 50px;
 }
 #storyline .choice{
 	padding : 5px;
