@@ -48,7 +48,7 @@
 #storyline .choice{
 	padding : 5px;
 	background-color: rgba(0,0,0,0.6);
-	padding : 5px;
+	padding-left : 15px;
 	border-radius: 15px;
 	color : white;
 	font-size: 15px;
