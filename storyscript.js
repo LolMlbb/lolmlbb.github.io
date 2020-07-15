@@ -6,8 +6,8 @@ let charr = document.querySelectorAll(".charr");
 let storypage1 = document.getElementsByClassName("storypage1")[0];
 let storyhero = document.querySelector(".storypage1 #charhero");
 let storyline = document.querySelector(".storypage1 #storyline .storypg");
-let choose1label = document.getElementById("choose1label");
-let choose2label = document.getElementById("choose2label");
+let chooselabel1 = document.getElementById("choose1label");
+let chooselabel2 = document.getElementById("choose2label");
 
 
 if(typeof(Storage) !== "undefined"){
@@ -37,15 +37,39 @@ charconfirm.addEventListener("click",()=>{
 	intropage.style.zIndex = "-1";
 	localStorage.setItem("storyresume",storypage1);
 	storyhero.innerHTML = cname.textContent;
+
+
+
+
 	if(localStorage.getItem("choosehero") === "kgkg"){
 		storyline.innerHTML = localStorage.getItem("kaungkaung1");
+		localStorage.setItem("clabel1","ချစ်မိသွားမယ်");
+		localStorage.setItem("clabel2","ဂရုမစိုက်ပဲနေတော့မယ်");
+		chooselabel1.innerHTML = localStorage.getItem("clabel1");
+		chooselabel2.innerHTML = localStorage.getItem("clabel2");
 	}
+
+
+
+
+
 	else if(localStorage.getItem("choosehero") === "am"){
 		storyline.innerHTML = localStorage.getItem("ayemya1");
 	}
+
+
+
+
+
 	else if(localStorage.getItem("choosehero") === "kng"){
 		storyline.innerHTML = localStorage.getItem("kokong1");
 	}
+
+
+
+
+
+
 	setTimeout(()=>{
 	storypage1.style.transition = "6s";
 	storypage1.style.opacity = "1";

@@ -51,6 +51,9 @@
 	width: 50px;
 	border-radius: 50px;
 }
+#storyok:hover{
+	background-color: black;
+}
 #storyline .choice{
 	padding : 5px;
 	background-color: rgba(0,0,0,0.6);
