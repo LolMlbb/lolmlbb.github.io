@@ -47,7 +47,7 @@ charconfirm.addEventListener("click",()=>{
 		storyline.innerHTML = localStorage.getItem("kokong1");
 	}
 	setTimeout(()=>{
-	storypage1.style.transition = "3s";
+	storypage1.style.transition = "6s";
 	storypage1.style.opacity = "1";
 	storypage1.style.zIndex = "1";
 },500);

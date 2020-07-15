@@ -31,13 +31,14 @@
                     }
     .sline .cc{
                     border-radius: 25px;
-                    background-color: yellow;
+                    background-color: skyblue;
                     padding: 10px;
                     width: 390px;
                     height: 350px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    box-shadow: 12px 12px 24px 0 rgba(0,0,0,0.2), -12px -12px 24px 0 rgba(255,255,255,0.3);
                     }
                     
             .choosec{
@@ -54,8 +55,14 @@
             }
                             
                 .choosec button{
-                                background-color: purple;
-                                color: white;
+                                width : 50px;
+                                height: 50px;
+                                border-radius: 50px;
+                                -webkit-appearance : none;
+                                border: none;
+                                outline : none;
+                                box-shadow: 10px 10px 24px 0 rgba(0,0,0,0.5), -10px -10px 24px 0 rgba(255,255,255,0.4);
+                                background-color: skyblue;
                                 font-weight: bold;
                                 }
             .warn{
@@ -109,10 +116,10 @@
         <div id="storyline">
             <p class="storypg"></p>
             <div class="choice">
-                <input type="radio" name="quesinsight" id="choice1radio"><span class="choice1label">hi</span>
+                <input type="radio" name="quesinsight" id="realchoice"><span class="choice1label">hi</span>
             <br><br>
            
-                <input type="radio" name="quesinsight" id="choice2radio"><span class="choice2label">hi</span>
+                <input type="radio" name="quesinsight" id="realchoice"><span class="choice2label">hi</span>
             </div>
             <div align="center">
             <button id="storyok">အိုခေ</button>
