@@ -9,12 +9,17 @@ let storyline = document.querySelector(".storypage1 #storyline .storypg");
 let chooselabel1 = document.getElementById("choose1label");
 let chooselabel2 = document.getElementById("choose2label");
 let storyok = document.getElementById("storyok");
+let realchoice = document.querySelectorAll(".choice #realchoice");
 
-
+	localStorage.setItem("clabel1","");
+	localStorage.setItem("clabel2","");
+	localStorage.setItem("choosehero","");
+	localStorage.setItem("userchoice","");
 if(typeof(Storage) !== "undefined"){
 	localStorage.setItem("ayemya1","အေးမြအိပ်ရာနိုးပီ");
 	localStorage.setItem("kokong1","<div align='center'><iframe class='iframeedit' src='kokonaing1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.html' frameborder=0></div>");
+	localStorage.setItem("kaungkaung1.1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.1.html' frameborder=0></div>");
 }
 const inputchar = (index) =>{
 	if(typeof(Storage) !== "undefined"){
@@ -58,3 +63,27 @@ charconfirm.addEventListener("click",()=>{
 },500);
 }
 });
+const ingamechoose = (index) =>{
+	if(typeof(Storage) !=="undefined"){
+		localStorage.setItem("userchoice",realchoice[index].value);
+		}
+	}
+
+const confirmclick = () =>{
+	if(typeof(Storage) !== "undefined"){
+		if(localStorage.getItem("choosehero") === "kgkg"){
+			if(localStorage.getItem("userchoice") === "ans1"){
+				storyline.innerHTML = localStorage.getItem("kaungkaung1.1");
+			}
+			else{
+				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
+			}
+		}
+		else if(localStorage.getItem("choosehero") === "am"){
+			
+		}
+		else if(localStorage.getItem("choosehero") === "kng"){
+			
+		}
+	}
+}

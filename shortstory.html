@@ -119,12 +119,12 @@
         <div id="storyline">
             <p class="storypg"></p><br>
             <div class="choice">
-                <input type="radio" name="quesinsight" id="realchoice"> &nbsp;<span id="choose1label">hi</span>
+                <input oninput="ingamechoose(0)" type="radio" name="quesinsight" id="realchoice" value="ans1"> &nbsp;<span id="choose1label">hi</span>
             <br><br>
-                <input type="radio" name="quesinsight" id="realchoice"> &nbsp;<span id="choose2label">hi</span>
+                <input oninput="ingamechoose(1)" type="radio" name="quesinsight" id="realchoice" value="ans2"> &nbsp;<span id="choose2label">hi</span>
             </div><br>
             <div align="center">
-            <button id="storyok">အိုခေ</button>
+            <button id="storyok" onclick="confirmclick()">အိုခေ</button>
         </div>
     </div></div>
 <script type="text/javascript" src="storyscript.js">
