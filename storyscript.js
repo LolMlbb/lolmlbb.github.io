@@ -57,7 +57,7 @@ charconfirm.addEventListener("click",()=>{
 		storyline.innerHTML = localStorage.getItem("kokong1");
 	}
 	setTimeout(()=>{
-	storypage1.style.transition = "6s";
+	storypage1.style.transition = "3s";
 	storypage1.style.opacity = "1";
 	storypage1.style.zIndex = "1";
 },500);
@@ -70,10 +70,19 @@ const ingamechoose = (index) =>{
 	}
 
 const confirmclick = () =>{
+	storyline.style.visibility = "hidden";
+	storyline.style.opacity = "0";
+	setTimeout(()=>{
+		storyline.style.transition = "2.5s";
+		storyline.style.visibility = "visible";
+		storyline.style.opacity = "1";
+	},500);
 	if(typeof(Storage) !== "undefined"){
 		if(localStorage.getItem("choosehero") === "kgkg"){
 			if(localStorage.getItem("userchoice") === "ans1"){
 				storyline.innerHTML = localStorage.getItem("kaungkaung1.1");
+				chooselabel1.innerHTML = "";
+				chooselabel2.innerHTML = "";
 			}
 			else{
 				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
