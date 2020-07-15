@@ -8,6 +8,7 @@ let storyhero = document.querySelector(".storypage1 #charhero");
 let storyline = document.querySelector(".storypage1 #storyline .storypg");
 let chooselabel1 = document.getElementById("choose1label");
 let chooselabel2 = document.getElementById("choose2label");
+let storyok = document.getElementById("storyok");
 
 
 if(typeof(Storage) !== "undefined"){
@@ -37,10 +38,6 @@ charconfirm.addEventListener("click",()=>{
 	intropage.style.zIndex = "-1";
 	localStorage.setItem("storyresume",storypage1);
 	storyhero.innerHTML = cname.textContent;
-
-
-
-
 	if(localStorage.getItem("choosehero") === "kgkg"){
 		storyline.innerHTML = localStorage.getItem("kaungkaung1");
 		localStorage.setItem("clabel1","ချစ်မိသွားမယ်");
@@ -48,28 +45,12 @@ charconfirm.addEventListener("click",()=>{
 		chooselabel1.innerHTML = localStorage.getItem("clabel1");
 		chooselabel2.innerHTML = localStorage.getItem("clabel2");
 	}
-
-
-
-
-
 	else if(localStorage.getItem("choosehero") === "am"){
 		storyline.innerHTML = localStorage.getItem("ayemya1");
 	}
-
-
-
-
-
 	else if(localStorage.getItem("choosehero") === "kng"){
 		storyline.innerHTML = localStorage.getItem("kokong1");
 	}
-
-
-
-
-
-
 	setTimeout(()=>{
 	storypage1.style.transition = "6s";
 	storypage1.style.opacity = "1";
