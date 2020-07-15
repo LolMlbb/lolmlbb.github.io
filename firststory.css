@@ -36,6 +36,13 @@
 	border-radius : 25px;
 	padding-bottom: 5px;
 }
+#storyok{
+	background-color: purple;
+	color : white;
+}
+#storyline .choice{
+	margin-left: 20px;
+}
 @media screen and (max-width: 4080px){
 	body{
 		display: none;
