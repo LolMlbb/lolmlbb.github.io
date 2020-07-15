@@ -40,8 +40,8 @@ charconfirm.addEventListener("click",()=>{
 	storyhero.innerHTML = cname.textContent;
 	if(localStorage.getItem("choosehero") === "kgkg"){
 		storyline.innerHTML = localStorage.getItem("kaungkaung1");
-		localStorage.setItem("clabel1","ချစ်မိသွားမယ်");
-		localStorage.setItem("clabel2","ဂရုမစိုက်ပဲနေတော့မယ်");
+		localStorage.setItem("clabel1","အချစ်ကိုသူသိအောင်ပြမယ်");
+		localStorage.setItem("clabel2","စိတ်ထဲကနေပဲချစ်သွားတော့မယ်");
 		chooselabel1.innerHTML = localStorage.getItem("clabel1");
 		chooselabel2.innerHTML = localStorage.getItem("clabel2");
 	}
