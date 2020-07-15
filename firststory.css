@@ -9,7 +9,7 @@
 .storypage1{
 	opacity: 0;
 	z-index: -1;
-	background-color: sandybrown;
+	background-color: blue;
 	position: absolute;
 	top : 0;
 	bottom : 0;
@@ -38,7 +38,7 @@
 	background-color: skyblue;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	height : 80%;
+	height : 70%;
 	border-radius : 25px;
 	padding-bottom: 5px;
 }
@@ -48,6 +48,12 @@
 }
 #storyline .choice{
 	margin-left: 20px;
+}
+.choice{
+	background-color: rgba(0,0,0,0.6);
+	padding : 5px;
+	border-radius: 15px;
+	color : white;
 }
 .iframeedit{
 	width : 100%;
