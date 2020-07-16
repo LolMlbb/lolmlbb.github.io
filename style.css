@@ -144,7 +144,7 @@ nav .brand{
 	}
 	nav .link_container{
 		position: absolute;
-		height: 55vh;
+		height: 70vh;
 		background-color: #ddd;
 		top : 6vh;
 		left: 0;
@@ -158,9 +158,9 @@ nav .brand{
 		z-index: 1;
 		overflow: hidden;
 	}
-	nav .link_container li{
+	/*nav .link_container li{
 		opacity: 0;
-	}
+	}*/
 	.hidebar{
 		transform: translateX(-100%);
 	}
