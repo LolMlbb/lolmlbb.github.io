@@ -19,17 +19,17 @@ logo.addEventListener("click",rocket);
 
 const showbar = () =>{
 	linkcontainer.classList.toggle("showbar");
-	// links.forEach((node,index) =>{
-	// 	if(node.style.animation){
-	// 		node.style.animation = "";
-	// 	}
-	// 	else{
+	links.forEach((node,index) =>{
+		if(node.style.animation){
+			node.style.animation = "";
+		}
+		else{
 			
-	// 		node.style.animation = `lilabel .5s ease forwards ${index /8}s`;
+			node.style.animation = `lilabel .5s ease forwards ${index /15}s`;
 
 		
-	// 	}
-	// });
+		}
+	});
 }
 
 

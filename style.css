@@ -158,9 +158,9 @@ nav .brand{
 		z-index: 1;
 		overflow: hidden;
 	}
-	/*nav .link_container li{
+	nav .link_container li{
 		opacity: 0;
-	}*/
+	}
 	.hidebar{
 		transform: translateX(-100%);
 	}
