@@ -17,7 +17,7 @@ let buttonalter = document.getElementById("buttonalter");
 	localStorage.setItem("choosehero","");
 	localStorage.setItem("userchoice","");
 if(typeof(Storage) !== "undefined"){
-	localStorage.setItem("ayemya1","အေးမြအိပ်ရာနိုးပီ");
+	localStorage.setItem("ayemya1","<div align='center'><iframe class='iframeedit' src='ayemya1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1.1.1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.1.1.html' frameborder=0></div>");
 	localStorage.setItem("kokong1","<div align='center'><iframe class='iframeedit' src='kokonaing1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.html' frameborder=0></div>");
@@ -60,6 +60,8 @@ charconfirm.addEventListener("click",()=>{
 	}
 	else if(localStorage.getItem("choosehero") === "am"){
 		storyline.innerHTML = localStorage.getItem("ayemya1");
+		chooselabel1.innerHTML = "အပတ်စဥ်စာမေးပွဲမှာ ပထမဆင့်ရအောင်လုပ်ပြမယ်";
+		chooselabel2.innerHTML = "ကျောင်းလစ်မယ်";
 	}
 	else if(localStorage.getItem("choosehero") === "kng"){
 		storyline.innerHTML = localStorage.getItem("kokong1");
@@ -97,19 +99,18 @@ const confirmclick = () =>{
 	},8000);
 	if(typeof(Storage) !== "undefined"){
 		if(localStorage.getItem("choosehero") === "kgkg"){
-			if(localStorage.getItem("userchoice") === "ans1"){
-				storyline.innerHTML = localStorage.getItem("kaungkaung1.1");
-				buttonalter.innerHTML = "<button onclick='kgkg11click()' id='kgkg11' class='storybutton'>အိုခေ</button>";
-				const kgkg11 = document.getElementById("kgkg11");
-				chooselabel1.innerHTML = "အတန်းထဲရည်းစားစာသွားပေးမယ်";
-				chooselabel2.innerHTML = "ပြန်တဲ့အချိန်လမ်းမှာလိုက်ပြောမယ်";
-			}
-			else{
-				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
+					if(localStorage.getItem("userchoice") === "ans1"){
+						storyline.innerHTML = localStorage.getItem("kaungkaung1.1");
+						buttonalter.innerHTML = "<button onclick='kgkg11click()' id='kgkg11' class='storybutton'>အိုခေ</button>";
+						const kgkg11 = document.getElementById("kgkg11");
+						chooselabel1.innerHTML = "အတန်းထဲရည်းစားစာသွားပေးမယ်";
+						chooselabel2.innerHTML = "ပြန်တဲ့အချိန်လမ်းမှာလိုက်ပြောမယ်";
 			}
 		}
 		else if(localStorage.getItem("choosehero") === "am"){
-			
+			if(localStorage.getItem("userchoice") === "ans1"){
+				buttonalter.innerHTML = "<button onclick='am11click()' id='kgkg11' class='storybutton'>အိုခေ</button>";
+			}
 		}
 		else if(localStorage.getItem("choosehero") === "kng"){
 			
@@ -120,12 +121,18 @@ const confirmclick = () =>{
 
 const kgkg11click = () =>{
 		storyline.style.opacity = "0";
+		chooselabel1.style.opacity = "0";
+		chooselabel2.style.opacity = "0";
 
 	setTimeout(()=>{
 		storyline.style.transition = "2s";
 		storyline.style.visibility = "visible";
 		storyline.style.opacity = "1";
 	},500);
+	setTimeout(()=>{
+		chooselabel1.style.opacity = "1";
+		chooselabel2.style.opacity = "1";
+	},8000);
 	if(localStorage.getItem("userchoice") === "ans1"){
 		storyline.innerHTML = localStorage.getItem("kaungkaung1.1.1");
 		chooselabel1.innerHTML = "အေးမြဆီက ဖုန်းနံပါတ်တောင်းမယ်";
