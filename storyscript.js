@@ -18,6 +18,7 @@ let buttonalter = document.getElementById("buttonalter");
 	localStorage.setItem("userchoice","");
 if(typeof(Storage) !== "undefined"){
 	localStorage.setItem("ayemya1","အေးမြအိပ်ရာနိုးပီ");
+	localStorage.setItem("kaungkaung1.1.1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.1.1.html' frameborder=0></div>");
 	localStorage.setItem("kokong1","<div align='center'><iframe class='iframeedit' src='kokonaing1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1.1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.1.html' frameborder=0></div>");
@@ -81,10 +82,15 @@ const confirmclick = () =>{
 	storyline.style.opacity = "0";
 	chooselabel1.style.opacity = "0";
 	chooselabel2.style.opacity = "0";
+
 	setTimeout(()=>{
+		storyline.style.transition = "2s";
 		storyline.style.visibility = "visible";
 		storyline.style.opacity = "1";
 	},500);
+	setTimeout(()=>{
+		storyline.style.transition = "none";
+	},2000);
 	setTimeout(()=>{
 		chooselabel1.style.opacity = "1";
 		chooselabel2.style.opacity = "1";
@@ -93,7 +99,8 @@ const confirmclick = () =>{
 		if(localStorage.getItem("choosehero") === "kgkg"){
 			if(localStorage.getItem("userchoice") === "ans1"){
 				storyline.innerHTML = localStorage.getItem("kaungkaung1.1");
-				buttonalter.innerHTML = "<button id='kgkg11' class='storybutton'>အိုခေ</button>";
+				buttonalter.innerHTML = "<button onclick='kgkg11click()' id='kgkg11' class='storybutton'>အိုခေ</button>";
+				const kgkg11 = document.getElementById("kgkg11");
 				chooselabel1.innerHTML = "အတန်းထဲရည်းစားစာသွားပေးမယ်";
 				chooselabel2.innerHTML = "ပြန်တဲ့အချိန်လမ်းမှာလိုက်ပြောမယ်";
 			}
@@ -108,4 +115,23 @@ const confirmclick = () =>{
 			
 		}
 	}
+}
+// const kgkg11 = document.getElementById("kgkg11");
+
+const kgkg11click = () =>{
+		storyline.style.opacity = "0";
+
+	setTimeout(()=>{
+		storyline.style.transition = "2s";
+		storyline.style.visibility = "visible";
+		storyline.style.opacity = "1";
+	},500);
+	if(localStorage.getItem("userchoice") === "ans1"){
+		storyline.innerHTML = localStorage.getItem("kaungkaung1.1.1");
+		chooselabel1.innerHTML = "အေးမြဆီက ဖုန်းနံပါတ်တောင်းမယ်";
+		chooselabel2.innerHTML = "အရေးမလုပ်ပဲ အေးတိအေးစက်နေမယ်";
+	}
+	else{
+				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
+			}
 }

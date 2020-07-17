@@ -50,7 +50,7 @@
 	width: 50px;
 	border-radius: 50px;
 }
-#storyok:hover{
+.storybutton:hover{
 	background-color: black;
 }
 #storyline .choice{
