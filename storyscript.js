@@ -22,6 +22,8 @@ if(typeof(Storage) !== "undefined"){
 	localStorage.setItem("kokong1","<div align='center'><iframe class='iframeedit' src='kokonaing1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.html' frameborder=0></div>");
 	localStorage.setItem("kaungkaung1.1","<div align='center'><iframe class='iframeedit' src='kaungkaung1.1.html' frameborder=0></div>");
+	localStorage.setItem("ayemya1.1","<div align='center'><iframe class='iframeedit' src='ayemya1.1.html' frameborder=0></div>");
+	localStorage.setItem("ayemya1.2","<div align='center'><iframe class='iframeedit' src='ayemya1.2.html' frameborder=0></div>");
 }
 const inputchar = (index) =>{
 	if(typeof(Storage) !== "undefined"){
@@ -109,7 +111,16 @@ const confirmclick = () =>{
 		}
 		else if(localStorage.getItem("choosehero") === "am"){
 			if(localStorage.getItem("userchoice") === "ans1"){
+				storyline.innerHTML = localStorage.getItem("ayemya1.1");
 				buttonalter.innerHTML = "<button onclick='am11click()' id='kgkg11' class='storybutton'>အိုခေ</button>";
+				chooselabel1.innerHTML = "သူ့အချစ်ကိုငြင်းမယ်";
+				chooselabel2.innerHTML = "သူ့ကိုချစ်မိသွားပီ အပြာရောင်ဝတ်လာမယ်";
+			}
+			if(localStorage.getItem("userchoice") === "ans2"){
+				storyline.innerHTML = localStorage.getItem("ayemya1.2");
+				buttonalter.innerHTML = "<button onclick='am11click()' id='kgkg11' class='storybutton'>အိုခေ</button>";
+				chooselabel1.innerHTML = "ဘေးမှာရှိတဲ့ ဓါးနဲ့ထိုးသတ်မယ်";
+				chooselabel2.innerHTML = "မရတော့ဘူး ထန်လာပီ အလိုးခံလိုက်တော့မယ်";
 			}
 		}
 		else if(localStorage.getItem("choosehero") === "kng"){
@@ -137,6 +148,32 @@ const kgkg11click = () =>{
 		storyline.innerHTML = localStorage.getItem("kaungkaung1.1.1");
 		chooselabel1.innerHTML = "အေးမြဆီက ဖုန်းနံပါတ်တောင်းမယ်";
 		chooselabel2.innerHTML = "အရေးမလုပ်ပဲ အေးတိအေးစက်နေမယ်";
+	}
+	else{
+				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
+			}
+}
+const am11click = () =>{
+		storyline.style.opacity = "0";
+		chooselabel1.style.opacity = "0";
+		chooselabel2.style.opacity = "0";
+
+	setTimeout(()=>{
+		storyline.style.transition = "2s";
+		storyline.style.visibility = "visible";
+		storyline.style.opacity = "1";
+	},500);
+	setTimeout(()=>{
+		chooselabel1.style.opacity = "1";
+		chooselabel2.style.opacity = "1";
+	},8000);
+	if(localStorage.getItem("userchoice") === "ans1"){
+		storyline.innerHTML = localStorage.getItem("ayemya1.1.1");
+		chooselabel1.innerHTML = "သူ့အချစ်ကိုငြင်းမယ်";
+		chooselabel2.innerHTML = "သူ့ကိုချစ်မိသွားပီ။အပြာရောင်အင်္ကျီဝတ်လာမယ်";
+	}
+	else if(localStorage.getItem("userchoice") === "ans2"){
+
 	}
 	else{
 				alert("တစ်ခုခုတော့ရွေးအုံးလေ");
