@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=0">
+	<title>...</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+	margin: 0;
+	padding : 0;
+	overflow : hidden;
+}
+.background{
+	background-color: rgb(27,43,52);
+	position: absolute;
+	top : 0;
+	left : 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	height : 100%;
+	z-index: -1;
+}
+.textkeyboard{
+	transform: translateY(120%);
+	background-color: rgb(36,37,38);
+	position: absolute;
+	bottom: 0;
+	height: 50%;
+	width: 100%;
+}
+.textkeyboard .textkeyboardedit{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(20,21,24);
+	margin : 0;
+	padding : 0;
+	position: relative;
+}
+.textkeyboard .textkeyboardedit div{
+	display: flex;
+	justify-content: center;
+	height : 24%;
+	margin-bottom: 2px;
+}
+.textkeyboard .textkeyboardedit div button, .atzextra{
+	color : white;
+	background-color: rgb(51,52,54);
+	outline: none;
+	-webkit-appearance : none;
+	margin : 1px;
+	border : none;
+	border-radius: 15px;
+	height: 100%;
+	font-family: 'Poppins', sans-serif;
+	font-size : 20px;
+}
+.textkeyboard .textkeyboardedit div .atz, .txtnorkey{
+	width: 10%;
+}
+.txtsecondrow button:nth-child(10){
+	display: none;
+}
+.numkeyboard{
+	background-color: blue;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 55%;
+	transform: translateY(120%);
+}
+.numkeyboardedit{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: grey;
+}
+.numkeyboardedit div{
+	width: 100%;
+	height: 25%;
+	display: flex;
+}
+
+.numkeyboardedit div button{
+	width : 25%;
+	height: 100%;
+	border : none;
+	-webkit-appearance : none;
+	outline : none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	background-color: rgb(51,52,54);
+	color : white;
+}
+.space{
+	width : 20%;
+}
+.cap, .del{
+	width: 15%;
+}
+.enter{
+	width : 15%;
+}
+.inputbox{
+	position: absolute;
+	top : 8vh;
+	left: 50%;
+	transform: translate(-50%);
+}
+.inputitems{
+	background-color: skyblue;
+	width: 380px;
+	height : 200px;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#username, #userphone{
+	outline: none;
+}
+.txttransform{
+	text-transform: uppercase;
+}
+.txtkeyappear{
+	transform: translateY(0);
+}
+.bordertransform{
+	border-color : blue;
+}
+@media screen and (max-width: 720px){
+	.textkeyboard{
+		height : 40%;
+	}
+	.numkeyboard{
+		height : 40%;
+	}
+}
+	</style>
+</head>
+<body>
+	<div class="inputbox">
+<div class="inputitems">
+	<table>
+		<tr>
+<td>Yourname : </td>
+<td><input type="text" name="username" id="username" onfocus="namefocus()" readonly></td>
+</tr>
+<tr>
+<td>Phone Number : </td>
+<td><input type="text" name="userphone" id="userphone" onfocus="phonefocus()" readonly></td>
+</tr>
+</table>
+</div></div>
+
+
+
+
+
+
+
+
+	<div class="background" onclick="backgroundclick()">
+		
+	</div>
+	<div class="textkeyboard">
+<div class="textkeyboardedit">
+	<div class="txtfirstrow">
+		<button onclick="atzclick(0)" class="atz">q</button>
+		<button onclick="atzclick(1)" class="atz">w</button>
+		<button onclick="atzclick(2)" class="atz">e</button>
+		<button onclick="atzclick(3)" class="atz">r</button>
+		<button onclick="atzclick(4)" class="atz">t</button>
+		<button onclick="atzclick(5)" class="atz">y</button>
+		<button onclick="atzclick(6)" class="atz">u</button>
+		<button onclick="atzclick(7)" class="atz">i</button>
+		<button onclick="atzclick(8)" class="atz">o</button>
+		<button onclick="atzclick(9)" class="atz">p</button>
+	</div>
+	<div class="txtsecondrow">
+		<button onclick="atzclick(10)" class="atz">a</button>
+		<button onclick="atzclick(11)" class="atz">s</button>
+		<button onclick="atzclick(12)" class="atz">d</button>
+		<button onclick="atzclick(13)" class="atz">f</button>
+		<button onclick="atzclick(14)" class="atz">g</button>
+		<button onclick="atzclick(15)" class="atz">h</button>
+		<button onclick="atzclick(16)" class="atz">j</button>
+		<button onclick="atzclick(17)" class="atz">k</button>
+		<button onclick="atzclick(18)" class="atz">l</button>
+		<button onclick="atzclick(19)" class="atz">ာ</button>
+	</div>
+	<div class="txtthirdrow">
+		<button class="cap" onclick="capclick()">Cap</button>
+		<button onclick="atzclick(20)" class="atz">z</button>
+		<button onclick="atzclick(21)" class="atz">x</button>
+		<button onclick="atzclick(22)" class="atz">c</button>
+		<button onclick="atzclick(23)" class="atz">v</button>
+		<button onclick="atzclick(24)" class="atz">b</button>
+		<button onclick="atzclick(25)" class="atz">n</button>
+		<button onclick="atzclick(26)" class="atz">m</button>
+		<button onclick="deleteclick()" class="del">Del</button>
+	</div>
+	<div class="txtfourthrow">
+		<button class="txtnorkey" onclick="ottclick()">123</button>
+		<button class="txtnorkey" onclick="changelang()">⟳</button>
+		<button class="txtnorkey misc" onclick="miscclick(0)">/</button>
+		<button class="space" onclick="spaceclick()">Space</button>
+		<button class="txtnorkey misc" onclick="miscclick(1)">.</button>
+		<button class="misc" onclick="miscclick(2)">.com</button>
+		<button class="enter" onclick="numdisboard()">↵</button>
+	</div>
+</div></div>
+<div class="numkeyboard">
+	<div class="numkeyboardedit">
+		<div class="numfirstrow">
+			<button class="otn" onclick="otnclick(0)">1</button>
+			<button class="otn" onclick="otnclick(1)">2</button>
+			<button class="otn" onclick="otnclick(2)">3</button>
+			<button onclick="abcclick()">Abc</button>
+		</div>
+		<div class="numsecondrow">
+			<button class="otn" onclick="otnclick(3)">4</button>
+			<button class="otn" onclick="otnclick(4)">5</button>
+			<button class="otn" onclick="otnclick(5)">6</button>
+			<button class="otn" onclick="otnclick(6)">-</button>
+		</div>
+		<div class="numthirdrow">
+			<button class="otn" onclick="otnclick(7)">7</button>
+			<button class="otn" onclick="otnclick(8)">8</button>
+			<button class="otn" onclick="otnclick(9)">9</button>
+			<button onclick="numdelclick()">DEL</button>
+		</div>
+		<div class="numfourthrow">
+			<button class="otn" onclick="otnclick(10)">*</button>
+			<button class="otn" onclick="otnclick(11)">0</button>
+			<button class="otn" onclick="otnclick(12)">#</button>
+			<button class="numdis" onclick="numdisboard()">↵</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	const username = document.getElementById("username");
+const userphone = document.getElementById("userphone");
+const textkeyboard = document.getElementsByClassName("textkeyboard")[0];
+const numkeyboard = document.getElementsByClassName("numkeyboard")[0];
+const atz = document.querySelectorAll(".atz");
+let txtsecondrow = document.getElementsByClassName("txtsecondrow")[0];
+let misc = document.querySelectorAll(".misc");
+const cap = document.getElementsByClassName("cap")[0];
+const background = document.getElementsByClassName("background")[0];
+let otn = document.querySelectorAll(".otn");
+const backgroundclick = () =>{
+	username.style.border = "1px solid black";
+	userphone.style.border = "1px solid black";
+	textkeyboard.classList.remove("txtkeyappear");
+	numkeyboard.classList.remove("txtkeyappear");
+}
+const miscclick = (index) =>{
+	
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value += misc[index].textContent;
+}
+	if(username.style.border === "1px solid blue"){
+		username.value += misc[index].textContent;
+	}
+}
+
+const namefocus = () =>{
+	username.style.border = "1px solid blue";
+	userphone.style.border = "1px solid black";
+	textkeyboard.style.transition = ".5s";
+	textkeyboard.classList.add("txtkeyappear");
+	numkeyboard.classList.remove("txtkeyappear");
+}
+const phonefocus = () =>{
+	numkeyboard.style.transition = ".5s";
+	username.style.border = "1px solid black";
+	userphone.style.border = "1px solid blue";
+	textkeyboard.classList.remove("txtkeyappear");
+	numkeyboard.classList.add("txtkeyappear");
+}
+const atzclick = (index) =>{
+	
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value += atz[index].textContent;
+}
+	if(username.style.border === "1px solid blue"){
+		username.value += atz[index].textContent;
+	}
+}
+const deleteclick = () =>{
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value = userphone.value.slice(0,-1);
+}
+	if(username.style.border === "1px solid blue"){
+		username.value = username.value.slice(0,-1);
+	}
+}
+const changelang = () =>{
+	cap.style.color = "white";
+	if(atz[0].textContent === "q" || atz[0].textContent === "Q"){
+	atz[19].style.display = "block";
+	atz[0].textContent = "ဆ";
+	atz[1].textContent = "တ";
+	atz[2].textContent = "န";
+	atz[3].textContent = "မ";
+	atz[4].textContent = "အ";
+	atz[5].textContent = "ပ";
+	atz[6].textContent = "က";
+	atz[7].textContent = "င";
+	atz[8].textContent = "သ";
+	atz[9].textContent = "စ";
+	atz[10].textContent = "ေ";
+	atz[11].textContent = "ျ";
+	atz[12].textContent = "ိ";
+	atz[13].textContent = "်";
+	atz[14].textContent = "ါ";
+	atz[15].textContent = "့";
+	atz[16].textContent = "ြ";
+	atz[17].textContent = "ု";
+	atz[18].textContent = "ူ";
+	atz[19].textContent = "း";
+	atz[20].textContent = "ဖ";
+	atz[21].textContent = "ထ";
+	atz[22].textContent = "ခ";
+	atz[23].textContent = "လ";
+	atz[24].textContent = "ဘ";
+	atz[25].textContent = "ည";
+	atz[26].textContent = "ာ";
+	misc[0].textContent = "ရ";
+	misc[1].textContent = "ယ";
+}
+else if(atz[0].textContent === "ဆ" || atz[0].textContent === "စျ"){
+	atz[19].style.display = "none";
+	atz[0].textContent = "q";
+	atz[1].textContent = "w";
+	atz[2].textContent = "e";
+	atz[3].textContent = "r";
+	atz[4].textContent = "t";
+	atz[5].textContent = "y";
+	atz[6].textContent = "u";
+	atz[7].textContent = "i";
+	atz[8].textContent = "o";
+	atz[9].textContent = "p";
+	atz[10].textContent = "a";
+	atz[11].textContent = "s";
+	atz[12].textContent = "d";
+	atz[13].textContent = "f";
+	atz[14].textContent = "g";
+	atz[15].textContent = "h";
+	atz[16].textContent = "j";
+	atz[17].textContent = "k";
+	atz[18].textContent = "l";
+	atz[20].textContent = "z";
+	atz[21].textContent = "x";
+	atz[22].textContent = "c";
+	atz[23].textContent = "v";
+	atz[24].textContent = "b";
+	atz[25].textContent = "n";
+	atz[26].textContent = "m";
+	misc[0].textContent = "/";
+	misc[1].textContent = ".";
+}
+}
+const capclick = () =>{
+	if(atz[0].textContent === "q"){
+	cap.style.color = "lightgreen";
+	atz[0].textContent = "Q";
+	atz[1].textContent = "W";
+	atz[2].textContent = "E";
+	atz[3].textContent = "R";
+	atz[4].textContent = "T";
+	atz[5].textContent = "Y";
+	atz[6].textContent = "U";
+	atz[7].textContent = "I";
+	atz[8].textContent = "O";
+	atz[9].textContent = "P";
+	atz[10].textContent = "A";
+	atz[11].textContent = "S";
+	atz[12].textContent = "D";
+	atz[13].textContent = "F";
+	atz[14].textContent = "G";
+	atz[15].textContent = "H";
+	atz[16].textContent = "J";
+	atz[17].textContent = "K";
+	atz[18].textContent = "L";
+	atz[20].textContent = "Z";
+	atz[21].textContent = "X";
+	atz[22].textContent = "C";
+	atz[23].textContent = "V";
+	atz[24].textContent = "B";
+	atz[25].textContent = "N";
+	atz[26].textContent = "M";
+	}
+	else if(atz[0].textContent === "Q"){
+	cap.style.color = "white";
+	atz[0].textContent = "q";
+	atz[1].textContent = "w";
+	atz[2].textContent = "e";
+	atz[3].textContent = "r";
+	atz[4].textContent = "t";
+	atz[5].textContent = "y";
+	atz[6].textContent = "u";
+	atz[7].textContent = "i";
+	atz[8].textContent = "o";
+	atz[9].textContent = "p";
+	atz[10].textContent = "a";
+	atz[11].textContent = "s";
+	atz[12].textContent = "d";
+	atz[13].textContent = "f";
+	atz[14].textContent = "g";
+	atz[15].textContent = "h";
+	atz[16].textContent = "j";
+	atz[17].textContent = "k";
+	atz[18].textContent = "l";
+	atz[20].textContent = "z";
+	atz[21].textContent = "x";
+	atz[22].textContent = "c";
+	atz[23].textContent = "v";
+	atz[24].textContent = "b";
+	atz[25].textContent = "n";
+	atz[26].textContent = "m";
+	}
+	else if(atz[0].textContent === "ဆ"){
+		cap.style.color = "lightgreen";
+	atz[0].textContent = "စျ";
+	atz[1].textContent = "ဝ";
+	atz[2].textContent = "ဣ";
+	atz[3].textContent = "၎င်း";
+	atz[4].textContent = "ဤ";
+	atz[5].textContent = "၌";
+	atz[6].textContent = "ဥ";
+	atz[7].textContent = "၍";
+	atz[8].textContent = "ဿ";
+	atz[9].textContent = "ဏ";
+	atz[10].textContent = "ဗ";
+	atz[11].textContent = "ှ";
+	atz[12].textContent = "ီ";
+	atz[13].textContent = "္";
+	atz[14].textContent = "ွ";
+	atz[15].textContent = "ံ";
+	atz[16].textContent = "ဲ";
+	atz[17].textContent = "ဒ";
+	atz[18].textContent = "ဓ";
+	atz[19].textContent = "ဂ";
+	atz[20].textContent = "ဇ";
+	atz[21].textContent = "ဌ";
+	atz[22].textContent = "ဃ";
+	atz[23].textContent = "ဠ";
+	atz[24].textContent = "ဟ";
+	atz[25].textContent = "ဎ";
+	atz[26].textContent = "၏";
+	misc[0].textContent = "ဧ";
+	misc[1].textContent = "၊";
+}
+else if(atz[0].textContent === "စျ"){
+	cap.style.color = "white";
+	atz[0].textContent = "ဆ";
+	atz[1].textContent = "တ";
+	atz[2].textContent = "န";
+	atz[3].textContent = "မ";
+	atz[4].textContent = "အ";
+	atz[5].textContent = "ပ";
+	atz[6].textContent = "က";
+	atz[7].textContent = "င";
+	atz[8].textContent = "သ";
+	atz[9].textContent = "စ";
+	atz[10].textContent = "ေ";
+	atz[11].textContent = "ျ";
+	atz[12].textContent = "ိ";
+	atz[13].textContent = "်";
+	atz[14].textContent = "ါ";
+	atz[15].textContent = "့";
+	atz[16].textContent = "ြ";
+	atz[17].textContent = "ု";
+	atz[18].textContent = "ူ";
+		atz[19].textContent = "း";
+	atz[20].textContent = "ဖ";
+	atz[21].textContent = "ထ";
+	atz[22].textContent = "ခ";
+	atz[23].textContent = "လ";
+	atz[24].textContent = "ဘ";
+	atz[25].textContent = "ည";
+	atz[26].textContent = "ာ";
+	misc[0].textContent = "ရ";
+	misc[1].textContent = "ယ";
+	}
+}
+const spaceclick = () =>{
+	
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value += " ";
+}
+	if(username.style.border === "1px solid blue"){
+		username.value += " ";
+	}
+}
+const abcclick = () =>{
+	textkeyboard.classList.add("txtkeyappear");
+	numkeyboard.classList.remove("txtkeyappear");
+}
+const numdisboard = () =>{
+	numkeyboard.classList.remove("txtkeyappear");
+	userphone.style.border = "1px solid black";
+	textkeyboard.classList.remove("txtkeyappear");
+	username.style.border = "1px solid black";
+}
+const numdelclick = () =>{
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value = userphone.value.slice(0,-1);
+}
+	if(username.style.border === "1px solid blue"){
+		username.value = username.value.slice(0,-1);
+	}
+}
+const otnclick = (index) =>{
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value += otn[index].textContent;
+}
+	if(username.style.border === "1px solid blue"){
+		username.value += otn[index].textContent;
+	}
+}
+const ottclick = () =>{
+	textkeyboard.classList.remove("txtkeyappear");
+	numkeyboard.classList.add("txtkeyappear");
+}
+</script>
+</body>
+</html>
