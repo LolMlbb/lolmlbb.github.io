@@ -25,7 +25,7 @@ const showbar = () =>{
 		}
 		else{
 			
-			node.style.animation = `lilabel .5s ease forwards ${index /15}s`;
+			node.style.animation = `lilabel .5s ease forwards ${index /28}s`;
 
 		
 		}
