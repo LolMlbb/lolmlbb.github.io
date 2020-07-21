@@ -1647,6 +1647,7 @@ const namefocus = () =>{
 	textkeyboard.style.transition = ".5s";
 	textkeyboard.classList.add("txtkeyappear");
 	numkeyboard.classList.remove("txtkeyappear");
+	emojisection.classList.remove("txtkeyappear");
 }
 const phonefocus = () =>{
 	numkeyboard.style.transition = ".5s";
@@ -1654,6 +1655,7 @@ const phonefocus = () =>{
 	userphone.style.border = "1px solid blue";
 	textkeyboard.classList.remove("txtkeyappear");
 	numkeyboard.classList.add("txtkeyappear");
+	emojisection.classList.remove("txtkeyappear");
 }
 const atzclick = (index) =>{
 	
@@ -1908,6 +1910,7 @@ const ottclick = () =>{
 }
 const emocontent = document.querySelectorAll(".emojisectionedit .emojicontent div");
 const emotab = document.querySelectorAll(".emojisectionedit .emojitab button");
+const emojikey = document.querySelectorAll(".emojisectionedit .emojicontent div button");
 
 const emojisection = document.getElementsByClassName("emojisection")[0];
 const emotabclick = (index) =>{
@@ -1932,6 +1935,14 @@ const emojiclick = () =>{
 	textkeyboard.classList.remove("txtkeyappear");
 	numkeyboard.classList.remove("txtkeyappear");
 	emojisection.classList.add("txtkeyappear");
+}
+const emojikeyclick = (index) =>{
+	if(userphone.style.border === "1px solid blue"){
+	userphone.value += emojikey[index].textContent;
+}
+	if(username.style.border === "1px solid blue"){
+		username.value += emojikey[index].textContent;
+	}
 }
 </script>
 </body>
