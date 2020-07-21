@@ -14,13 +14,15 @@
 }
 #username, #userphone{
 	-webkit-appearance : none;
-	border : none;
 	height : 25px;
+	border : 1px solid black;
 	width : 150px;
 	font-size : 15px;
 	font-family: 'Poppins', sans-serif;
 	border-radius: 15px;
 	padding-left: 12px;
+	transition: .5s;
+	outline: none;
 }
 .background{
 	background-color: rgb(27,43,52);
@@ -230,7 +232,7 @@
 		<button class="txtnorkey misc" onclick="miscclick(0)">/</button>
 		<button class="space" onclick="spaceclick()"></button>
 		<button class="txtnorkey misc" onclick="miscclick(1)">.</button>
-		<button class="misc emoji" onclick="emojiclick(2)">☺︎</button>
+		<button class="misc emoji" onclick="emojiclick(2)">☻</button>
 		<button class="enter" onclick="numdisboard()">↵</button>
 	</div>
 </div></div>
