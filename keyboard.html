@@ -139,6 +139,41 @@
 	justify-content: center;
 	font-family: 'Poppins', sans-serif;
 }
+.emojisection{
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(20,21,24);
+	width : 100%;
+	height : 50%;
+}
+.emojisectionedit{
+	width : 100%;
+	height : 100%;
+	position: relative;
+}
+.emojisectionedit .emojitab{
+	display: flex;
+/*		overflow: scroll;
+  white-space: nowrap;*/
+	width: 100%;
+	height : 15%;
+	position: absolute;
+	bottom : 0;
+}
+.emojisectionedit .emojitab button{
+	background-color: rgb(51,52,54);
+	display: inline-block;
+	font-size: 20px;
+	-webkit-appearance : none;
+	border : none;
+	margin : 0;
+	height : 100%;
+	width : 15%;
+	outline : none;
+}
+.emojisectionedit .emojitab button:nth-child(2){
+	border-bottom: 4px solid red;
+}
 .ottkey{
 	width : 15%;
 }
@@ -228,12 +263,12 @@
 	</div>
 	<div class="txtfourthrow">
 		<button class="txtnorkey ottkey" onclick="ottclick()">123</button>
-		<button class="txtnorkey" onclick="changelang()">⟳</button>
+		<button class="txtnorkey" id="langkey" onclick="changelang()">🇲🇲</button>
 		<button class="txtnorkey misc" onclick="miscclick(0)">/</button>
 		<button class="space" onclick="spaceclick()"></button>
 		<button class="txtnorkey misc" onclick="miscclick(1)">.</button>
 		<button class="misc emoji" onclick="emojiclick(2)">☻</button>
-		<button class="enter" onclick="numdisboard()">↵</button>
+		<button class="enter enterkey" onclick="numdisboard()">↵</button>
 	</div>
 </div></div>
 <div class="numkeyboard">
@@ -264,6 +299,46 @@
 		</div>
 	</div>
 </div>
+<div class="emojisection">
+	<div class="emojisectionedit">
+	<div class="emojitab">
+		<button>😀</button>
+		<button>🐼</button>
+		<button>🍺</button>
+		<button>⚽️</button>
+		<button>🚗</button>
+		<button>💡</button>
+		<button>❤️</button>
+		<button>🏴‍</button>
+	</div>
+	<div class="emojicontent">
+		<div class="smile">
+			<div
+		</div>
+		<div class="animal">
+			
+		</div>
+		<div class="food">
+			
+		</div>
+		<div class="sport">
+			
+		</div>
+		<div class="place">
+			
+		</div>
+		<div class="objects">
+			
+		</div>
+		<div class="symbols">
+			
+		</div>
+		<div class="flag">
+			
+		</div>
+	</div>
+</div>
+</div>
 <script type="text/javascript">
 	const username = document.getElementById("username");
 const userphone = document.getElementById("userphone");
@@ -275,6 +350,7 @@ let misc = document.querySelectorAll(".misc");
 const cap = document.getElementsByClassName("cap")[0];
 const background = document.getElementsByClassName("background")[0];
 let otn = document.querySelectorAll(".otn");
+const langkey = document.getElementById("langkey");
 const backgroundclick = () =>{
 	username.style.border = "1px solid black";
 	userphone.style.border = "1px solid black";
@@ -326,6 +402,7 @@ const changelang = () =>{
 	cap.style.color = "white";
 	if(atz[0].textContent === "q" || atz[0].textContent === "Q"){
 	atz[19].style.display = "block";
+	langkey.textContent = "🇺🇸";
 	atz[0].textContent = "ဆ";
 	atz[1].textContent = "တ";
 	atz[2].textContent = "န";
@@ -358,6 +435,7 @@ const changelang = () =>{
 }
 else if(atz[0].textContent === "ဆ" || atz[0].textContent === "စျ"){
 	atz[19].style.display = "none";
+	langkey.textContent = "🇲🇲";
 	atz[0].textContent = "q";
 	atz[1].textContent = "w";
 	atz[2].textContent = "e";
