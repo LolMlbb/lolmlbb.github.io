@@ -9,8 +9,16 @@
 		body{
 	margin: 0;
 	padding : 0;
-	overflow : hidden;
+	overflow-x : hidden;
 	-webkit-overflow : hidden;
+}
+#username, #userphone{
+	-webkit-appearance : none;
+	border : none;
+	height : 25px;
+	width : 150px;
+	font-size : 15px;
+	font-family: 'Poppins', sans-serif;
 }
 .background{
 	background-color: rgb(27,43,52);
@@ -61,7 +69,7 @@
 	font-family: 'Poppins', sans-serif;
 	font-size : 20px;
 }
-.textkeyboard .textkeyboardedit div .atz, .txtnorkey{
+.textkeyboard .textkeyboardedit div .atz, .txtnorkey, .emoji{
 	width: 10%;
 }
 .txtsecondrow button:nth-child(10){
@@ -125,6 +133,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	font-family: 'Poppins', sans-serif;
 }
 #username, #userphone{
 	outline: none;
@@ -156,7 +165,7 @@
 <div class="inputitems">
 	<table>
 		<tr>
-<td>Yourname : </td>
+<td>Your Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </td>
 <td><input type="text" name="username" id="username" onfocus="namefocus()" readonly></td>
 </tr>
 <tr>
@@ -203,7 +212,7 @@
 		<button onclick="atzclick(19)" class="atz">ာ</button>
 	</div>
 	<div class="txtthirdrow">
-		<button class="cap" onclick="capclick()">Cap</button>
+		<button class="cap" onclick="capclick()">⇧</button>
 		<button onclick="atzclick(20)" class="atz">z</button>
 		<button onclick="atzclick(21)" class="atz">x</button>
 		<button onclick="atzclick(22)" class="atz">c</button>
@@ -211,15 +220,15 @@
 		<button onclick="atzclick(24)" class="atz">b</button>
 		<button onclick="atzclick(25)" class="atz">n</button>
 		<button onclick="atzclick(26)" class="atz">m</button>
-		<button onclick="deleteclick()" class="del">Del</button>
+		<button onclick="deleteclick()" class="del">⌫</button>
 	</div>
 	<div class="txtfourthrow">
 		<button class="txtnorkey" onclick="ottclick()">123</button>
 		<button class="txtnorkey" onclick="changelang()">⟳</button>
 		<button class="txtnorkey misc" onclick="miscclick(0)">/</button>
-		<button class="space" onclick="spaceclick()">Space</button>
+		<button class="space" onclick="spaceclick()"></button>
 		<button class="txtnorkey misc" onclick="miscclick(1)">.</button>
-		<button class="misc" onclick="miscclick(2)">.com</button>
+		<button class="misc emoji" onclick="emojiclick(2)">☺︎</button>
 		<button class="enter" onclick="numdisboard()">↵</button>
 	</div>
 </div></div>
@@ -241,7 +250,7 @@
 			<button class="otn" onclick="otnclick(7)">7</button>
 			<button class="otn" onclick="otnclick(8)">8</button>
 			<button class="otn" onclick="otnclick(9)">9</button>
-			<button onclick="numdelclick()">DEL</button>
+			<button onclick="numdelclick()">⌫</button>
 		</div>
 		<div class="numfourthrow">
 			<button class="otn" onclick="otnclick(10)">*</button>
