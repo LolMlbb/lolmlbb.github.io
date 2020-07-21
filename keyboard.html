@@ -145,6 +145,11 @@
 	background-color: rgb(20,21,24);
 	width : 100%;
 	height : 50%;
+	transform: translateY(-20%);
+	z-index: -1;
+	opacity: 0;
+	visibility: hidden;
+	user-select: none;
 }
 .emojisectionedit{
 	width : 100%;
@@ -190,6 +195,28 @@
 	-webkit-appearance : none;
 	border : none;
 	background-color: rgb(20,21,24);
+	outline: none;
+}
+.emojisectionedit .emojicontent div:nth-child(2){
+	display: none;
+}
+.emojisectionedit .emojicontent div:nth-child(3){
+	display: none;	
+}
+.emojisectionedit .emojicontent div:nth-child(4){
+	display: none;	
+}
+.emojisectionedit .emojicontent div:nth-child(5){
+	display: none;
+}
+.emojisectionedit .emojicontent div:nth-child(6){
+	display: none;	
+}
+.emojisectionedit .emojicontent div:nth-child(7){
+	display: none;	
+}
+.emojisectionedit .emojicontent div:nth-child(8){
+	display: none;	
 }
 .ottkey{
 	width : 15%;
@@ -287,7 +314,7 @@
 		<button class="txtnorkey misc" onclick="miscclick(0)">/</button>
 		<button class="space" onclick="spaceclick()"></button>
 		<button class="txtnorkey misc" onclick="miscclick(1)">.</button>
-		<button class="misc emoji" onclick="emojiclick(2)">☻</button>
+		<button class="misc emoji" onclick="emojiclick()">☻</button>
 		<button class="enter enterkey" onclick="numdisboard()">↵</button>
 	</div>
 </div></div>
@@ -322,14 +349,15 @@
 <div class="emojisection">
 	<div class="emojisectionedit">
 	<div class="emojitab">
-		<button>😀</button>
-		<button>🐼</button>
-		<button>🍺</button>
-		<button>⚽️</button>
-		<button>🚗</button>
-		<button>💡</button>
-		<button>❤️</button>
-		<button>🏴‍</button>
+		<button onclick="emotabclick(0)">😀</button>
+		<button onclick="emotabclick(1)">🐼</button>
+		<button onclick="emotabclick(2)">🍺</button>
+		<button onclick="emotabclick(3)">⚽️</button>
+		<button onclick="emotabclick(4)">🚗</button>
+		<button onclick="emotabclick(5)">💡</button>
+		<button onclick="emotabclick(6)">❤️</button>
+		<button onclick="emotabclick(7)">🏴‍</button>
+		<button onclick="emotabclick(8)">⌨︎</button>
 	</div>
 	<div class="emojicontent">
 		<div class="smile" align="center">
@@ -1601,6 +1629,7 @@ const backgroundclick = () =>{
 	userphone.style.border = "1px solid black";
 	textkeyboard.classList.remove("txtkeyappear");
 	numkeyboard.classList.remove("txtkeyappear");
+	emojisection.classList.remove("txtkeyappear");
 }
 const miscclick = (index) =>{
 	
@@ -1847,6 +1876,7 @@ const spaceclick = () =>{
 const abcclick = () =>{
 	textkeyboard.classList.add("txtkeyappear");
 	numkeyboard.classList.remove("txtkeyappear");
+	emojisection.classList.remove("txtkeyappear");
 }
 const numdisboard = () =>{
 	numkeyboard.classList.remove("txtkeyappear");
@@ -1874,6 +1904,34 @@ const ottclick = () =>{
 	numkeyboard.style.transition = ".5s";
 	textkeyboard.classList.remove("txtkeyappear");
 	numkeyboard.classList.add("txtkeyappear");
+	emojisection.classList.remove("txtkeyappear");
+}
+const emocontent = document.querySelectorAll(".emojisectionedit .emojicontent div");
+const emotab = document.querySelectorAll(".emojisectionedit .emojitab button");
+
+const emojisection = document.getElementsByClassName("emojisection")[0];
+const emotabclick = (index) =>{
+if(index === 8){
+	textkeyboard.classList.add("txtkeyappear");
+	numkeyboard.classList.remove("txtkeyappear");
+	emojisection.classList.remove("txtkeyappear");
+}
+else{
+	emocontent.forEach((node) =>{
+		node.style.display = "none";
+	});
+	emotab.forEach((node)=>{
+		node.style.border = "none";
+	});
+	emotab[index].style.borderBottom = "4px solid red";
+	emocontent[index].style.display = "block";
+}
+}
+const emojiclick = () =>{
+	emojisection.style.transition = ".5s";
+	textkeyboard.classList.remove("txtkeyappear");
+	numkeyboard.classList.remove("txtkeyappear");
+	emojisection.classList.add("txtkeyappear");
 }
 </script>
 </body>
