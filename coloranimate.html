@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">;
 	<title>...</title>
 <link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
 	<style type="text/css">
@@ -22,7 +21,6 @@ background-size: 100% 1.2em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow:hidden;
 	margin: 1px;
 	
 }
@@ -242,19 +240,28 @@ background-size: 100% 1.2em;
 	}
 }
 @keyframes animateloop2{
-	from{
+	0%{
 		height: 0;
 		width: 0;
 		border: 0;
 		font-size: 0;
 		/*transform: rotate(0);*/
 	}
-	to{
+	50%{
+		/*transform: rotate(180deg);*/
+		height: 50px;
+		width: 50px;
+		font-size: 12px;
+		border: 2px solid black;
+		background-color: skyblue;
+	}
+	100%{
 		/*transform: rotate(180deg);*/
 		height: 90%;
 		width: 90%;
 		font-size: 12px;
 		border: 2px solid black;
+		background-color: blue;
 	}
 }
 @keyframes loveanimate{
@@ -431,9 +438,10 @@ background-size: 100% 1.2em;
 				const six = document.querySelectorAll(".six");
 				const matrix = document.querySelectorAll(".matrix div");
 				const ltwentytwo = document.getElementsByClassName("ltwentytwo")[0];
+				var loglabel= "I ❤️ U Babe!";
 				const myEndFunction = () =>{
 					setTimeout(()=>{
-					alert("I ❤️ U Babe!");
+					alert(loglabel);
 					},500);
 				}
 				const instantFunction = () =>{
@@ -446,28 +454,29 @@ background-size: 100% 1.2em;
 					});
 					setTimeout(()=>{
 					one.forEach((node)=>{
-						node.style.animation = "animateloop2 2s ease forwards 1s";
+						node.style.animation = "animateloop2 2s ease forwards";
 					});
 					two.forEach((node)=>{
-						node.style.animation = "animateloop2 2s ease forwards 1.1s";
+						node.style.animation = "animateloop2 2s ease forwards .1s";
 					});
 					three.forEach((node)=>{
-						node.style.animation = "animateloop2 2s ease forwards 1.2s";
+						node.style.animation = "animateloop2 2s ease forwards .2s";
 					});
 					four.forEach((node)=>{
-						node.style.animation = "animateloop2 2s ease forwards 1.3s";
+						node.style.animation = "animateloop2 2s ease forwards .3s";
 					});
 					five.forEach((node)=>{
-						node.style.animation = "animateloop2 2s ease forwards 1.4s";
+						node.style.animation = "animateloop2 2s ease forwards .4s";
 					});
 					six.forEach((node)=>{
-						node.style.animation = "animateloop2 2s ease forwards 1.5s";
+						node.style.animation = "animateloop2 2s ease forwards .5s";
 					});
 					},750);
 					},700);
 				}
 				setTimeout(()=>{
 				instantFunction();
+				loglabel ="ကိုကို့ကိုပဲ လက်ထပ်ပါနော်ချစ်လေးရေ";
 			},6500);
 				ltwentytwo.addEventListener("animationend",myEndFunction);
 			</script>
