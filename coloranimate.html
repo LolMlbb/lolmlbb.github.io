@@ -254,14 +254,16 @@ background-size: 100% 1.2em;
 		font-size: 12px;
 		border: 2px solid black;
 		background-color: skyblue;
+		font-size: 0;
 	}
 	100%{
 		/*transform: rotate(180deg);*/
 		height: 90%;
 		width: 90%;
-		font-size: 12px;
+		font-size: 20px;
 		border: 2px solid black;
 		background-color: blue;
+
 	}
 }
 @keyframes loveanimate{
@@ -337,30 +339,30 @@ background-size: 100% 1.2em;
 				<div class="matrix"><div class="six setshit"></div></div>
 			</div>
 			<div class="fifth">
-				<div class="matrix"><div class="six khoon lone">❤️</div></div>
-				<div class="matrix"><div class="five shit ltwo">ကျွ</div></div>
-				<div class="matrix"><div class="four koe lthree">န်</div></div>
-				<div class="matrix"><div class="three tasal lfour">တော်</div></div>
-				<div class="matrix"><div class="two settit lfive">မြ</div></div>
-				<div class="matrix"><div class="two sethnit lsix">င့်</div></div>
-				<div class="matrix"><div class="two setthone lseven">ကို</div></div>
-				<div class="matrix"><div class="three setlay leight">ကို</div></div>
-				<div class="matrix"><div class="four setngar lnine">ဦး</div></div>
-				<div class="matrix"><div class="five setchouk lten">က</div></div>
-				<div class="matrix"><div class="six setkhoon leleven">❤️</div></div>
+				<div class="matrix"><div class="six khoon lone quote">❤️</div></div>
+				<div class="matrix"><div class="five shit ltwo quote">ကျွ</div></div>
+				<div class="matrix"><div class="four koe lthree quote">န်</div></div>
+				<div class="matrix"><div class="three tasal lfour quote">တော်</div></div>
+				<div class="matrix"><div class="two settit lfive quote">မြ</div></div>
+				<div class="matrix"><div class="two sethnit lsix quote">င့်</div></div>
+				<div class="matrix"><div class="two setthone lseven quote">ကို</div></div>
+				<div class="matrix"><div class="three setlay leight quote">ကို</div></div>
+				<div class="matrix"><div class="four setngar lnine quote">ဦး</div></div>
+				<div class="matrix"><div class="five setchouk lten quote">က</div></div>
+				<div class="matrix"><div class="six setkhoon leleven quote">❤️</div></div>
 			</div>
 			<div class="sixth">
-				<div class="matrix"><div class="six chouk ltwelve">ခိုင်</div></div>
-				<div class="matrix"><div class="five khoon lthirteen">နီ</div></div>
-				<div class="matrix"><div class="four shit lfourteen">နီ</div></div>
-				<div class="matrix"><div class="three koe lfifteen">နိုင်</div></div>
-				<div class="matrix"><div class="two tasal lsixteen">ထွေး</div></div>
-				<div class="matrix"><div class="one settit lseventeen">လေး</div></div>
-				<div class="matrix"><div class="two sethnit leighteen">ကို</div></div>
-				<div class="matrix"><div class="three setthone lnineteen">အ</div></div>
-				<div class="matrix"><div class="four setlay ltwenty">ရမ်း</div></div>
-				<div class="matrix"><div class="five setngar ltwentyone">ချစ်</div></div>
-				<div class="matrix"><div class="six setchouk ltwentytwo">တယ်</div></div>
+				<div class="matrix"><div class="six chouk ltwelve quote">ခိုင်</div></div>
+				<div class="matrix"><div class="five khoon lthirteen quote">နီ</div></div>
+				<div class="matrix"><div class="four shit lfourteen quote">နီ</div></div>
+				<div class="matrix"><div class="three koe lfifteen quote">နိုင်</div></div>
+				<div class="matrix"><div class="two tasal lsixteen quote">ထွေး</div></div>
+				<div class="matrix"><div class="one settit lseventeen quote">လေး</div></div>
+				<div class="matrix"><div class="two sethnit leighteen quote">ကို</div></div>
+				<div class="matrix"><div class="three setthone lnineteen quote">အ</div></div>
+				<div class="matrix"><div class="four setlay ltwenty quote">ရမ်း</div></div>
+				<div class="matrix"><div class="five setngar ltwentyone quote">ချစ်</div></div>
+				<div class="matrix"><div class="six setchouk ltwentytwo quote">တယ်</div></div>
 			</div>
 			<div class="seventh">
 				<div class="matrix"><div class="six ngar"></div></div>
@@ -438,11 +440,15 @@ background-size: 100% 1.2em;
 				const six = document.querySelectorAll(".six");
 				const matrix = document.querySelectorAll(".matrix div");
 				const ltwentytwo = document.getElementsByClassName("ltwentytwo")[0];
+				const quote = document.querySelectorAll(".quote");
 				var loglabel= "I ❤️ U Babe!";
 				const myEndFunction = () =>{
 					setTimeout(()=>{
 					alert(loglabel);
 					},500);
+					setTimeout(()=>{
+						loglabel ="ကိုကို့ကိုပဲ လက်ထပ်ပါနော်ချစ်လေးရေ";
+					},1000);
 				}
 				const instantFunction = () =>{
 					setTimeout(()=>{
@@ -453,6 +459,10 @@ background-size: 100% 1.2em;
 						node.style.border = "0";
 					});
 					setTimeout(()=>{
+						quote.forEach((node)=>{
+							node.textContent = "";
+						});
+						quote[16].textContent = "❤️";
 					one.forEach((node)=>{
 						node.style.animation = "animateloop2 1.5s ease forwards";
 					});
@@ -476,7 +486,6 @@ background-size: 100% 1.2em;
 				}
 				setTimeout(()=>{
 				instantFunction();
-				loglabel ="ကိုကို့ကိုပဲ လက်ထပ်ပါနော်ချစ်လေးရေ";
 			},6500);
 				ltwentytwo.addEventListener("animationend",myEndFunction);
 			</script>
