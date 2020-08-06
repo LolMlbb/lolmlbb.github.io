@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>...</title>
+	<link href="https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<style type="text/css">
+		.card{
+	position: relative;
+	background : transparent;
+	color : darkblue;
+	display: inline-block;
+	text-align: center;
+	margin: 5px;
+	width: 180px;
+	border-radius: 5px;
+	border : 2px solid darkblue;
+	transition: .3s;
+	font-family: 'Poppins', sans-serif;
+	user-select: none;
+	cursor: pointer;
+}
+.blurs{
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: rgba(255,255,255,0.8);
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em;
+}
+.card div img{
+	width: 100px;
+	height: 100px;
+}
+.card h3{
+	font-size: 15px;
+}
+.card h5{
+	font-size: 11px;
+}
+.card:hover{
+	transform: scale(1.05);
+}
+.resultlabel{
+	margin: 10px;
+	color : darkblue;
+}
+.searchbox{
+	padding : 15px;
+	background-color: rgba(255,255,255,0.6);
+	color : darkblue;
+	border : 2px solid darkblue;
+	font-size: 18px;
+	letter-spacing: 1px;
+	border-radius : 5px;
+	outline : none;
+}
+.menulabel{
+	font-family: 'Blinker', sans-serif;
+	font-size: 15px;
+	color : darkblue;
+	text-align: center;
+	user-select: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+	</style>
+</head>
+<body>
+<div class="menulabel">
+	<h1>-Search People-</h1>
+</div>
+
+<div align="center">
+	<input type="text" spellCheck="false" placeholder="မြန်မာလိုရှာရန်..." class="searchbox" onInput="onInputSearch()" name="" />
+</div>
+<div class="resultlabel" align="center"></div>
+
+
+<div align="center" class="cardList"></div>
+<script type="text/javascript">
+	const friendList = [
+{
+	id: 1,
+	name: 'မြင့်ကိုကိုဦး',
+	phone: '09400960095',
+	email: 'myintkokooo@icloud.com'
+},
+{
+	id: 2,
+	name: 'စိုးဝင်းထွန်း',
+	phone: '09797909304',
+	email: 'swh.lunox@gmail.com'
+},
+{
+	id: 3,
+	name: 'ကောင်းစည်သူ',
+	phone: '09693234189',
+	email: 'kaungkaung.420@gmail.com'
+},
+{
+	id: 4,
+	name: 'ဝေဖြိုးသူ',
+	phone: '092055984',
+	email: 'waiwai.fashion@gmail.com'
+},
+{
+	id: 5,
+	name: 'မင်းသွင်ခန့်',
+	phone: '09969786424',
+	email: 'minmin.designer@gmail.com'
+},
+{
+	id: 6,
+	name: 'ကျော်စွာဝင်း',
+	phone: '092060820',
+	email: 'kyawgyi.41@gmail.com'
+},
+{
+	id: 7,
+	name: 'ကျော်ထိပ်တင်မောင်',
+	phone: '09402605972',
+	email: 'htake.tin@gmail.com'
+},
+{
+	id: 8,
+	name: 'ကျော်ဇင်ဝင်း',
+	phone: '09790805010',
+	email: 'zinzin.win@gmail.com'
+},
+{
+	id: 9,
+	name: 'စိုးလင်းပိုင်',
+	phone: '09444013551',
+	email: 'painglin.soe@gmail.com'
+},
+{
+	id: 10,
+	name: 'ဦးမန်းငွေ',
+	phone: '0991057814',
+	email: 'ngwengwe.69@gmail.com'
+},
+{
+	id: 11,
+	name: 'အောင်ကျော်ဖြိုး',
+	phone: '09422834147',
+	email: 'kyawaung.ygn@gmail.com'
+},
+{
+	id: 12,
+	name: 'ဦးနှင်းမောင်မောင်',
+	phone: '09403746632',
+	email: 'hninhnin.969@gmail.com'
+},
+{
+	id: 13,
+	name: 'မျိုးမင်းသန့်',
+	phone: '09400960095',
+	email: 'myintkokooo@icloud.com'
+},
+{
+	id: 14,
+	name: 'ဒိုင်းခင်ခင်',
+	phone: '09797909304',
+	email: 'swh.lunox@gmail.com'
+},
+{
+	id: 15,
+	name: 'ကျော်ထက်အောင်',
+	phone: '09693234189',
+	email: 'kaungkaung.420@gmail.com'
+},
+{
+	id: 16,
+	name: 'ပုံ့ပုံ့',
+	phone: '092055984',
+	email: 'waiwai.fashion@gmail.com'
+},
+{
+	id: 17,
+	name: 'ရူပါအောင်',
+	phone: '09969786424',
+	email: 'minmin.designer@gmail.com'
+},
+{
+	id: 18,
+	name: 'နှင်းဧကရီ',
+	phone: '092060820',
+	email: 'kyawgyi.41@gmail.com'
+},
+{
+	id: 19,
+	name: 'စုသန္တာဇော်',
+	phone: '09402605972',
+	email: 'htake.tin@gmail.com'
+},
+{
+	id: 20,
+	name: 'နှင်းအိဖြူ',
+	phone: '09790805010',
+	email: 'zinzin.win@gmail.com'
+},
+{
+	id: 21,
+	name: 'သိမ့်ဇာခြည်အောင်',
+	phone: '09444013551',
+	email: 'painglin.soe@gmail.com'
+},
+{
+	id: 22,
+	name: 'ဖြူနှင်းထက်',
+	phone: '0991057814',
+	email: 'ngwengwe.69@gmail.com'
+},
+{
+	id: 23,
+	name: 'အေးမြတ်သူ',
+	phone: '09422834147',
+	email: 'kyawaung.ygn@gmail.com'
+},
+{
+	id: 24,
+	name: 'သီရိမိုးအောင်',
+	phone: '09403746632',
+	email: 'hninhnin.969@gmail.com'
+},
+{
+	id: 25,
+	name: 'ဦးဝေလင်းဦး',
+	phone: '09402605972',
+	email: 'bluesky.zar@gmail.com'
+},
+{
+	id: 26,
+	name: 'ဦးမင်းလွင်ဦး',
+	phone: '09784421711',
+	email: 'minlwin.424@gmail.com'
+},
+{
+	id: 27,
+	name: 'ဦးဝင်းကို',
+	phone: '09693234189',
+	email: 'winko.pes@gmail.com'
+},
+{
+	id: 28,
+	name: 'ဦးသန်းထိုက်',
+	phone: '092055984',
+	email: 'htikegyi.mdy@gmail.com'
+},
+{
+	id: 29,
+	name: 'ဇော်လတ်',
+	phone: '09969786424',
+	email: 'zaw.latt34289@gmail.com'
+},
+{
+	id: 30,
+	name: 'ဦးဌေးဝင်း',
+	phone: '092060820',
+	email: 'htaywin.alcoholman@gmail.com'
+},
+{
+	id: 31,
+	name: 'ဦးစန်းလင်း',
+	phone: '09402605972',
+	email: 'sanlinn.143evos@gmail.com'
+},
+{
+	id: 32,
+	name: 'ဝေယံတင်ဦး',
+	phone: '09790805010',
+	email: 'yanyan.noodle@gmail.com'
+},
+{
+	id: 33,
+	name: 'ဇင်ယော်အောင်',
+	phone: '09444013551',
+	email: 'zinyaw.bird@gmail.com'
+},
+{
+	id: 34,
+	name: 'ခင်ရတီဇော်',
+	phone: '0991057814',
+	email: 'khinkhin.tiktok@gmail.com'
+},
+{
+	id: 35,
+	name: 'သီဟနိုင်',
+	phone: '09422834147',
+	email: 'thithi.kyaukse@gmail.com'
+},
+{
+	id: 36,
+	name: 'ကျော်မင်းဟိန်း',
+	phone: '09403746632',
+	email: 'kyawgyi.420@gmail.com'
+},
+{
+	id: 37,
+	name: 'ခင်နန္ဒာအောင်',
+	phone: '09400960095',
+	email: 'nandar.danpouk@gmail.com'
+},
+{
+	id: 38,
+	name: 'စန္ဒာဦး',
+	phone: '09797909304',
+	email: 'sandar.angel@gmail.com'
+},
+{
+	id: 39,
+	name: 'အိမွန်ဖူး',
+	phone: '09693234189',
+	email: 'eimonphool.mdy@gmail.com'
+},
+{
+	id: 40,
+	name: 'အေးပြည့်ပြည့်အောင်',
+	phone: '092055984',
+	email: 'pyaegyi.singapore@gmail.com'
+},
+{
+	id: 41,
+	name: 'အောင်ဇေသန့်',
+	phone: '09969786424',
+	email: 'zayzay.beerbal@gmail.com'
+},
+{
+	id: 42,
+	name: 'နန္ဒာအောင်',
+	phone: '092060820',
+	email: 'nandar.ydnb@gmail.com'
+},
+{
+	id: 43,
+	name: 'သော်လွင်ဟိန်း',
+	phone: '09402605972',
+	email: 'thawthaw.lwin@gmail.com'
+},
+{
+	id: 44,
+	name: 'ဟိန်းလွင်',
+	phone: '09790805010',
+	email: 'heinlwin.weed@gmail.com'
+},
+{
+	id: 45,
+	name: 'အောင်ပြည့်ဖြိုး',
+	phone: '09444013551',
+	email: 'aunglay.actor@gmail.com'
+},
+{
+	id: 46,
+	name: 'ယုန်လေး',
+	phone: '0991057814',
+	email: 'yonelay.969@gmail.com'
+},
+{
+	id: 47,
+	name: 'ဒေါ်မော်မော်',
+	phone: '09422834147',
+	email: 'mawgyi.pes@gmail.com'
+},
+{
+	id: 48,
+	name: 'ညီညီ',
+	phone: '09403746632',
+	email: 'nyinyi.fighter@gmail.com'
+},
+{
+	id: 49,
+	name: 'အေးဝတ်ရည်သောင်း',
+	phone: '09422834147',
+	email: 'ayethaung@gmail.com'
+}
+];
+
+
+
+const cardList = document.getElementsByClassName("cardList")[0];
+const searchbox = document.getElementsByClassName("searchbox")[0];
+const resultlabel = document.getElementsByClassName("resultlabel")[0];
+
+// friendList.map((user,i)=>{
+// 	cardList.innerHTML += 
+// 	`<div class='card'>
+// 	<div>
+// 	<img src='https://robohash.org/${friendList[i].id}?200x200' alt='friend${friendList[i].id}'>
+// 	</div>
+// 	<h3>${friendList[i].name}</h3>
+// 	<h4>${friendList[i].phone}</h4>
+// 	<h5>${friendList[i].email}</h5>
+// 	</div>`;
+// })
+
+const onInputSearch = () =>{
+	const filterFriend = friendList.filter((user)=>{
+		return user.name.toLowerCase().includes(searchbox.value.toLowerCase());
+	})
+	if(searchbox.value === ""){
+		cardList.innerHTML = "";
+		resultlabel.innerText = "";
+	}
+	else if(searchbox.value === " "){
+		cardList.innerHTML = "";
+		resultlabel.innerText = "";
+	}
+	else{
+	if(filterFriend.length<1){
+		resultlabel.innerText = `"${searchbox.value}" ကိုမတွေ့ရှိပါ။`;
+	}
+	else{
+	resultlabel.innerText = `${filterFriend.length}ယောက်တွေ့ရှိပါသည်။`;
+	}
+	cardList.innerHTML = "";
+	filterFriend.map((user,i)=>{
+	cardList.innerHTML += 
+	`<div class='card'>
+	<div class='blurs'></div>
+	<div>
+	<img src='https://robohash.org/${friendList[i].id}?200x200' alt='friend${friendList[i].id}'>
+	</div>
+	<h3>${filterFriend[i].name}</h3>
+	<h4>${filterFriend[i].phone}</h4>
+	<h5>${filterFriend[i].email}</h5>
+	</div>`;
+})
+}//else close
+}//onINputSearchclose
+
+
+</script>
+</body>
+</html>
