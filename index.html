@@ -1,249 +1,1214 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<link rel="icon" type="image/png" href="https://simpleicon.com/wp-content/uploads/rocket.png">
-	<title>Perfect Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=notosan' />
-</head>
-<body>
-	<audio id="rocket_launch">
-		<source src="rocket.mp3" type="audio/mp3">
-	</audio>
-	<nav>
-		<div id="humburger" onclick="showbar()">
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<div class="brand">
-			<i class="logo"><img src="https://simpleicon.com/wp-content/uploads/rocket.png" width="30" height="30"></i>
-			<h3 class="logo_label">Rocket Group<sup>&copy;</sup></h3>
-		</div>
-		<ul class="link_container hidebar">
-			<li><a href="calculator.html">Calculator</a></li>
-			<li><a href="https://khaingnini.github.io">KN3H</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="shop.html">Shop</a></li>
-			<li><a href="forlove.html">For Love</a></li>
-			<li><a href="setting.html">Setting</a></li>
-			<li><a href="keyboard.html">Register</a></li>
-			<li><a href="notification.html">ControlCenter</a></li>
-			<li><a href="desktop.html">Desktop</a></li>
-			<li><a href="friend.html">Search friends</a></li>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="colpanel.css">
+	<link rel="icon" type="image/jpg" href="https://serving.photos.photobox.com/99336755ee8f1dcaa8806c8a5ad1d91b4c8658aa353009793fb233ff0d3c130ef0a26058.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>-Layer Of Legends-</title>
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+		/*.all_html_codes{
+			display: none;
+		}*/
+		::-webkit-scrollbar{
+			width : 13px;
+		}
+		::-webkit-scrollbar-track{
+			box-shadow: inset 0 0 5px #333;
+			border-radius: 10px;
+			background-color: #ddd;
+		}
+		::-webkit-scrollbar-thumb{
+			background-color: red;
+			border-radius: 10px;
+		}
+		#corename{
+			position: sticky;
+			top : 0;
+			z-index: 1;
+			}
+		.darker{
+			background-color: rgb(36,37,38);
+		}
+		.mainoptionap{
+			z-index: 3;
+			opacity: 1;
+			transform: translateY(0);
+			transform : translateX(-2em);
 			
-		</ul>
-	</nav><br>
+		}
+		.mainoption{
+			position: sticky;
+			bottom : 28vh;
+			display: flex;
+			width: 100%;
 
-	<!-- <section class="somethingcontact">
-<div class="container2">
-	<div class="container1">
-<table align="center"><br>
-	<h1 align="center">CONTACT</h1><br>
-	<tr>
-		<td>Name</td>
-		<td><input type="text" name="" id="namebox"></td>
-	</tr>
-	<tr>
-		<td>Phone</td>
-		<td><input type="text" name="" id="phonebox"></td>
-	</tr>
-</table><br>
-<div align="center">
-<button id="opsubmit" onclick="clickSubmit()">Submit</button>
-<button id="opclear" onclick="clickClear()">Clear</button>
-</div><br>
-<div align="center" id="sign">.</div><br>
-<div align="center">
-<button id="opshow" onclick="clickShow()">Show Contact</button>
+		}
+		.mainoption{
+			display: none;
+		}
+		.option_floatshit{
+			background-color : skyblue;
+		}
+		.colorss{
+			background-color: grey;
+		}
+		.option_float{
+			padding: 8px;
+			display: flex;
+			justify-content: flex-end;
+			flex-direction: column;
+			position: absolute;
+			right : 0;
+			border-radius: 10px;
+			cursor: pointer;
+			transition: .5s;
+		}
+		.option_float div{
+			margin : 3px;
+			width : 25px;
+			height: 3px;
+			background-color: black;
+		}
+		.table_shitshit{
+			z-index: -1;
+			opacity: 0;
+			transform: translateY(5em);
+		}
+		.table_div{
+			transition: .5s;
+			display: flex;
+			justify-content: flex-end;
+			flex-direction: column;
+			position: sticky;
+			bottom : 30vh;
+			width : 100%;
+			right : 0;
+		}
+		.table_div{
+			display: none;
+		}
+		#sidebar_tool{
+			background-color: grey;
+			padding: 5px;
+			border-radius: 25px;
+			position: absolute;
+			right : 0;
+
+		}
+		.tool_label{
+			display: flex;
+			align-items: center;
+		}
+		body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: rgb(25,5,40);
+	overflow-x: hidden;
+}
+.switch1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color : white;
+	background-color: darkcyan;
+	transition: 1s;
+}
+input[type="checkbox"]{
+	position: relative;
+	height : 25px;
+	width: 50px;
+	-webkit-appearance : none;
+	background : #C9C9C9;
+	border-radius: 25px;
+	outline: none;
+	transition : .5s;
+	box-shadow: inset 0 0 5px black;
+}
+input:checked[type="checkbox"]{
+	background : #03a9f4;
+}
+input[type="checkbox"]::before{
+	position: absolute;
+	top : 0;
+	left: 0;
+	content: "";
+	height : 25px;
+	width: 25px;
+	background-color: #fff;
+	border-radius: 25px;
+	/*transform : scale(1.1);*/
+	transition: .5s;
+	box-shadow: 0 2px 5px black;
+}
+input:checked[type="checkbox"]::before{
+	left : 25px;
+}
+
+
+.para1, .para2, .para3, .para4, .para5, .para6, .para7, .para8{
+	height : 0;
+	overflow: scroll;
+	transition: 0.5s;
+}
+.sizefix{
+	height : 250px;
+}
+.imgfix{
+	height : 80px;
+	width: 80px;
+}
+.fbpagemain{
+				display: flex;
+                                background-color : black;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				color: white;
+				letter-spacing: 2px;
+				}
+.fbpage:hover{
+				font-size: 20px;
+}
+.fbpage{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-decoration: none;
+				color: white;
+				letter-spacing: 2px;
+				transition: .5s;
+				}
+				
+.hrcolor{
+				border : 1px solid rgba(255,255,255,0.3);
+				}
+.names{
+				line-height: 250%;
+				background-color: rgba(0,0,0,0.6);
+				overflow:hidden;
+				}
+.bgname{
+				background-image: url("https://image.freepik.com/free-vector/abstract-dynamic-pattern-wallpaper-vector_53876-59131.jpg");
+				background-position: center;
+				height: 0px;
+				overflow: scroll;
+				transition: .5s;
+				}
+.names a{
+				text-decoration: none;
+				color: white;	
+				letter-spacing: 3px;
+			}
+			.names a:hover{
+							color: red;
+							}
+
+.person{
+				
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px darkcyan;*/
+				}
+				
+			.person2{
+			
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}
+				
+				.person3{
+				
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}
+				
+			.person4{
+				
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}
+				
+					
+				.person5{
+				
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}
+				
+				.person6{
+			
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}
+				
+				.person7{
+			
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}
+				
+			.person8{
+				
+				padding : 20px;
+				transition: .5s;
+				/*box-shadow: 0 0 17px skyblue;*/
+				}	
+				.perper{
+					background-color : #ddd;
+				}
+				
+				.toplink{
+								text-decoration: none;
+								color: green;
+								}
+				
+				
+				
+				
+.profileimg{
+				border-radius :150px;
+				}
+				.profileimgmini1, .profileimgmini2, .profileimgmini3, .profileimgmini4, .profileimgmini5, .profileimgmini6, .profileimgmini7{
+				border-radius :100px;
+				}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height : 10vh;
+	background-color: rgb(27,0,56);
+	color : white;
+}
+.logopart{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 9px;
+}
+.logopart .icon_label{
+	margin-left : 20px;
+	font-family: 'Tenali Ramakrishna', sans-serif;
+	font-size : 30px;
+}
+.logopart .iconmain .logo{
+	margin-left: 5px;
+	border-radius: 50px;
+}
+.link_container{
+	display: flex;
+	justify-content: space-around;
+	width : 60%;
+}
+.link_container li a{
+	text-decoration: none;
+	color : white;
+	letter-spacing: 2px;
+	font-size : 15px;
+	font-family: 'Poppins', sans-serif;
+	transition: .5s;
+	text-transform: uppercase;
+}
+.link_container li a:hover{
+	color : red;
+	transition: all .5s;
+}
+.bgsize{
+	height: 360px;
+}
+.link_container li{
+	list-style-type: none;
+}
+.burger div{
+	margin : 5px;
+	height : 3px;
+	width : 25px;
+	background-color: white;
+}
+.burger{
+	position: absolute;
+	display: none;
+	cursor: pointer;
+}
+.line1, .line2, .line3{
+	opacity: 1;
+	transition: .5s;
+}
+.line1{
+	transform: rotate(0);
+}
+.line3{
+	transform: rotate(0);
+}
+.line1tran{
+	transform : rotate(43deg) translate(13px,-1px);
+}
+.line2tran{
+	transform : rotate(-49deg) translate(13px,3px);
+}
+.bgdark{
+	background-color: rgb(24,25,26);
+}
+.bobo{
+	color : white;
+}
+@media screen and (max-width : 1080px){
+	body{
+		overflow-x: hidden;
+	}
+	.link_container{
+		width :90%;
+	}
+	.icon_label{
+		display: none;
+	}
+}
+@media screen and (max-width: 720px){
+	body{
+		overflow-x: hidden;
+	}
+	.icon_label{
+		display: block;
+	}
+	.link_container li a{
+		color : yellow;
+		font-size : 16px;
+		font-weight : bold;
+	}
+	.link_container li a:hover{
+		color : red;
+	}
+	.burger{
+		display: block;
+		left : 0;
+		z-index: 2;
+	}
+	.link_container{
+		position: absolute;
+		min-height : 65vh;
+		top : 9vh;
+		background-color: rgba(0, 0, 0,0.8);
+		left : 9px;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		width : 50%;
+		transition: .5s;
+		transform : translateX(-110%);
+		border-radius: 25px;
+	}
+	.logopart{
+		width : 100%;
+		z-index: 1;
+		justify-content: center;
+	}
+}
+.linksave{
+	transform: translateX(0);
+}
+
+
+	</style>
+
+</head>
+<body id="bodyhate">
+	<div class="all_html_codes">
+	<!-- <div id="corename"> -->
+<nav id="mainnames">
+	<div class="logopart">
+		<div class="iconmain">
+		<img class="logo" src="https://serving.photos.photobox.com/99336755ee8f1dcaa8806c8a5ad1d91b4c8658aa353009793fb233ff0d3c130ef0a26058.jpg" width="50" height="50"></div>
+		<div class="icon_label">
+			<span class="lp1">LAYER OF LEGENDS -</span>
+			<span class="lp2"> LԾL </span>
+		</div>
+	</div>
+	<ul class="link_container">
+		<li><a href="satsu.html">satsu</a></li>
+		<li><a href="gallery.html">gallery</a></li>
+		<li><a href="register2.html">register</a></li>
+		<li><a href="calculator.html">calculator</a></li>
+		<li><a href="#">videos</a></li>
+		<li><a href="contact.html">contact</a></li>
+                <li><a href="kshop.html">Shop</a></li>
+		<li><a href="nav1.html">EC Team</a></li>
+		<li><a href="friends.html">My Friends</a></li>
+		<li><a href="messenger.html.html">Chatting</a></li>
+		<li><a href="music.html">Music</a></li>
+		<li><a href="https://myintkokooo.github.io/desktop.html">Desktop</a></li>
+		<li><a href="manutd.html">ManUtd</a></li>
+
+
+	</ul>
+	<div class="burger">
+		<div class="line1"> </div>
+		<div class="line2"> </div>
+		<div class="line3"> </div>
+	</div>
+</nav>
+
+<div class="switch1">
+	Squad member names<input id="askswitch" onclick="ask()" type="checkbox" name="">
 </div>
-<div id="textboxs" class="orgtxtheight" style="color:black;" align="center">
-	<div class="name1"></div>
-	<div class="phone1"></div>
-	<div class="name2"></div>
-	<div class="phone2"></div>
-	<div class="name3"></div>
-	<div class="phone3"></div>
-	<div class="name4"></div>
-	<div class="phone4"></div>
-	<div class="name5"></div>
-	<div class="phone5"></div>
-	<div class="name6"></div>
-	<div class="phone6"></div>
-	<div class="name7"></div>
-	<div class="phone7"></div>
-	<div class="name8"></div>
-	<div class="phone8"></div>
-	<div class="name9"></div>
-	<div class="phone9"></div>
-	<div class="name10"></div>
-	<div class="phone10"></div>
-	<div class="name11"></div>
-	<div class="phone11"></div>
-	<div class="name12"></div>
-	<div class="phone12"></div>
-	<div class="name13"></div>
-	<div class="phone13"></div>
-	<div class="name14"></div>
-	<div class="phone14"></div>
-	<div class="name15"></div>
-	<div class="phone15"></div>
-	<div class="name16"></div>
-	<div class="phone16"></div>
-	<div class="name17"></div>
-	<div class="phone17"></div>
-	<div class="name18"></div>
-	<div class="phone18"></div>
-	<div class="name19"></div>
-	<div class="phone19"></div>
-	<div class="name20"></div>
-	<div class="phone20"></div>
-	<div class="name21"></div>
-	<div class="phone21"></div>
-	<div class="name22"></div>
-	<div class="phone22"></div>
-	<div class="name23"></div>
-	<div class="phone23"></div>
-	<div class="name24"></div>
-	<div class="phone24"></div>
-	<div class="name25"></div>
-	<div class="phone25"></div>
-	<div class="name26"></div>
-	<div class="phone26"></div>
-	<div class="name27"></div>
-	<div class="phone27"></div>
-	<div class="name28"></div>
-	<div class="phone28"></div>
-	<div class="name29"></div>
-	<div class="phone29"></div>
-	<div class="name30"></div>
-	<div class="phone30"></div>
-	<div class="name31"></div>
-	<div class="phone31"></div>
-	<div class="name32"></div>
-	<div class="phone32"></div>
-	<div class="name33"></div>
-	<div class="phone33"></div>
-	<div class="name34"></div>
-	<div class="phone34"></div>
-	<div class="name35"></div>
-	<div class="phone35"></div>
-	<div class="name36"></div>
-	<div class="phone36"></div>
-	<div class="name37"></div>
-	<div class="phone37"></div>
-	<div class="name38"></div>
-	<div class="phone38"></div>
-	<div class="name39"></div>
-	<div class="phone39"></div>
-	<div class="name40"></div>
-	<div class="phone40"></div>
-	<div class="name41"></div>
-	<div class="phone41"></div>
-	<div class="name42"></div>
-	<div class="phone42"></div>
-	<div class="name43"></div>
-	<div class="phone43"></div>
-	<div class="name44"></div>
-	<div class="phone44"></div>
-	<div class="name45"></div>
-	<div class="phone45"></div>
-	<div class="name46"></div>
-	<div class="phone46"></div>
-	<div class="name47"></div>
-	<div class="phone47"></div>
-	<div class="name48"></div>
-	<div class="phone48"></div>
-	<div class="name49"></div>
-	<div class="phone49"></div>
-	<div class="name50"></div>
-	<div class="phone50"></div>
-	<div class="name51"></div>
-	<div class="phone51"></div>
-	<div class="name52"></div>
-	<div class="phone52"></div>
-	<div class="name53"></div>
-	<div class="phone53"></div>
-	<div class="name54"></div>
-	<div class="phone54"></div>
-	<div class="name55"></div>
-	<div class="phone55"></div>
-	<div class="name56"></div>
-	<div class="phone56"></div>
-	<div class="name57"></div>
-	<div class="phone57"></div>
-	<div class="name58"></div>
-	<div class="phone58"></div>
-	<div class="name59"></div>
-	<div class="phone59"></div>
-	<div class="name60"></div>
-	<div class="phone60"></div>
-	<div class="name61"></div>
-	<div class="phone61"></div>
-	<div class="name62"></div>
-	<div class="phone62"></div>
-	<div class="name63"></div>
-	<div class="phone63"></div>
-	<div class="name64"></div>
-	<div class="phone64"></div>
-	<div class="name65"></div>
-	<div class="phone65"></div>
-	<div class="name66"></div>
-	<div class="phone66"></div>
-	<div class="name67"></div>
-	<div class="phone67"></div>
-	<div class="name68"></div>
-	<div class="phone68"></div>
-	<div class="name69"></div>
-	<div class="phone69"></div>
-	<div class="name70"></div>
-	<div class="phone70"></div>
-</div>
+<div class="bgname">
+<div class="names" align="center"> <br>
+  <a href="#pigbenis">Pig Benis</a> <br> 
+  <a href="#kanieloutis">KANIEL OUTIS</a> <br>
+  <a href="#shika">SHIKA</a> <br>
+  <a href="#eric">E R I C</a> <br>
+  <a href="#legolas">Legolas</a> <br>
+  <a href="#appleshampoo">AppleShampoo</a> <br>
+  <a href="#kobain">Ko Bain</a> <br>
+  <a href="#anoe">San Linn</a><br>
 </div></div>
-</section> -->
+<!-- </div> -->
+
+<div id="pigbenis" class="person perper" align="center">
+<img class="profileimg" src="pigbenis.jpg" width="250"
+height="250"> <br>
+<h2>Pig Benis</h2>
+<h4>Tank/Support Player(Leader)</h4>
+<a class="fbpage" href="https://www.facebook.com/kaungsithu1999"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Kaung Si Thu</h5></a>
+
+<p class="para1">
+Squad ရဲ့ leader - Pig Benis ပဲ ဖြစ်ပါတယ်။
+
+marksman/assassin role ကလွဲပြီး
+ကျန် role တွေကို အကောင်းဆုံးဆော့ပေးနိုင်တဲ့သူပဲ ဖြစ်ပါတယ်၊
+Squad မှာ လိုအပ်တဲ့ roleကို ဖြည့်ကိုင်ပေးနေပြီး favorite roleကတော့ ဂိမ်းရဲ့အသက် တွေဖြစ်တဲ့ tank/support role ဖြစ်ပါတယ်၊ ဒီ season မှာ Atlas ကို ပိုမိုဦးစားပေးကိုင်ခဲ့ပေမယ့်လဲ လိုအပ်တဲ့အခါ
+Jawhead, silvana တို့နဲ့ offlane ဆော့ပေးနိုင်ပါသေးတယ်။
+
+Support ဆော့တဲ့အခါမှာဆိုရင်လဲ mmကို တစ်ဖက်ရန်သူတွေ ဝင်မနှိုက်နိုင်အောင်
+back up ပေးနိုင်သူလဲဖြစ်ပါတယ်။ 
+Popol and Kupa, Valir တို့နဲ့ enemy ကို နှောင့်နိုင်တဲ့အပြင် မိမိသေချင်သေပါစေ
+mm ကိုအသက်မပေးရအောင် ကြိုးစားပေးခဲ့တာလဲ အကြိမ်ကြိမ်ပါ။
+
+Hyper flowမှာ အဓိကကျ တဲ့ role ဖြစ်တဲ့အလျောက် squad မှာပါ leaderဖြစ်နေတဲ့အတွက် training ကိုလဲ ညဆယ်နာရီတိုင်းမှာ လုပ်ဆောင်‌စေလျက်ရှိပါတယ်။ 
+
+အသင်းရှုံးရင် တစ်ခါတစ်လေစိတ်ကောက်တတ်ပြီး base မှာ ရပ်နေတာတို့၊ AFK လုပ်ပစ်တာတို့ကတော့ မကောင်းတဲ့အချက်ပါပဲ၊
+အဲ့အကျင့်တွေကို ပယ်ဖျောက်ပြီးတော့
+လာမယ့် season သစ်မှာ Squad power တက်အောင် member တွေနဲ့ အတူတူ ကြိုးစားဖို့ အဆင်သင့်ဖြစ်နေပါပြီ။
+</p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
 
 
+<div id="kanieloutis" class="person2 perper" align="center">
+<img class="profileimgmini1" src="ksw.jpg" width="200"
+height="200"> <br>
+<h2>KANIEL OUTIS</h2>
+<h4>Tank Player</h4>
+<a class="fbpage" href="https://web.facebook.com/kaung.kaung.7792"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Kyaw Swar Win</h5></a>
+<p class="para2">
+ဟိုးအရင် Season 3 ကတည်းက ဆော့ခဲ့တဲ့ KANIEL OUTIS ဖြစ်ပါတယ်ခင်ဗျ။
 
-<!-- 
-	<section class="something">
-	<div class="panel">
-		<div class="paneltab">
-		<button onclick="clicks(0,'rgba(245,252,0,0.4)','black')">ပူတူးလေးအတွက်-၁</button>
-		<button onclick="clicks(1,'rgba(0,137,8,0.4)','black')">ပူတူးလေးအတွက်-၂</button>
-		<button onclick="clicks(2,'rgba(255,0,0,0.4)','black')">ပူတူးလေးအတွက်-၃</button>
-		<button onclick="clicks(3,'rgba(70,0,255,0.4)','black')">ပူတူးလေးအတွက်-၄</button>
+အရင်ကတော့ Yi Sun Shin ကို proဆန်စွာဆော့ခဲ့ပေမယ့်လဲ အခု squad မှာ လိုအပ်နေတဲ့ Tank roleကို ဖြည့်ကိုင်ပေးနေပါတယ်။ Tank ကို leader လောက် မကိုင်တတ်‌သေးပေမယ့်လဲ marksman ကို
+back upပေးတဲ့နေရာမှာတော့ ဆရာတစ်ဆူပါပဲ။
+
+Favorite heroကတော့ francoပါ၊
+hookကတော့ ဆယ်ခါဆွဲရင် တစ်ခါတော့
+ကျိန်းသေပေါက်မိပါတယ်၊ တစ်ဖက်က
+Damage အထွက်ဆုံး hero ကို battleမှာ
+ဝင်ဝင်ရိုက်ပေးရင်း အသက်ပေးရတာလဲ
+ခဏခဏပါပဲ၊ ဒါပေမယ့် စိတ်မဆိုးပါဘူး၊
+သူသေ လဲ Savage for marksmam ပါ။
+
+တစ်ခါတစ်လေ Pro live တွေကြည့်ပြီး
+Yss, kagura တို့ကို support လိုဆော့ပါသေးတယ်၊ hero pool ကျယ်ပေမယ့်
+Mythicမရောက်ဖူးသေးပါဘူး၊ 
+
+</p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+
+<div id="shika" class="person3 perper" align="center">
+<img class="profileimgmini2" src="shika.jpg" width="200"
+height="200"> <br>
+<h2>SHIKA</h2>
+<h4>Fighter Player</h4>
+<a class="fbpage" href="https://web.facebook.com/profile.php?id=100014823156764"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Aung Kyaw Phyo</h5></a>
+<p class="para3">
+Fighter role ကို တာဝန်ယူဆော့မယ့် SHIKA ဖြစ်ပါတယ်။
+
+SHIKAရဲ့ favorite heroကတော့ ၊Badang ပါ၊ Squadမရောက်ခင် လက်ရည်စမ်းတဲ့ပွဲမှာ Leader ကြီးရဲ့ Khufra ကို ချောကလက်ရစေခဲ့တဲ့ Minsitthar အား Support ပုံစံနဲ့
+ထုတ်ပြခဲ့ပါတယ်၊ ရံဖန်ရံခါ Selenaကိုင်ပီး 
+ဆေးထိုးတတ်ပါတယ်၊ hero pools ကျယ်ပြီး လက်ရှိ Mythic မှာပါ၊ 
+နောက် season မှာတော့ Gloryတက်ဖို့ စိတ်ကူးထားတဲ့သူပါ။
+
+ကိုယ့် lane ကို အကောင်းဆုံးထိန်းနိုင်ပြီး
+Battleမှာ enemy marksmanကို targetထားပြီး ဒဲ့ဝင်ကြုံးတာကတော့
+SHIKAရဲ့ အထာပေါ့၊ Trio Training ကာလမှာ 
+X Borg, Tharmuz တို့ကို 
+ထပ်မံ trainထားပါသေးတယ်၊ လိုအပ်ရင် လိုအပ်သလို တခြား role တွေကိုလဲ
+ဆော့ပေးနိုင်ပါတယ်၊ full party မကစားရသေးပေမယ့် Squad power မြှင့်တင်ပေးဖို့အတွက် အခုကတည်းက တာဆူနေသောသူ ဖြစ်ပါတယ်။
+
+Assassin metaဖြစ်တဲ့အလျောက် fighterတွေဟာ tank/support လို ဆော့ရတဲ့ အချိန်မှာ multiple role ပိုင်နိုင်တဲ့
+SHIKA လို playerတစ်ယောက် ရရှိတာဟာ Squad အတွက် အားတက်စရာပဲဖြစ်ပါတယ်။
+
+</p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+
+<div id="eric" class="person4 perper" align="center">
+<img class="profileimgmini3" src="eric.jpg" width="200"
+height="200"> <br>
+<h2>E R I C</h2>
+<h4>Marksman Player</h4>
+<a class="fbpage" href="https://web.facebook.com/minthwin.khant666"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Min Thwin Khant</h5></a>
+<p class="para4">သူကတော့ E R I C ဖြစ်ပါတယ်ခင်ဗျ။
+
+BG က တရုတ်ကြီးတော့ မဟုတ်ပါဘူး၊ ကျွန်တော်တို့ Squad ရဲ့ တရုတ်ကြီးပါ။
+Marksman role ကို အဓိကထားဆော့ပြီး
+လက်ရှိ Meta heroတွေနဲ့ မဆော့ပဲ Old heroတွေဖြစ်တဲ့ Clint, Hanabiနဲ့ အသင်းကို အကောင်းဆုံး carryပေးနေတာပဲဖြစ်ပါတယ်။ Granger pro
+ Ko Bain ရှိခဲ့စဉ်အခါက Leomord, Alucard, Chouတို့ ကိုင်ပြီး
+Offlane role ဆော့ပေးခဲ့ပါသေးတယ်။
+
+hero pools ကတော့ သူ့အတွက်အများကြီးလိုသေးပေမယ့်လဲ 
+Leaderရဲ့ တောင်းဆိုမှုအရ Claudeနဲ့ Kimmyကို grandmaster accountမှာ trainနေရင်းနဲ့ legendရောက်သွားခဲ့ပါသေးတယ်။
+
+Early ပိုင်းမှာ သွေးအေးတတ်ပြီး
+late gameမှာ Savageကတော့ သူ့အတွက်ပါပဲ။
+တစ်ခါတစ်ရံ Savageဖြတ်လုခံရရင်တော့ တစ်ဖက် tower ထဲ ပြေးပြေးဝင်တတ်တဲ့ ကစားသမားပါ။
+
+Mlကို အပျော်ဆော့တဲ့ E R I C ဟာ accountပေါင်းများစွာရှိ‌ခဲ့ပါသေးတယ်၊ 
+မှတ်မိသလောက်ကတော့ koopl, lord bully, Dr.acula, May be Hope တို့ပဲဖြစ်ပါတယ်၊ ဒါပေမယ့်လဲ LOL Squadထဲရောက်မှ Mythic ရောက်ဖူးသူပါခင်ဗျ။
+
+</p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+
+<div id="legolas" class="person5 perper" align="center">
+<img class="profileimgmini4" src="swh.jpg" width="200"
+height="200"> <br>
+<h2>Legolas</h2>
+<h4>Mage Player</h4>
+<a class="fbpage" href="https://web.facebook.com/ohsoewinhtun/"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Soe Win Htun</h5></a>
+<p class="para5">
+Mid-laner မကောင်းရင် ပွဲရှုံးဖို့က 65%ကျော် သေချာသလောက်ရှိနေပါပြီ၊ ဒီပြဿနာကို
+ဖြေရှင်းဖို့အတွက် Legolas ရှိပါတယ်။
+
+Legolas ပါရင် Marksman က free farming
+ပါပဲ၊အပေါ်အောက်တင်မက jungle တွေထဲပါ roam တတ်တဲ့ mid-laner တစ်ယောက်ကတော့ Legolasပဲ ဖြစ်ပါတယ်။
+
+Mage role မှာ အစုံကိုင်တတ်သူဖြစ်ပြီးတော့၊ 1-3-1 (hyper) အတွက် pure mage တွေကို Supportလို ဆော့တတ်တဲ့
+Playerတစ်ယောက်လဲဖြစ်ပါတယ်၊  
+1-2-2 အတွက်လဲ Chang'e, Pharsa, lunox, Lylia, Harley စသဖြင့် ကိုင်လေ့ရှိပါတယ်၊
+
+Squadမရောက်ခင် (Epic) မှာ ကျင်လည်ခဲ့စဉ်ကတည်းက Odette နဲ့ savage ခဏခဏယူခဲ့သူပါ၊ Coverပေးရင် ပေးသလောက် performance ထွက်တဲ့သူလဲဖြစ်ပါတယ်။ Memberတွေနဲ့ training တော့ မလုပ်ရသေးပေမယ့်လဲ solo lifeမှာတင် experience ကောင်းကောင်းရရှိထားသူဖြစ်တဲ့အတွက်
+Full partyမှာ အဆင်ပြေမယ့်သူဖြစ်ပါတယ်။
+
+</p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+
+<div id="appleshampoo" class="person6 perper" align="center">
+<img class="profileimgmini5" src="appleshampoo.jpg" width="200"
+height="200"> <br>
+<h2>AppleShampoo</h2>
+<h4>Assassin Player</h4>
+<a class="fbpage" href="https://web.facebook.com/profile.php?id=100012108916305"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Aung Thurein Htun</h5></a>
+<p class="para6">သူကတော့
+AppleShampooပဲ ဖြစ်ပါတယ်။
+
+Assassin playerဖြစ်ပြီး သူ့ရဲ့ favorite heroကတော့ Hayabusa ပါ။
+ဘယ်လောက်ထိ Hayabusa ကို proကျသလဲဆိုရင်တော့ counter hero (Helcurt) ကိုတောင် By one တွေ ခဏခဏမေးတတ်တဲ့ထိပါခင်ဗျ။
+
+Earlyသာရင်တော့ သူ့အတွက် mage/marksmanတွေက သားကောင်လေးတွေလိုပါပဲ၊ Early မသာပြန်ရင်လဲ lane creep အကောင်းဆုံးရှင်းပေးပြီး laneသာအောင်လုပ်ပေးနိုင်သလို၊အရေးကြီးတဲ့ Tower လဲ push နိုင်ပါတယ်ခင်ဗျ၊ 
+တစ်ခါကတော့ Tower ခိုးချိုးရင်း
+Baseမှာဝိုင်းဖြုတ်ခံလိုက်ရတာ‌တော့
+အမှတ်တရ Defeat ပေါ့။
+ဒါပေမယ့်လဲ ရှုံးလဲအတူတူ၊နိုင်လဲအတူတူပါပဲခင်ဗျာ။
+ 
+တစ်ခါတစ်ရံ squadလိုအပ်ချက်အရ Aurora ကို Support ဆော့ပေးပါတယ်၊
+ဘာကိုင်ကိုင်သူ့မျက်လုံးထဲမြင်တာကတော့
+Enemy marksmanပါ။
+
+AppleShampooပါရင် enemy marksmanတွေ ဖင်တုန်အောင်ကြောက်နေရတာ Map hack လို့ပြောခံရတဲ့ထိပါပဲ။
+
+Ulti ခဏခဏလွဲပစ်တတ်တာတော့ သူ့အားနည်းချက်ပါ၊
+PUBGလဲပစ်တတ်ပါတယ်၊ Mlbbမှာတော့ Haya pro ပေါ့။
+</p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+
+<div id="kobain" class="person7 perper" align="center">
+<img class="profileimgmini6" src="kobain.jpg" width="200"
+height="200"> <br>
+<h2>Ko Bain</h2>
+<h4>Support Player</h4>
+<a class="fbpage" href="https://web.facebook.com/kyaw.htake.92"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Kyaw Htake Tin Maung</h5></a>
+<p class="para7"></p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+
+<div id="anoe" class="person8 perper" align="center">
+<img class="profileimgmini7" src="https://i.pinimg.com/originals/af/8d/63/af8d63a477078732b79ff9d9fc60873f.jpg" width="200"
+height="200"> <br>
+<h2>အေနိုး</h2>
+<h4>Manager/Coach</h4>
+<a class="fbpage" href="https://web.facebook.com/komaeda.nagito.3"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="25"><h5 style="color: black;">Sann Linn</h5></a>
+<p class="para8"></p>
+<a class="toplink"href="#mainnames">Go Top ☝️😍</a>
+</div><br>
+<div class="thisbox perper">
+
+		<div>
+			<h1 align="center">News</h1>
+			<br>
+	<div class="container"> <!--  container start -->
+		<div class="tabbtn">
+			<button onclick="showPanel(0,'rgba(0,0,0,0.8)','#bbb')">NMA</button>
+			<button onclick="showPanel(1,'skyblue','red')">PUBG</button>
+			<button onclick="showPanel(2,'lightgreen','')">PES20</button>
+			<button onclick="showPanel(3,'sandybrown','purple')">COC</button>
+		</div>
+
+		<div class="tabcontentbox tabno">
+		<div class="tabcontent">
+			<h3 align="center">Nyein Myat Thu</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="tabcontent">
+			<h3 align="center">PUBG</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="tabcontent">
+			<h3 align="center">PES - 2020</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+		<div class="tabcontent">
+			<h3 align="center">Clash of Clans</h3>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
 	</div>
-		<div class="panelcontent">
-			ချစ်ဆုံးဂူဂူးလေးရေ ခလေးလေးက တကယ်ကိုအရမ်းလှပတဲ့ကောင်မလေးပါကွာ။
-			ကိုကိုကတော့ အရမ်းကိုစွဲမက်နေပါပီ။ ကိုကို့မှာလေ ပူတူတူးလေးကိုပဲအချိန်တိုင်း တွေးနေမိတယ်သိလား။
-			အိပ်ပြန်တော့လဲ ပူတူတူးလေးအကြောင်း စားပြန်တော့လဲ ပူတူတူးလေးအကြောင်း။ 
-			ကိုကို့ကိုပဲယူပါနော် ပူတူတူးလေးရေ ။ ပူတူတူးလေးကို ကိုကိုပဲဘဝဆက်တိုင်း ပိုင်ဆိုင်ရပါလို၏လို့ 
-			အမြဲဆုတောင်းဖြစ်တယ်။ ❤️
-		</div>
-		<div class="panelcontent">
-			ဘဝမှာမွေးခါစကနေ အခုအချိန်ထိ ကံအကောင်းဆုံးအချိန်ကို ပြောပါဆိုရင်
-			ပူတူတူးလေးနဲ့ ချစ်သူဖြစ်တဲ့နေ့က ကိုကို့အတွက် ကံအကောင်းဆုံးပဲ။လူတွေက
-			ပြောကြတယ် ကျောက်မြတ်ရတနာ စိန်ရွှေငွေ ပတ္တမြားတွေဆိုတာက လောကမှာတန်ဖိုးအကြီးဆုံးပဲတဲ့။
-			ကိုကို့အတွက်တော့ လုံးဝမှားယွင်းနေတယ် ပူတူတူးလေးကမှ လောကမှာတင်မဟုတ်ဘူး
-			စကြာဝဠာမှာပါ တကယ်တန်ဖိုးအကြီးဆုံး ❤️
-		</div>
-		<div class="panelcontent">
-			နေပူတယ် မိုးရွာတယ် နှင်းကျတယ်ဆိုပီး မြန်မာနိုင်ငံမှာ ရာသီဥတုသုံးပါးကို ဖြတ်ကျော်ရင်း လူတွေက ပင်ပန်းမှုဒဏ်တွေ စိတ်ဒဏ်ရာတွေ လောဘ ဒေါသ မောဟတွေနဲ့အတူ ဖြတ်သန်းနေကြရတယ်။
-			ကိုကို့အတွက် ကံကောင်းသွားတာတစ်ခုက ပူတူတူးလေးဘေးမှာ ရှိနေရရင် အပူအပင်တွေ မောပန်းမှုတွေ ပျောက်ကွယ်ပီး အေးချမ်းမှု နူးညံ့မှုလေးတွေပဲခံစားမိတယ်။ပူတူတူးလေးဘေးမှာတစ်သက်လုံးနေခွင့်ပြုပါနော် ❤️
-		</div>
-		<div class="panelcontent">
-			လူသားတိုင်းက အိမ်လှလှလေးတွေ သစ်ပင်လှလှလေးတွေ အိမ်မွေးတိရစ္ဆာန်လှလှလေးတွေ ပစ္စည်းလှလှလေးတွေ ပန်းလှလှလေးတွေကို အလှတရားလို့မြင်ပီး ထိန်းသိမ်းမွမ်းမံ မွေးမြူကြတယ်။
-			အဲ့ဒါတွေက ကျွန်တော့်အတွက်တော့ လှတယ်လို့ကို မမြင်မိပါဘူးဗျာ။ တစ်ခုတော့ရှိတယ်။ ကျွန်တော့်အတွက် အလှပဆုံးလေးတစ်မျိုးပဲရှိတယ်။ အဲ့ဒါ ခိုင်နီနီနိုင်ထွေးလေးရဲ့ ပင်ဂိုအလှလေးပဲ ❤️
-		</div>
-	</div>
-</section>
+		</div> <!--  container end -->
+		<div align="center"><br><button id="closebtn" onclick="removeall()">close</button></div>
+	<br></div></div>
+<a class="fbpagemain" href="https://www.facebook.com/lolmandalay/"><img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19751.png" width="30" height="30"><h5>LAYER OF LEGENDS - LԾL</h5></a>
 
-<h4 class="footer">Made with ❤️ By MKKO</h4> -->
+<div class="table_div table_shitshit">
+<table id="sidebar_tool">
+	<tr>
+		<td class="tool_label"><img src="https://cdn4.iconfinder.com/data/icons/music-ui-solid-24px/24/moon_dark_mode_night-2-512.png" width="30" height="30">Dark mode</td>
+		<td><input type="checkbox" name="" id="darkmode1" onclick="darkworld()"></td>
+	</tr>
+	<tr>
+		<td class="tool_label"><img src="https://www.pngarts.com/files/3/Letter-T-PNG-Download-Image.png" width="30" height="30">Change text color</td>
+			<td><input type="checkbox" name="" id="textchange" onclick="txtfun()"></td>
+	</tr>
+</table></div>
+<div class="mainoption">
+<div class="option_float colorss" onclick="clickfloat()">
+	<div></div>
+	<div></div>
+	<div></div>
+</div>
+</div>
 
 
-<script type="text/javascript" src="script.js"></script>
+</div><!-- all html codes close -->
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	const line1 = document.querySelector(".line1");
+const line2 = document.querySelector(".line2");
+const line3 = document.querySelector(".line3");
+const burger = document.getElementsByClassName("burger")[0];
+const linkblah = document.querySelector(".link_container");
+let menuopen = false;
+
+const clickfun = () =>{
+	
+	if(!menuopen){
+		line2.style.opacity = "0";
+		line1.classList.add("line1tran");
+		line3.classList.add("line2tran");
+		linkblah.classList.toggle("linksave");
+		menuopen = true;
+	}
+	else{
+		line2.style.opacity = "1";
+		line1.classList.remove("line1tran");
+		line3.classList.remove("line2tran");
+		linkblah.classList.toggle("linksave");
+		menuopen = false;
+	}	
+}
+burger.addEventListener("click",clickfun);
+
+
+
+const para1 = document.getElementsByClassName("para1")[0];
+const para2 = document.getElementsByClassName("para2")[0];
+const para3 = document.getElementsByClassName("para3")[0];
+const para4 = document.getElementsByClassName("para4")[0];
+const para5 = document.getElementsByClassName("para5")[0];
+const para6 = document.getElementsByClassName("para6")[0];
+const para7 = document.getElementsByClassName("para7")[0];
+const para8 = document.getElementsByClassName("para8")[0];
+const profileimg = document.getElementsByClassName("profileimg")[0];
+const profileimgmini1 = document.getElementsByClassName("profileimgmini1")[0];
+const profileimgmini2 = document.getElementsByClassName("profileimgmini2")[0];
+const profileimgmini3 = document.getElementsByClassName("profileimgmini3")[0];
+const profileimgmini4 = document.getElementsByClassName("profileimgmini4")[0];
+const profileimgmini5 = document.getElementsByClassName("profileimgmini5")[0];
+const profileimgmini6 = document.getElementsByClassName("profileimgmini6")[0];
+const profileimgmini7 = document.getElementsByClassName("profileimgmini7")[0];
+
+
+
+
+const shit1 = () =>{
+	profileimg.style.transition = "0.5s";
+
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+
+		profileimg.classList.toggle("imgfix");
+		para1.classList.toggle("sizefix");
+
+
+	para2.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+	para7.classList.remove("sizefix");
+	para8.classList.remove("sizefix");
+}
+
+
+const shit2 = () =>{
+	profileimgmini1.style.transition = "0.5s";
+
+	
+		profileimgmini1.classList.toggle("imgfix");
+		para2.classList.toggle("sizefix");
+	
+
+	profileimg.classList.remove("imgfix");
+
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+	para7.classList.remove("sizefix");
+	para8.classList.remove("sizefix");
+}
+
+
+const shit3 = () =>{
+	profileimgmini2.style.transition = "0.5s";
+
+	
+
+		profileimgmini2.classList.toggle("imgfix");
+		para3.classList.toggle("sizefix");
+	
+
+
+	profileimg.classList.remove("imgfix");
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para2.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+	para7.classList.remove("sizefix");
+	para8.classList.remove("sizefix");
+}
+
+
+const shit4 = () =>{
+	profileimgmini3.style.transition = "0.5s";
+
+	
+
+		profileimgmini3.classList.toggle("imgfix");
+		para4.classList.toggle("sizefix");
+		
+
+
+	profileimg.classList.remove("imgfix");
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para2.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+	para7.classList.remove("sizefix");
+	para8.classList.remove("sizefix");
+
+}
+
+
+const shit5 = () =>{
+	profileimgmini4.style.transition = "0.5s";
+
+	
+
+		profileimgmini4.classList.toggle("imgfix");
+		para5.classList.toggle("sizefix");
+		
+
+	
+	profileimg.classList.remove("imgfix");
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para2.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+	para7.classList.remove("sizefix");
+	para8.classList.remove("sizefix");
+}
+
+
+const shit6 = () =>{
+	profileimgmini5.style.transition = "0.5s";
+
+	
+	
+		profileimgmini5.classList.toggle("imgfix");
+		para6.classList.toggle("sizefix");
+		
+
+
+	profileimg.classList.remove("imgfix");
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para2.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para7.classList.remove("sizefix");
+	para8.classList.remove("sizefix");
+
+}
+
+
+const shit7 = () =>{
+	profileimgmini6.style.transition = "0.5s";
+
+	
+
+		profileimgmini6.classList.toggle("imgfix");
+		para7.classList.toggle("sizefix");
+	
+
+
+	profileimg.classList.remove("imgfix");
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini7.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para2.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+		para8.classList.remove("sizefix");
+}
+
+
+const shit8 = () =>{
+	profileimgmini7.style.transition = "0.5s";
+
+	
+
+		profileimgmini7.classList.toggle("imgfix");
+		para8.classList.toggle("sizefix");
+		
+
+	
+	profileimg.classList.remove("imgfix");
+	profileimgmini1.classList.remove("imgfix");
+	profileimgmini2.classList.remove("imgfix");
+	profileimgmini3.classList.remove("imgfix");
+	profileimgmini4.classList.remove("imgfix");
+	profileimgmini5.classList.remove("imgfix");
+	profileimgmini6.classList.remove("imgfix");
+	para1.classList.remove("sizefix");
+	para2.classList.remove("sizefix");
+	para3.classList.remove("sizefix");
+	para5.classList.remove("sizefix");
+	para4.classList.remove("sizefix");
+	para6.classList.remove("sizefix");
+		para7.classList.remove("sizefix");
+}
+
+
+profileimg.addEventListener("click",shit1);
+profileimgmini1.addEventListener("click",shit2);
+profileimgmini2.addEventListener("click",shit3);
+profileimgmini3.addEventListener("click",shit4);
+profileimgmini4.addEventListener("click",shit5);
+profileimgmini5.addEventListener("click",shit6);
+profileimgmini6.addEventListener("click",shit7);
+profileimgmini7.addEventListener("click",shit8);
+
+const askswitch = document.getElementById("askswitch");
+const bgname = document.getElementsByClassName("bgname")[0];
+const switch1 = document.getElementsByClassName("switch1")[0];
+const bodyhate = document.getElementById("bodyhate");
+const ask = () =>{
+if(askswitch.checked == true){
+	bgname.classList.toggle("bgsize");
+	switch1.style.backgroundColor = "#ddd";
+	switch1.style.color = "black";
+	setTimeout(()=>{
+		bgname.classList.remove("bgsize");
+		askswitch.checked = false;
+		switch1.style.backgroundColor = "darkcyan";
+		switch1.style.color = "white";
+	},7000);
+}
+else{
+	bgname.classList.remove("bgsize");
+	switch1.style.backgroundColor = "darkcyan";
+	switch1.style.color = "white";
+}
+}
+const person = document.getElementsByClassName("person")[0];
+const person2 = document.getElementsByClassName("person2")[0];
+const person3 = document.getElementsByClassName("person3")[0];
+const person4 = document.getElementsByClassName("person4")[0];
+const person5 = document.getElementsByClassName("person5")[0];
+const person6 = document.getElementsByClassName("person6")[0];
+const person7 = document.getElementsByClassName("person7")[0];
+const person8 = document.getElementsByClassName("person8")[0];
+const tablediv = document.getElementsByClassName("table_div")[0];
+const optionfloat = document.getElementsByClassName("option_float")[0];
+const thisbox = document.getElementsByClassName("thisbox")[0];
+const clickfloat = () =>{
+	tablediv.classList.toggle("mainoptionap");
+	tablediv.classList.toggle("table_shitshit");
+	optionfloat.classList.toggle("option_floatshit");
+	optionfloat.classList.toggle("colorss");
+}
+const darkbtn = document.getElementById("darkmode1");
+const darkworld = () =>{
+	if(darkbtn.checked === true){
+		textchange.checked = true;
+		thisbox.classList.toggle("darker");
+		thisbox.classList.toggle("perper");
+                
+		person.classList.toggle("darker");
+		person.classList.toggle("perper");
+
+		person2.classList.toggle("darker");
+		person2.classList.toggle("perper");
+		
+		person3.classList.toggle("darker");
+		person3.classList.toggle("perper");
+		
+		person4.classList.toggle("darker");
+		person4.classList.toggle("perper");
+		
+		person5.classList.toggle("darker");
+		person5.classList.toggle("perper");
+		
+		person6.classList.toggle("darker");
+		person6.classList.toggle("perper");
+		
+		person7.classList.toggle("darker");
+		person7.classList.toggle("perper");
+		
+		person8.classList.toggle("darker");
+		person8.classList.toggle("perper");
+		
+		bodyhate.classList.toggle("bgdark");
+	}
+	else{
+        textchange.checked = false;
+
+        thisbox.classList.toggle("darker");
+		thisbox.classList.toggle("perper");
+
+		person.classList.toggle("darker");
+		person.classList.toggle("perper");
+
+		person2.classList.toggle("darker");
+		person2.classList.toggle("perper");
+		
+		person3.classList.toggle("darker");
+		person3.classList.toggle("perper");
+		
+		person4.classList.toggle("darker");
+		person4.classList.toggle("perper");
+		
+		person5.classList.toggle("darker");
+		person5.classList.toggle("perper");
+		
+		person6.classList.toggle("darker");
+		person6.classList.toggle("perper");
+		
+		person7.classList.toggle("darker");
+		person7.classList.toggle("perper");
+		
+		person8.classList.toggle("darker");
+		person8.classList.toggle("perper");
+		
+		bodyhate.classList.toggle("bgdark");
+
+	}
+	if(textchange.checked === true){
+               
+		bodyhate.classList.toggle("bobo");
+	}
+	else{
+		bodyhate.classList.toggle("bobo");
+	}
+}
+const textchange = document.getElementById("textchange");
+const txtfun = () =>{
+	
+	if(textchange.checked === true){
+        darkbtn.checked = true;
+		bodyhate.classList.toggle("bobo");
+	}
+	else{
+		darkbtn.checked = false;
+		bodyhate.classList.toggle("bobo");
+	}
+	if(darkbtn.checked === true){
+		thisbox.classList.toggle("darker");
+		thisbox.classList.toggle("perper");
+                
+		person.classList.toggle("darker");
+		person.classList.toggle("perper");
+
+		person2.classList.toggle("darker");
+		person2.classList.toggle("perper");
+		
+		person3.classList.toggle("darker");
+		person3.classList.toggle("perper");
+		
+		person4.classList.toggle("darker");
+		person4.classList.toggle("perper");
+		
+		person5.classList.toggle("darker");
+		person5.classList.toggle("perper");
+		
+		person6.classList.toggle("darker");
+		person6.classList.toggle("perper");
+		
+		person7.classList.toggle("darker");
+		person7.classList.toggle("perper");
+		
+		person8.classList.toggle("darker");
+		person8.classList.toggle("perper");
+		
+		bodyhate.classList.toggle("bgdark");
+	}
+	else{
+
+		thisbox.classList.toggle("darker");
+		thisbox.classList.toggle("perper");
+
+		person.classList.toggle("darker");
+		person.classList.toggle("perper");
+
+		person2.classList.toggle("darker");
+		person2.classList.toggle("perper");
+		
+		person3.classList.toggle("darker");
+		person3.classList.toggle("perper");
+		
+		person4.classList.toggle("darker");
+		person4.classList.toggle("perper");
+		
+		person5.classList.toggle("darker");
+		person5.classList.toggle("perper");
+		
+		person6.classList.toggle("darker");
+		person6.classList.toggle("perper");
+		
+		person7.classList.toggle("darker");
+		person7.classList.toggle("perper");
+		
+		person8.classList.toggle("darker");
+		person8.classList.toggle("perper");
+		
+		bodyhate.classList.toggle("bgdark");
+
+	}
+}
+</script>
+<script type="text/javascript" src="colpanel.js"></script>
 </body>
 </html>
